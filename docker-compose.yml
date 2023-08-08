@@ -1,0 +1,46 @@
+version: '3.5'
+
+services:
+  app:
+    container_name: app
+    ports:
+      - "80:80"
+    env_file:
+      - .env
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/usr/src/app
+    networks:
+      - app_network
+      - redis_network
+    command: [ "/usr/src/docker/app.sh" ]
+    restart: always
+
+  mongodb:
+    container_name: mongodb
+    image: mongo:latest
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - app_network
+    ports:
+      - "27017:27017"
+  redis:
+    container_name: redis
+    restart: always
+    image: redis:7.0.8
+    networks:
+      - redis_network
+
+networks:
+  app_network:
+  redis_network:
+
+volumes:
+  mongodb_data:
+
