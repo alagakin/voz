@@ -1,0 +1,3282 @@
+[
+  {
+    "type": "Point",
+    "coordinates": [
+      44.794085,
+      20.453769
+    ],
+    "name": "BEOGRAD CENTAR"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.79761442620788,
+      20.465511381161594
+    ],
+    "name": "KARAÐORÐEV PARK"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.867222,
+      20.320556
+    ],
+    "name": "Kemendin st"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.850278,
+      20.345556
+    ],
+    "name": "Altina st"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.3,
+      18.801944
+    ],
+    "name": "VINKOVCI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.226944,
+      18.413611
+    ],
+    "name": "STRIZIVOJNA VRPOLJE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.163056,
+      18.010833
+    ],
+    "name": "SLAVONSKI BROD"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.19,
+      17.650278
+    ],
+    "name": "NOVA KAPELA BATRINA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.253333,
+      17.379167
+    ],
+    "name": "NOVA GRADIŠKA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.325556,
+      16.981667
+    ],
+    "name": "NOVSKA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.445833,
+      16.876389
+    ],
+    "name": "BANOVA JARUGA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.479617,
+      16.775603
+    ],
+    "name": "KUTINA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.70753366149477,
+      16.397918300468568
+    ],
+    "name": "IVANIĆ GRAD"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.801609219982616,
+      16.23462421484826
+    ],
+    "name": "DUGO SELO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.804655163042874,
+      15.978817816854084
+    ],
+    "name": "ZAGREB GL.KOL."
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.50751781814622,
+      19.049083845445164
+    ],
+    "name": "ERDUT"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.500201707888955,
+      18.963370697853083
+    ],
+    "name": "DALJ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.51317303935644,
+      18.859061635843773
+    ],
+    "name": "BIJELO BRDO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.520806466334356,
+      18.83433618382323
+    ],
+    "name": "SARVAŠ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.5366175920771,
+      18.76769227259269
+    ],
+    "name": "OSIJEK LUKA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.54538297687671,
+      18.742261182600924
+    ],
+    "name": "STANDARD"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.5523404893218,
+      18.721322602112885
+    ],
+    "name": "OSIJEK DONJI GRAD"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.55413993308433,
+      18.70549546673719
+    ],
+    "name": "OSIJEK OLT"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.55296369600433,
+      18.683501412413452
+    ],
+    "name": "OSIJEK"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      42.99409314695585,
+      22.84306212487293
+    ],
+    "name": "KALOTINA ZAPAD"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      42.92211118676028,
+      22.9321160013577
+    ],
+    "name": "DRAGOMAN"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      42.92211118676028,
+      22.9321160013577
+    ],
+    "name": "DRAGOMAN sp"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      42.8792214025179,
+      22.987564228448687
+    ],
+    "name": "ALDOMIROVCI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      42.855084307240396,
+      23.03899307875911
+    ],
+    "name": "SLIVNICA sp"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      42.84957105413532,
+      23.055932082823833
+    ],
+    "name": "SLIVNICA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      42.82762372849745,
+      23.121897305030764
+    ],
+    "name": "PETARCH"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      42.807180356494534,
+      23.199725244482153
+    ],
+    "name": "KOSTINBROD"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      42.79238320293879,
+      23.209456910848033
+    ],
+    "name": "KOSTINBROD sp"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      42.754608455617515,
+      23.24483943899795
+    ],
+    "name": "VOLUJAK"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      42.7382612907288,
+      23.263928257531635
+    ],
+    "name": "OBELYA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      42.72771095329425,
+      23.282737520827197
+    ],
+    "name": "VRABNICA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      42.720946233921275,
+      23.30154824715356
+    ],
+    "name": "NADEZHDA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      42.71220344999791,
+      23.32118773552579
+    ],
+    "name": "SOFIA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.69702553911941,
+      20.60190267064066
+    ],
+    "name": "MATARUŠKA BANJA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.68486705647136,
+      20.57119383209239
+    ],
+    "name": "PROGORELICA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.65285008535105,
+      20.557329778619113
+    ],
+    "name": "BOGUTOVAČKA BANJA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.534270217505856,
+      20.61152939491818
+    ],
+    "name": "POLUMIR"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.465398085753215,
+      20.62425094935372
+    ],
+    "name": "UŠĆE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.411218399414885,
+      20.659381836573107
+    ],
+    "name": "JOŠANIČKA BANJA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.38877146837906,
+      20.646625153826772
+    ],
+    "name": "PISKANJA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.355837250727525,
+      20.64530589290197
+    ],
+    "name": "BRVENIK"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.327368500028975,
+      20.63764025505986
+    ],
+    "name": "RVATI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.29077775867289,
+      20.61663682043313
+    ],
+    "name": "RAŠKA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.26043549044316,
+      20.6622700091888
+    ],
+    "name": "KAZNOVIĆI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.23762551469075,
+      20.68077335351311
+    ],
+    "name": "RUDNICA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.43582845830368,
+      20.662763638489107
+    ],
+    "name": "LOZNO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.48529222454983,
+      20.609691143151114
+    ],
+    "name": "PUSTO POLJE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.657254969723866,
+      21.385142777096064
+    ],
+    "name": "MRZENICA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.59268642468987,
+      21.353375792635607
+    ],
+    "name": "DEDINA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.587465736617474,
+      21.32743912234643
+    ],
+    "name": "KRUŠEVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.585591625456104,
+      21.247214069757177
+    ],
+    "name": "KOŠEVI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.5773456455035,
+      21.15320266609684
+    ],
+    "name": "STOPANJA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.59196389396954,
+      21.075780190827174
+    ],
+    "name": "POCEKOVINA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.61512129690631,
+      20.99763407987034
+    ],
+    "name": "TRSTENIK"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.638900588477455,
+      20.92596635148681
+    ],
+    "name": "VRNJAČKA BANJA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.640540754343164,
+      20.92010728250128
+    ],
+    "name": "LIPOVA STA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.672213161580544,
+      20.83405689629751
+    ],
+    "name": "PODUNAVCI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.69127842157526,
+      20.783562375996212
+    ],
+    "name": "VRBA STAJ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.71132957370702,
+      20.754586458676066
+    ],
+    "name": "RATINA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.65969477528884,
+      20.8537181890967
+    ],
+    "name": "TOMINAC STA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.678679334699545,
+      20.820409800712667
+    ],
+    "name": "VRANEŠI STAJ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.59077709324926,
+      21.26988101277198
+    ],
+    "name": "ČITLUK"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.68151083500762,
+      21.41495523242037
+    ],
+    "name": "GRAD STALAĆ STA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.01164801593937,
+      22.766848570960082
+    ],
+    "name": "DIMITROVGRAD"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.65742392190755,
+      21.48343959136646
+    ],
+    "name": "BRALJINA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.60999405546237,
+      21.48575850143642
+    ],
+    "name": "STARO TRUBAREVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.60508110410702,
+      21.513059368748753
+    ],
+    "name": "ĐUNIS"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.59091021081437,
+      21.552449599852945
+    ],
+    "name": "VITKOVAC STAJ."
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.57841553969984,
+      21.57074135784019
+    ],
+    "name": "DONJI LJUBEŠ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.55287974341449,
+      21.61242557417372
+    ],
+    "name": "KORMAN"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.53602244048508,
+      21.633502767148155
+    ],
+    "name": "TRNJANI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.52301681433499,
+      21.650351600099576
+    ],
+    "name": "ADROVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.50826135796615,
+      21.693551038798034
+    ],
+    "name": "ALEKSINAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.47157487783806,
+      21.720077434232714
+    ],
+    "name": "LUŽANE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.444583126338856,
+      21.736631804550633
+    ],
+    "name": "TEŠICA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.42234562208787,
+      21.74753500627584
+    ],
+    "name": "GREJAČ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.395120769158595,
+      21.76950177085019
+    ],
+    "name": "SUPOVAČKI MOST"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.39270742426247,
+      21.7796196566182
+    ],
+    "name": "MEZGRAJA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.35749845278401,
+      21.819200935394015
+    ],
+    "name": "TRUPALE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.6265400531751,
+      21.486122401670723
+    ],
+    "name": "CEROVO RAŽANJ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.375145927247885,
+      21.808408218621775
+    ],
+    "name": "VRTIŠTE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.56576346165432,
+      21.5934448234524
+    ],
+    "name": "GORNJI LJUBEŠ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.48218127717641,
+      21.713559049803205
+    ],
+    "name": "NOZRINA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.332570074374416,
+      21.881556404408396
+    ],
+    "name": "CRVENI KRST"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.31635263722417,
+      21.877238403557236
+    ],
+    "name": "NIŠ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.765423958623124,
+      20.62880009801657
+    ],
+    "name": "ADRANI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.76908889864046,
+      20.593598671225376
+    ],
+    "name": "MRSAĆ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.777589873076195,
+      20.559346423771046
+    ],
+    "name": "SAMAILA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.795667029294535,
+      20.51432347261223
+    ],
+    "name": "GORIČANI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.818268428741575,
+      20.482807224211925
+    ],
+    "name": "MRSINCI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.84406313612545,
+      20.447623516729212
+    ],
+    "name": "ZABLAĆE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.908811087781324,
+      20.282993206511026
+    ],
+    "name": "PRIJEVOR"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.90344331908217,
+      20.192661875522777
+    ],
+    "name": "OVČAR BANJA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.880123092015864,
+      20.113910859034387
+    ],
+    "name": "DRAGAČEVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.91008168333608,
+      20.316461878659133
+    ],
+    "name": "TRBUŠANI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.84831,
+      20.06932
+    ],
+    "name": "BORAČKO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.85739,
+      20.41981
+    ],
+    "name": "BALUGA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.89289167354293,
+      20.119928214192033
+    ],
+    "name": "JELEN DO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.833873001458635,
+      20.46555702662537
+    ],
+    "name": "KUKIĆI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.86742751554411,
+      20.100155849144354
+    ],
+    "name": "GUGALJ STA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.889923303787384,
+      20.356021742912137
+    ],
+    "name": "ČAČAK"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.1554953783221,
+      21.07562734363462
+    ],
+    "name": "BATOČINA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.146441777840764,
+      21.021916886077943
+    ],
+    "name": "GRADAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.13021921924366,
+      20.980056816020625
+    ],
+    "name": "BADNJEVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.109459688021175,
+      20.96409836924888
+    ],
+    "name": "RESNIK KRAGUJEVAČKI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.12631659787063,
+      20.966596246207118
+    ],
+    "name": "MILATOVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.13234924762156,
+      20.98899142653277
+    ],
+    "name": "JOVANOVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.00503187695278,
+      20.907409554907353
+    ],
+    "name": "ZAVOD"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.99493752704229,
+      20.876345759567485
+    ],
+    "name": "GROŠNICA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.973356472382896,
+      20.82052991478946
+    ],
+    "name": "DRAGOBRAĆA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.93280967821191,
+      20.74817335423556
+    ],
+    "name": "KNIĆ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.892401382789515,
+      20.767840774203503
+    ],
+    "name": "GRUŽA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.83871591028287,
+      20.773492742470374
+    ],
+    "name": "GUBEREVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.79161111129513,
+      20.790413936872753
+    ],
+    "name": "VITKOVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.74961245280188,
+      20.804765339677157
+    ],
+    "name": "MILAVČIĆI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.727125126461985,
+      20.801583820823232
+    ],
+    "name": "VITANOVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.726500888655856,
+      20.759927666396866
+    ],
+    "name": "ŠUMARICE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.727446195910346,
+      20.72616784216245
+    ],
+    "name": "SIRČA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.80686137570757,
+      20.7876958579847
+    ],
+    "name": "TOMIĆA BRDO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.01026342295351,
+      20.92800812882922
+    ],
+    "name": "KRAGUJEVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.72860539056832,
+      20.693562368256018
+    ],
+    "name": "KRALJEVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.12411713263061,
+      21.134689685243675
+    ],
+    "name": "BRZAN"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.10549364883,
+      21.163038429315204
+    ],
+    "name": "MILOŠEVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.082991575338866,
+      21.18003762572815
+    ],
+    "name": "BAGRDAN"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.043350496797885,
+      21.236050997864293
+    ],
+    "name": "LANIŠTE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.00811301822925,
+      21.231982021422997
+    ],
+    "name": "BUKOVČE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.954187993883494,
+      21.317794972264398
+    ],
+    "name": "GILJE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.864985227130326,
+      21.3989911121042
+    ],
+    "name": "PARAĆIN"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.791693507105286,
+      21.422041747627674
+    ],
+    "name": "SIKIRICA-RATARI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.76398911730638,
+      21.427855076386635
+    ],
+    "name": "DRENOVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.72045955284057,
+      21.437927814012646
+    ],
+    "name": "ĆIĆEVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.702912232621586,
+      21.430043664440483
+    ],
+    "name": "LUČINA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.98208853064111,
+      21.26338192765307
+    ],
+    "name": "JAGODINA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.91649997898427,
+      21.366087237511636
+    ],
+    "name": "ĆUPRIJA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.68149108697914,
+      21.414965362925678
+    ],
+    "name": "STALAĆ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.32501864946473,
+      21.08234092237808
+    ],
+    "name": "VELIKA PLANA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.29406533836221,
+      21.08995160634511
+    ],
+    "name": "STARO SELO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.26157651310188,
+      21.092181252133656
+    ],
+    "name": "NOVO SELO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.238689368971315,
+      21.096807893547847
+    ],
+    "name": "MARKOVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.186510779125044,
+      21.102593697204842
+    ],
+    "name": "LAPOVO VAROŠ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.16800861156649,
+      21.09897677457393
+    ],
+    "name": "LAPOVO RANŽ.STAJ."
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.15768561520274,
+      21.10209365030182
+    ],
+    "name": "LAPOVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.54474113210525,
+      21.045434021329154
+    ],
+    "name": "OSIPAONICA STAJ."
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.562458604596095,
+      21.021680734782514
+    ],
+    "name": "SKOBALJ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.53477700178574,
+      21.056320742058524
+    ],
+    "name": "OSIPAONICA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.47700815387024,
+      21.07047095259499
+    ],
+    "name": "LOZOVIK-SARAORCI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.438433993280704,
+      21.07652543813645
+    ],
+    "name": "MILOŠEVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.41069591214009,
+      21.072845553957034
+    ],
+    "name": "KRNJEVO-TRNOVČE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.37341260447394,
+      21.0790040902889
+    ],
+    "name": "VELIKO ORAŠJE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.52056093218321,
+      21.063384783151907
+    ],
+    "name": "LUGAVČINA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.489664562952356,
+      21.06888102484119
+    ],
+    "name": "SARAORCI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.58460704790363,
+      21.002862639068365
+    ],
+    "name": "MALA KRSNA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.64518630064425,
+      20.952270969199695
+    ],
+    "name": "GODOMIN"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.61700844697997,
+      20.968630883624872
+    ],
+    "name": "RADINAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.59749693404428,
+      20.988681016998772
+    ],
+    "name": "VRANOVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.66770853972625,
+      20.92667265220439
+    ],
+    "name": "SMEDEREVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.39931692383271,
+      20.750552804504384
+    ],
+    "name": "KOVAČEVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.38497067834091,
+      20.776105166165635
+    ],
+    "name": "RABROVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.376022215421415,
+      20.828354487773243
+    ],
+    "name": "KUSADAK"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.36819308760179,
+      20.86571838740479
+    ],
+    "name": "RATARE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.3684809455154,
+      20.90484971396224
+    ],
+    "name": "GLIBOVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.36307362939186,
+      20.959799879621322
+    ],
+    "name": "PALANKA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.336663919915225,
+      21.03517010756061
+    ],
+    "name": "MALA PLANA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.34921511311597,
+      21.95625702923112
+    ],
+    "name": "MATEJEVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.340065167645776,
+      21.91573720766506
+    ],
+    "name": "PANTELEJ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.36394061234857,
+      22.028298934486905
+    ],
+    "name": "JASENOVIK"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.36978442458479,
+      22.043899145068945
+    ],
+    "name": "GRAMADA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.39800183958712,
+      22.050060217405598
+    ],
+    "name": "HADŽIĆEVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.41438265932238,
+      22.11825254378879
+    ],
+    "name": "SVRLJIG"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.46248122116861,
+      22.104413846128807
+    ],
+    "name": "NIŠEVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.48928948604495,
+      22.11185229401473
+    ],
+    "name": "PALILULA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.489175892389284,
+      22.134936272181154
+    ],
+    "name": "SVRLJIŠKI MILJKOVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.54542356792456,
+      22.19032372029489
+    ],
+    "name": "PODVIS"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.55126620165427,
+      22.208493761875122
+    ],
+    "name": "RGOŠTE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.571260299886326,
+      22.2514344138203
+    ],
+    "name": "KNJAŽEVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.60031738852048,
+      22.27170392376655
+    ],
+    "name": "GORNJE ZUNIĆE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.6261930673337,
+      22.274363642752032
+    ],
+    "name": "DONJE ZUNIĆE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.68648376725176,
+      22.29128384147119
+    ],
+    "name": "MINIĆEVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.70778674384822,
+      22.30073292422981
+    ],
+    "name": "SELAČKA REKA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.74027713397245,
+      22.30818219820047
+    ],
+    "name": "MALI IZVOR"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.7988102653685,
+      22.302828971413604
+    ],
+    "name": "VRATARNICA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.85595973571534,
+      22.29035532890111
+    ],
+    "name": "GRLJAN"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.8941752252605,
+      22.290584566861273
+    ],
+    "name": "TIMOK"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.48917139225004,
+      22.134934730902355
+    ],
+    "name": "SV MILJKOVAC STAJ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.904799698584405,
+      22.272837451157837
+    ],
+    "name": "ZAJEČAR"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.997397980074915,
+      22.327722013962408
+    ],
+    "name": "TRNAVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.021771379370925,
+      22.35255368142753
+    ],
+    "name": "ČOKONJAR"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.035306436062186,
+      22.37230910221552
+    ],
+    "name": "SOKOLOVICA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.05776795403022,
+      22.413849202513052
+    ],
+    "name": "TABAKOVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.067479918951435,
+      22.43236835946076
+    ],
+    "name": "TABAKOVAČKA REKA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.097911721806796,
+      22.48287646594634
+    ],
+    "name": "BRUSNIK"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.08656803410294,
+      22.511302731105594
+    ],
+    "name": "TAMNIĆ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.07766597920646,
+      22.54262603472651
+    ],
+    "name": "CRNOMASNICA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.08959276774307,
+      22.560979493245032
+    ],
+    "name": "RAJAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.11646131464313,
+      22.57341153959323
+    ],
+    "name": "ROGLJEVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.128501865985484,
+      22.604284998801223
+    ],
+    "name": "VELJKOVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.18928614615164,
+      22.587484864028806
+    ],
+    "name": "KOBIŠNICA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.228922825962755,
+      22.539789273890978
+    ],
+    "name": "NEGOTIN"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.287082570554894,
+      22.587534570530636
+    ],
+    "name": "PRAHOVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.289615582916696,
+      22.61421667180407
+    ],
+    "name": "PRAHOVO PRISTANIŠTE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.953915433783614,
+      22.324364569339462
+    ],
+    "name": "VRAŽOGRNAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.00602451669323,
+      22.28164354485806
+    ],
+    "name": "RGOTINA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.03366975084367,
+      22.213498031252538
+    ],
+    "name": "ZAGRAĐE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.04916974047349,
+      22.154269542414394
+    ],
+    "name": "BORSKA SLATINA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.05991443577776,
+      22.12492468434521
+    ],
+    "name": "BOR TERETNA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.07309327946046,
+      22.102868308206745
+    ],
+    "name": "BOR"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.38167185934354,
+      21.890097562924808
+    ],
+    "name": "MAJDANPEK"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.317595883147355,
+      21.941779388359276
+    ],
+    "name": "LESKOVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.28416245137887,
+      21.955417544279648
+    ],
+    "name": "JASIKOVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.25725565592457,
+      22.00194696381464
+    ],
+    "name": "VLAOLE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.18741978617997,
+      22.01544059732382
+    ],
+    "name": "CEROVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.19969032756806,
+      22.015994575317823
+    ],
+    "name": "KRIVELJSKI POTOK"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.141837446396515,
+      22.041973134544566
+    ],
+    "name": "MALI KRIVELJ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.232400512418096,
+      22.01598759811561
+    ],
+    "name": "GORNJANE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.16749132763691,
+      22.018108156741352
+    ],
+    "name": "KRIVELJSKI MOST"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.367012435719374,
+      21.907794050163798
+    ],
+    "name": "DEBELI LUG"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.27048475383861,
+      21.98077241483407
+    ],
+    "name": "VLAOLE SELO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.215488019692096,
+      22.020044870031736
+    ],
+    "name": "ŠUŠULAJKA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.101195500789366,
+      22.079592673027513
+    ],
+    "name": "BREZONIK"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.61390675544758,
+      21.18687625935707
+    ],
+    "name": "POŽAREVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.586178792987546,
+      21.131356530668917
+    ],
+    "name": "LJUBIČEVSKI MOST"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.15645213624852,
+      19.886590248606627
+    ],
+    "name": "LASTRA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.123519516602684,
+      19.8580892207012
+    ],
+    "name": "SAMARI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.08804103809009,
+      19.885917250243708
+    ],
+    "name": "DRENOVAČKI KIK"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.060379599066046,
+      19.908555746919777
+    ],
+    "name": "RAŽANA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.00041,
+      19.91896
+    ],
+    "name": "KOSJERIĆ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.92754876711564,
+      19.98979984081405
+    ],
+    "name": "KALENIĆ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.83799445271667,
+      19.904471431075567
+    ],
+    "name": "SEVOJNO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.97302926039598,
+      19.95397473514143
+    ],
+    "name": "TUBIĆI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.8535507531093,
+      19.839907349594338
+    ],
+    "name": "UZIĆI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.808103964761294,
+      20.02435759765862
+    ],
+    "name": "RASNA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.17278,
+      19.86784
+    ],
+    "name": "LESKOVICE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.87790274185223,
+      19.99937960676685
+    ],
+    "name": "GLUMAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.80630494488076,
+      19.953702808906602
+    ],
+    "name": "ZLAKUSA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.8969579827031,
+      19.99713747308465
+    ],
+    "name": "OTANJ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.589215232499235,
+      19.507906721051935
+    ],
+    "name": "RAČA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.840618386746826,
+      20.029064786484764
+    ],
+    "name": "POŽEGA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.84673484624095,
+      19.858590590469774
+    ],
+    "name": "UŽICE TERETNA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.85354338605359,
+      19.839907001682572
+    ],
+    "name": "UŽICE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.656242883064834,
+      20.47259059821233
+    ],
+    "name": "BELA REKA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.594025496829445,
+      20.424956016898523
+    ],
+    "name": "BARAJEVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.57724857430611,
+      20.41214921322899
+    ],
+    "name": "BARAJEVO CENTAR"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.5402705485147,
+      20.378082941509632
+    ],
+    "name": "VELIKI BORAK"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.50846327747093,
+      20.34210719084945
+    ],
+    "name": "LESKOVAC KOLUBARSKI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.49684709337135,
+      20.3103699510113
+    ],
+    "name": "STEPOJEVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.38480229977996,
+      20.245616904921487
+    ],
+    "name": "LAZAREVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.347235612305816,
+      20.093029815033873
+    ],
+    "name": "SLOVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.31247678514895,
+      20.063059693581547
+    ],
+    "name": "MLAĐEVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.30046204946166,
+      20.027856227072434
+    ],
+    "name": "DIVCI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.291768034152746,
+      19.958922930812665
+    ],
+    "name": "IVERAK"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.44888072806701,
+      20.279082011024776
+    ],
+    "name": "VREOCI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.270982166879264,
+      19.90729334480991
+    ],
+    "name": "VALJEVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.36797013581006,
+      20.164052586087152
+    ],
+    "name": "LAJKOVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.66175335433347,
+      20.508148547307453
+    ],
+    "name": "RIPANJ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.64189059091139,
+      20.53277297594286
+    ],
+    "name": "KLENJE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.600322250294035,
+      20.5320114001415
+    ],
+    "name": "RIPANJ TUNEL"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.56832981124405,
+      20.56107076153717
+    ],
+    "name": "RALJA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.52312363900401,
+      20.613019842740105
+    ],
+    "name": "SOPOT KOSMAJSKI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.4830183275464,
+      20.65841071496758
+    ],
+    "name": "VLAŠKO POLJE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.66833158082992,
+      20.495041785368908
+    ],
+    "name": "RIPANJ KOLONIJA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.440242540585245,
+      20.69126591272064
+    ],
+    "name": "MLADENOVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.70450712854811,
+      20.448656019439756
+    ],
+    "name": "RESNIK"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.845798745509455,
+      19.76227443681843
+    ],
+    "name": "STAPARI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.78856083528709,
+      19.753163075036102
+    ],
+    "name": "SUŠICA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.77941491885386,
+      19.68175622001692
+    ],
+    "name": "BRANEŠCI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.735107913506134,
+      19.614058443073638
+    ],
+    "name": "ZLATIBOR"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.70786099307558,
+      19.572787358366227
+    ],
+    "name": "RIBNICA ZLATIBORSKA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.70105145829864,
+      19.52186415804928
+    ],
+    "name": "JABLANICA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.63864338638275,
+      19.503278545935157
+    ],
+    "name": "ŠTRPCI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.58207556230166,
+      19.524932198639064
+    ],
+    "name": "PRIBOJ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.53090822416901,
+      19.570047199093814
+    ],
+    "name": "PRIBOJSKA BANJA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.4831946952778,
+      19.646498093291573
+    ],
+    "name": "BISTRICA NA LIMU"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.39309423697485,
+      19.639963441594922
+    ],
+    "name": "PRIJEPOLJE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.36641230380833,
+      19.633171989987744
+    ],
+    "name": "PRIJEPOLJE TERETNA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.82911529343419,
+      19.74483223623672
+    ],
+    "name": "RISTANOVIĆA POLJE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.80732970291746,
+      19.74197970910342
+    ],
+    "name": "TRIPKOVA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.44335,
+      19.63317
+    ],
+    "name": "DŽUROVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.5638369950173,
+      19.541842889859257
+    ],
+    "name": "POLJICE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.85758205767584,
+      20.334578179519344
+    ],
+    "name": "ZEMUNSKO POLJE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.836368891697056,
+      20.371271287259475
+    ],
+    "name": "ZEMUN"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.806716215733445,
+      20.418287967324236
+    ],
+    "name": "NOVI BEOGRAD"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.86112102389828,
+      20.51930908310956
+    ],
+    "name": "SEBEŠ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.87563497019367,
+      20.54481362571113
+    ],
+    "name": "OVČA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.81723693039093,
+      20.395026556902906
+    ],
+    "name": "TOŠIN BUNAR"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.81941244993718,
+      20.48905098071883
+    ],
+    "name": "PANČEVAČKI MOST"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.86997842699721,
+      20.666426587873104
+    ],
+    "name": "PANČEVO STRELIŠTE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.848089211168826,
+      20.505356389038816
+    ],
+    "name": "KRNJAČA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.84010714004826,
+      20.49725831578446
+    ],
+    "name": "KRNJAČA MOST STA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.80510789954969,
+      20.477244535670017
+    ],
+    "name": "VUKOV SPOMENIK"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.72338919719892,
+      20.437124843864083
+    ],
+    "name": "KIJEVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.73166191962864,
+      20.43125162770781
+    ],
+    "name": "KNEZEVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.746153174314166,
+      20.44271039209365
+    ],
+    "name": "RAKOVICA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.899307998320175,
+      20.272049017703694
+    ],
+    "name": "BATAJNICA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.77183,
+      19.6557
+    ],
+    "name": "MAJUR STAJ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.78031415688692,
+      19.610325684284817
+    ],
+    "name": "ŠTITAR"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.75654859472129,
+      19.535504504673998
+    ],
+    "name": "DUBLJE MAČVANSKO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.72837885678572,
+      19.448098871586936
+    ],
+    "name": "PETLOVAČA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.71656461812298,
+      19.420988271535474
+    ],
+    "name": "RIBARI STAJ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.69643258398137,
+      19.377049482453184
+    ],
+    "name": "PRNJAVOR MAČVANSKI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.67332,
+      19.34217
+    ],
+    "name": "PODRINJ NOVO SELO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.65653,
+      19.3212
+    ],
+    "name": "LEŠNICA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.62433,
+      19.30393
+    ],
+    "name": "JADARSKA STRAŽA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.57242,
+      19.27045
+    ],
+    "name": "LIPNICA STAJ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.53547,
+      19.216
+    ],
+    "name": "LOZNICA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.53009,
+      19.20169
+    ],
+    "name": "LOZNICA FABRIKA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.5171,
+      19.16197
+    ],
+    "name": "KOVILJAČA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.48979,
+      19.13662
+    ],
+    "name": "GORNJA KOVILJAČA STAJ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.45989,
+      19.14724
+    ],
+    "name": "BRASINA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.43963,
+      19.15336
+    ],
+    "name": "DONJA BORINA STAJ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.41323,
+      19.14905
+    ],
+    "name": "RADALJ STAJ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.4003,
+      19.1216
+    ],
+    "name": "ZVORNIK"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.75891,
+      19.70149
+    ],
+    "name": "ŠABAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.937682009778904,
+      20.210279892766376
+    ],
+    "name": "NOVA PAZOVA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.98626615756113,
+      20.137971825852294
+    ],
+    "name": "STARA PAZOVA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.01654427699062,
+      20.05166278394411
+    ],
+    "name": "GOLUBINCI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.98095859079066,
+      19.96662856293254
+    ],
+    "name": "PUTINCI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.98396402475356,
+      19.890773929511546
+    ],
+    "name": "KRALJEVCI STAJ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.98871675258548,
+      19.718411797496262
+    ],
+    "name": "VOGANJ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.98234503093232,
+      19.61368914639136
+    ],
+    "name": "SREMSKA MITROVICA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.02113,
+      19.46776
+    ],
+    "name": "MARTINCI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.0624571585923,
+      19.342707676591665
+    ],
+    "name": "KUKUJEVCI-ERDEVIK"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.117766131758195,
+      19.222045764664575
+    ],
+    "name": "ŠID"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.98962466724554,
+      19.827011512636087
+    ],
+    "name": "RUMA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.89721634172449,
+      19.856393327057692
+    ],
+    "name": "BUĐANOVCI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.85745571928844,
+      19.821426900565942
+    ],
+    "name": "NIKINCI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.829389700456346,
+      19.778788694220097
+    ],
+    "name": "PLATIĆEVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.78185781350376,
+      19.714163868334005
+    ],
+    "name": "KLENAK"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.048691093883036,
+      20.0920255193303
+    ],
+    "name": "INĐIJA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.14161425425195,
+      20.049622492720104
+    ],
+    "name": "BEŠKA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.20746430739598,
+      19.930058245836786
+    ],
+    "name": "SREMSKI KARLOVCI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.2403582060356,
+      19.887903372066
+    ],
+    "name": "PETROVARADIN"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.2655029464986,
+      19.82958715902026
+    ],
+    "name": "NOVI SAD"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.87881653966044,
+      20.660517650100385
+    ],
+    "name": "PANČEVO VAROŠ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.97639649630999,
+      20.785441611706048
+    ],
+    "name": "BANATSKO NOVO SELO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.031485160603815,
+      20.892425312978666
+    ],
+    "name": "VLADIMIROVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.073223790573465,
+      20.956845968334854
+    ],
+    "name": "ALIBUNAR"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.055670422642685,
+      21.016136227048158
+    ],
+    "name": "BANATSKI KARLOVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.06027137288496,
+      21.06605962472079
+    ],
+    "name": "NIKOLINCI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.050954440849445,
+      21.155522872735947
+    ],
+    "name": "ULJMA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.066421198708255,
+      21.21119999751244
+    ],
+    "name": "VLAJKOVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.105589590412116,
+      21.28377446865242
+    ],
+    "name": "VRŠAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.85910186526453,
+      20.655298218391096
+    ],
+    "name": "PANČEVO VOJLOVICA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.88732414714726,
+      20.637320385455066
+    ],
+    "name": "PANČEVO GLAVNA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.92975424592406,
+      20.66649015728939
+    ],
+    "name": "JABUKA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      44.96511577404331,
+      20.689239162221593
+    ],
+    "name": "KAČAREVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.005363213425746,
+      20.626172262500837
+    ],
+    "name": "CREPAJA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.07192534595941,
+      20.612943750378083
+    ],
+    "name": "DEBELJAČA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.11238518449674,
+      20.61101338718927
+    ],
+    "name": "KOVAČICA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.20290154478058,
+      20.63390866934165
+    ],
+    "name": "UZDIN"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.24521183385524,
+      20.607548056947138
+    ],
+    "name": "TOMAŠEVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.250786782173016,
+      20.58284755658948
+    ],
+    "name": "ORLOVAT STAJALIŠTE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.333006330823665,
+      20.49518282704997
+    ],
+    "name": "LUKIĆEVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.37143728178439,
+      20.424846984072317
+    ],
+    "name": "ZRENJANIN FABRIKA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.437250985274716,
+      20.310931228084858
+    ],
+    "name": "ELEMIR"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.508410885923595,
+      20.298563770010354
+    ],
+    "name": "MELENCI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.54818004904924,
+      20.232024024372535
+    ],
+    "name": "KUMANE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.60389013729223,
+      20.152123055249145
+    ],
+    "name": "NOVI BEČEJ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.69279,
+      20.29583
+    ],
+    "name": "BANAT.MILOŠEVO POLJE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.7262907796869,
+      20.31994338372424
+    ],
+    "name": "BANATSKO MILOŠEVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.37802607727327,
+      20.378682226994215
+    ],
+    "name": "ZRENJANIN"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.76122,
+      20.2855
+    ],
+    "name": "BOČAR"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.82955,
+      20.17164
+    ],
+    "name": "PADEJ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.891131405241204,
+      20.152891511608683
+    ],
+    "name": "OSTOJIĆEVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.94296112455742,
+      20.135725185453346
+    ],
+    "name": "ČOKA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.838006621932465,
+      20.488796013120226
+    ],
+    "name": "KIKINDA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      46.10206353171579,
+      19.67087380021351
+    ],
+    "name": "SUBOTICA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.929846038944305,
+      20.071780025160628
+    ],
+    "name": "SENTA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.93219,
+      20.0159
+    ],
+    "name": "GORNJI BREG"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.93514,
+      19.92733
+    ],
+    "name": "BOGARAŠ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.9581,
+      19.87199
+    ],
+    "name": "DOLINE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.97807,
+      19.83177
+    ],
+    "name": "OROM"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      46.00374,
+      19.79497
+    ],
+    "name": "GABRIĆ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      46.01966,
+      19.77187
+    ],
+    "name": "BIKOVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.356345729797795,
+      19.456041939456533
+    ],
+    "name": "GAJDOBRA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.25452427232383,
+      19.70148504178004
+    ],
+    "name": "FUTOG"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.329162856441535,
+      19.58214902807685
+    ],
+    "name": "PETROVAC-GLOŽAN"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.35190308047613,
+      19.53640914554467
+    ],
+    "name": "BAČKI MAGLIĆ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.84323764336899,
+      19.209757644237115
+    ],
+    "name": "SVETOZAR MILETIĆ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.92462040172931,
+      19.34916251091347
+    ],
+    "name": "ALEKSA ŠANTIĆ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.97683400643059,
+      19.413260268966145
+    ],
+    "name": "BAJMOK"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      46.02425,
+      19.46576
+    ],
+    "name": "SKENDEROVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      46.024227532530944,
+      19.465428725795405
+    ],
+    "name": "TAVANKUT"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      46.05908431950625,
+      19.536340667316825
+    ],
+    "name": "LJUTOVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      46.0861208288161,
+      19.59140478298011
+    ],
+    "name": "ŠEBEŠIĆ"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      46.10925413997098,
+      19.638894259688474
+    ],
+    "name": "SUBOTICA PREDGRAĐE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.40835408682601,
+      19.382952220116596
+    ],
+    "name": "PARAGE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.44828995423176,
+      19.327044297494737
+    ],
+    "name": "RATKOVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.51435807628489,
+      19.273461929711097
+    ],
+    "name": "ODŽACI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.51049292768937,
+      19.25524813320053
+    ],
+    "name": "ODŽACI KALVARIJA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.50170502621968,
+      19.208279109293205
+    ],
+    "name": "KARAVUKOVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.53274397791586,
+      19.13802650278056
+    ],
+    "name": "BOGOJEVO SELO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.54474992518827,
+      19.103876803490362
+    ],
+    "name": "BOGOJEVO"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.59945,
+      19.11061
+    ],
+    "name": "SONTA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.67583865815287,
+      19.097169575242276
+    ],
+    "name": "PRIGREVICA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.740607490711874,
+      19.073710656241982
+    ],
+    "name": "BUKOVAČKI SALAŠI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.786005795123415,
+      19.114127637320845
+    ],
+    "name": "SOMBOR"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      42.43219691153288,
+      19.2691870043531
+    ],
+    "name": "PODGORICA"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      42.343578372301074,
+      19.21849900440372
+    ],
+    "name": "GOLUBOVCI"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      42.13952803901399,
+      19.050238326705866
+    ],
+    "name": "SUTOMORE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      42.087822736030226,
+      19.10535839136345
+    ],
+    "name": "BAR"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      43.054158281121964,
+      19.769732313998798
+    ],
+    "name": "BIJELO POLJE"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      42.952800280388914,
+      19.586455286528743
+    ],
+    "name": "MOJKOVAC"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      42.81925537022892,
+      19.53683170453323
+    ],
+    "name": "KOLAŠIN"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.157761084494666,
+      19.14488938210169
+    ],
+    "name": "TOVARNIK"
+  },
+  {
+    "type": "Point",
+    "coordinates": [
+      45.25441151569453,
+      17.202005367628466
+    ],
+    "name": "OKUČANI"
+  }
+]
