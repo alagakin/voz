@@ -1,5 +1,5 @@
 import motor.motor_asyncio
-from src.config import MONGO_HOST, MONGO_PASS, MONGO_PORT, MONGO_USER
+from config import MONGO_HOST, MONGO_PASS, MONGO_PORT, MONGO_USER
 
 
 async def get_client():

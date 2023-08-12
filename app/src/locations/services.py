@@ -1,8 +1,8 @@
 import json
 import os
 
-from src.database import get_client
-from src.config import MONGO_DB
+from database import get_client
+from config import MONGO_DB
 
 
 async def sync_stations() -> None:
