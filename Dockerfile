@@ -14,7 +14,7 @@ COPY . .
 
 RUN chmod a+x docker/*.sh
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app/src
 
 EXPOSE 443
 EXPOSE 80
