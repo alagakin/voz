@@ -13,11 +13,12 @@ async def index(station_from, station_to):
     client = await get_client()
     db = client[MONGO_DB]
     collection = db["routes"]
-
+    stations = db["stations"]
     routes = []
     async for route in collection.find({}):
         if route_matches(route, station_from, station_to):
             route["_id"] = str(route["_id"])
+            route = await set_coordinates(route, stations)
             routes.append(route)
     return routes
 
@@ -38,3 +39,12 @@ def route_matches(route, station_from, station_to) -> bool:
         return False
 
     return True
+
+
+async def set_coordinates(route, stations):
+    for station in route['stations']:
+        db_station = await stations.find_one({"name": station['name']})
+        if db_station:
+            coords = db_station["coordinates"]
+        station["coordinates"] = coords
+    return route
