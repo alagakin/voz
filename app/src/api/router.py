@@ -43,8 +43,9 @@ def route_matches(route, station_from, station_to) -> bool:
 
 async def set_coordinates(route, stations):
     for station in route['stations']:
-        db_station = await stations.find_one({"name": station['name']})
+        db_station = await stations.find_one({"id": station['id']})
         if db_station:
             coords = db_station["coordinates"]
-        station["coordinates"] = coords
+            station["coordinates"] = coords
+
     return route
