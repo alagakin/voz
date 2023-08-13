@@ -14,5 +14,6 @@ def setup_logger(name, log_file):
     return logger
 
 
-parsing_logger = setup_logger("parsing", "parsing.log")
+routes_parsing_logger = setup_logger("routes_parsing_logger", "routes_parsing.log")
+trains_parsing_logger = setup_logger("trains_parsing_logger", "trains_parsing.log")
 logger = setup_logger("errors", "errors.log")
