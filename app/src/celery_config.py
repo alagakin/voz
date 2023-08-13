@@ -1,8 +1,4 @@
-import time
-
 from celery import Celery
-
-from parser.services import set_routes
 
 app = Celery(
     'tasks',  # Name of the app

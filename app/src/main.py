@@ -1,10 +1,6 @@
 from fastapi import FastAPI
+from api.router import router
 
-app = FastAPI(
-    title='Trading App'
-)
+app = FastAPI()
 
-
-@app.get('/')
-async def index():
-    return {'text': 'Hello, World!'}
+app.include_router(router)

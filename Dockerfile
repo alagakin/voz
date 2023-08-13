@@ -17,4 +17,4 @@ RUN chmod a+x docker/*.sh
 WORKDIR /usr/src/app/src
 
 EXPOSE 443
-EXPOSE 80
+EXPOSE 800
