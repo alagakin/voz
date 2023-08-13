@@ -1,31 +1,18 @@
 import logging
 
-logging_config = {
-    "version": 1,
-    "formatters": {
-        "default": {
-            "format": "[%(asctime)s] [%(levelname)s] [%(name)s] - %(message)s",
-        },
-    },
-    "handlers": {
-        "console": {
-            "class": "logging.StreamHandler",
-            "level": "DEBUG",
-            "formatter": "default",
-        },
-        "file": {
-            "class": "logging.FileHandler",
-            "filename": "logs/app.log",
-            "level": "INFO",
-            "formatter": "default",
-        },
-    },
-    "root": {
-        "level": "INFO",
-        "handlers": ["console", "file"],
-    },
-}
 
-logging.config.dictConfig(logging_config)
+def setup_logger(name, log_file):
+    formatter = logging.Formatter("[%(asctime)s] [%(levelname)s] [%(name)s] - %(message)s")
 
-logger = logging.getLogger("my_custom_logger")
+    handler = logging.FileHandler("logs/" + log_file)
+    handler.setFormatter(formatter)
+
+    logger = logging.getLogger(name)
+    logger.addHandler(handler)
+    logger.setLevel(logging.DEBUG)
+
+    return logger
+
+
+parsing_logger = setup_logger("parsing", "parsing.log")
+logger = setup_logger("errors", "errors.log")
