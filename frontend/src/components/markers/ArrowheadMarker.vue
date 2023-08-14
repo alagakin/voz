@@ -49,16 +49,13 @@ export default {
         };
     },
     methods: {
-        setLatlng(latlng) {
-            this.self.setLatLng(latlng);
-        },
         initLeafletObject() {
             this.selfOptions = extend(this.originOptions, this.options, this.$attrs);
 
             this.selfOptions.icon = icon({
                 iconUrl: arrowheadSvg,
-                iconAnchor: [5, 5],
-                iconSize: [10, 10],
+                iconAnchor: [9, 9],
+                iconSize: [18, 18],
             });
             this.selfOptions.rotation = this.rotation
 
