@@ -1,5 +1,5 @@
 <template>
-    <l-polyline :latlngs="[start, endCoords]" color="gray" weight="1"></l-polyline>
+    <l-polyline :latlngs="[start, endCoords]" color="gray" weight="1" :dashArray="[4, 4]"></l-polyline>
     <custom-marker
         :lat-lng="endCoords"
         :rotation="rotation"
