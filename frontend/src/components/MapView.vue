@@ -7,40 +7,40 @@
                 layer-type="base"
                 name="OpenStreetMap"
             ></l-tile-layer>
-            <l-marker v-for="point in points" :lat-lng="point" v-bind:key="point[0]"></l-marker>
+            <RouteView :stations="stations" />
         </l-map>
     </div>
 </template>
 
 <script>
 import "leaflet/dist/leaflet.css";
-import {LMap, LTileLayer, LMarker} from "vue3-leaflet";
+import {LMap, LTileLayer} from "vue3-leaflet";
 import SearchInput from "@/components/SearchInput.vue";
+import RouteView from "@/components/RouteView.vue";
 
 export default {
     components: {
+        RouteView,
         SearchInput,
         LMap,
         LTileLayer,
-        LMarker
     },
     methods: {
         setRoutes(routes) {
-            this.points = []
+            this.stations = []
             if (!routes.length) {
                 alert('Not found')
             }
             let route = routes[0]
             route.stations.forEach(station => {
-                this.points.push(station.coordinates)
+                this.stations.push(station)
             })
-
         }
     },
     data() {
         return {
             zoom: 8,
-            points: [],
+            stations: [],
         };
     },
 
