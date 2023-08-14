@@ -54,8 +54,8 @@ export default {
 
             this.selfOptions.icon = icon({
                 iconUrl: arrowheadSvg,
-                iconAnchor: [9, 9],
-                iconSize: [18, 18],
+                iconAnchor: [6, 6],
+                iconSize: [12, 12],
             });
             this.selfOptions.rotation = this.rotation
 

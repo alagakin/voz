@@ -29,7 +29,7 @@ export default {
         return {
             iconOptions: {
                 iconUrl: require("@/assets/finish.svg"),
-                iconAnchor: [24, 48],
+                iconAnchor: [4, 48],
             }
         }
 

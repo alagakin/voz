@@ -29,7 +29,7 @@ export default {
         return {
             iconOptions: {
                 iconUrl: require("@/assets/start.svg"),
-                iconAnchor: [24, 48],
+                iconAnchor: [18, 36],
             }
         }
 
