@@ -1,21 +1,28 @@
 <template>
-    <l-marker v :lat-lng="latLng" v-bind:key="latLng[1]"
-              :iconOptions="iconOptions"></l-marker>
+    <template class="hidden">
+        <l-marker :lat-lng="point['coordinates']" v-bind:key="point['coordinates'][1]"
+                  :iconOptions="iconOptions">
+            <l-popup>
+                <div>
+                    {{ point['name'] }}
+                </div>
+            </l-popup>
+        </l-marker>
+    </template>
 </template>
 
 <script>
-import {LMarker} from "vue3-leaflet";
+import {LMarker, LPopup} from "vue3-leaflet";
+
 export default {
     props: {
-        latLng: {
-            custom: true,
+        point: {
             type: [Array, Object],
             default: null,
-        },
-
+        }
     },
     components: {
-        LMarker
+        LMarker, LPopup
     },
     data() {
         return {

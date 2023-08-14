@@ -1,8 +1,10 @@
 <template>
-    <template v-for="point in points" v-bind:key="point.coordinates[0]">
-        <start-marker :lat-lng="point.coordinates" v-if="point.start"></start-marker>
-        <finish-marker :lat-lng="point.coordinates" v-else-if="point.finish"></finish-marker>
-        <station-marker :lat-lng="point.coordinates" v-else></station-marker>
+    <template v-for="point in points" v-bind:key="point['coordinates'][1]">
+        <start-marker :point="point" v-if="point.start">
+            <slot>Hi!</slot>
+        </start-marker>
+        <finish-marker :point="point" v-else-if="point.finish"></finish-marker>
+        <station-marker :point="point" v-else></station-marker>
     </template>
 </template>
 <script>
@@ -21,7 +23,8 @@ export default {
             this.points = []
             this.stations.forEach((station, index) => {
                 let point = {
-                    coordinates: station.coordinates
+                    coordinates: station.coordinates,
+                    name: station['name']
                 }
                 if (index === 0) {
                     point.start = true
