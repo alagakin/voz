@@ -64,7 +64,7 @@ services:
       - app_network
     restart: always
   meilisearch:
-    image: getmeili/meilisearch:v1.2
+    image: getmeili/meilisearch:latest
     env_file:
       - .env
     networks:
