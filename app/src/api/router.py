@@ -9,7 +9,7 @@ router = APIRouter(
 
 
 @router.get('/find-routes/')
-async def index(station_from, station_to):
+async def index(station_from: int, station_to: int):
     client = await get_client()
     db = client[MONGO_DB]
     collection = db["routes"]
@@ -23,13 +23,13 @@ async def index(station_from, station_to):
     return routes
 
 
-def route_matches(route, station_from, station_to) -> bool:
+def route_matches(route, station_from: int, station_to: int) -> bool:
     station_from_key = -1
     station_to_key = -1
     for key, station in enumerate(route['stations']):
-        if station['name'] == station_from:
+        if station['id'] == station_from:
             station_from_key = key
-        if station['name'] == station_to:
+        if station['id'] == station_to:
             station_to_key = key
 
     if station_from_key == -1 or station_to_key == -1:
