@@ -48,7 +48,6 @@ export default {
             if (query.length >= 2) {
                 axios.get("http://localhost:8000/api/v1/station/search/?query=" + query)
                     .then(response => {
-                        console.log(response)
                         if (inputField === 'from') {
                             this.suggestions_from = response.data.hits;
                         } else {
