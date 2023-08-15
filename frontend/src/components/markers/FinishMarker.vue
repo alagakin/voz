@@ -6,6 +6,11 @@
                 <div>
                     {{ point['name'] }}
                 </div>
+                <div>
+                    arrival: {{ format(point['arrival'], 'HH:mm') }}<br>
+                    departure: {{ format(point['departure'], 'HH:mm') }}
+                    duration: {{ point['time'] / (1000 * 60) }} min<br>
+                </div>
             </l-popup>
         </l-marker>
     </template>
@@ -37,4 +42,5 @@ export default {
 }
 </script>
 <script setup>
+import {format} from "date-fns";
 </script>

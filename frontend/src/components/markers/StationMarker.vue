@@ -5,6 +5,11 @@
             <l-popup>
                 <div>
                     {{ point['name'] }}
+                    <div>
+                        arrival: {{ format(point['arrival'], 'HH:mm') }}<br>
+                        departure: {{ format(point['departure'], 'HH:mm') }}
+                        duration: {{ point['time'] / (1000 * 60) }} min<br>
+                    </div>
                 </div>
             </l-popup>
         </l-marker>
@@ -13,8 +18,10 @@
 
 <script>
 import {LMarker, LPopup} from "vue3-leaflet";
+import {format} from 'date-fns';
 
 export default {
+    methods: {format},
     props: {
         point: {
             type: [Array, Object],
@@ -31,7 +38,6 @@ export default {
                 iconAnchor: [12, 24],
             }
         }
-
     }
 }
 </script>

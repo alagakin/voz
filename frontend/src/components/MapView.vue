@@ -31,7 +31,16 @@ export default {
             if (!routes.length) {
                 alert('Not found')
             }
+            //todo function for formatting
+            routes.forEach(route => {
+                route.stations.forEach(station => {
+                    station.arrival = new Date(station.arrival)
+                    station.departure = new Date(station.departure)
+                })
+            })
+
             let route = routes[0]
+
             route.stations.forEach(station => {
                 this.stations.push(station)
             })

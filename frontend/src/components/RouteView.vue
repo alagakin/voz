@@ -29,7 +29,9 @@ export default {
             this.stations.forEach((station, index) => {
                 let point = {
                     coordinates: station.coordinates,
-                    name: station['name']
+                    name: station['name'],
+                    arrival: station['arrival'],
+                    departure: station['departure']
                 }
                 if (index === 0) {
                     point.start = true
@@ -42,6 +44,9 @@ export default {
                         this.points[this.points.length - 1].coordinates,
                         point.coordinates
                     ])
+                    point['time'] = point.arrival - this.points[this.points.length - 1]['departure']
+                } else {
+                    point['time'] = 0
                 }
                 this.points.push(point)
 
