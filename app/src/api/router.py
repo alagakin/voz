@@ -1,3 +1,5 @@
+from typing import Dict
+
 from fastapi import APIRouter
 
 from config import MONGO_DB
@@ -16,14 +18,15 @@ async def index(station_from: int, station_to: int):
     stations = db["stations"]
     routes = []
     async for route in collection.find({}):
-        if route_matches(route, station_from, station_to):
+        route = get_route(route, station_from, station_to)
+        if route:
             route["_id"] = str(route["_id"])
             route = await set_coordinates(route, stations)
             routes.append(route)
     return routes
 
 
-def route_matches(route, station_from: int, station_to: int) -> bool:
+def get_route(route, station_from: int, station_to: int) -> Dict or bool:
     station_from_key = -1
     station_to_key = -1
     for key, station in enumerate(route['stations']):
@@ -37,8 +40,8 @@ def route_matches(route, station_from: int, station_to: int) -> bool:
 
     if station_from_key >= station_to_key:
         return False
-
-    return True
+    route['stations'] = route['stations'][station_from_key:station_to_key + 1]
+    return route
 
 
 async def set_coordinates(route, stations):
