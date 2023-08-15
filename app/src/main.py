@@ -1,16 +1,16 @@
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 
+from locations.services import index_stations
 from api.router import router
 
 app = FastAPI()
 origins = [
     "http://localhost",
-    "http://localhost:8080",  # If you're running a Vue app on this port
+    "http://localhost:8080",
     "http://localhost:8000",
 ]
 
-# Use the CORSMiddleware to enable CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
@@ -19,3 +19,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 app.include_router(router)
+
+
+@app.on_event("startup")
+async def startup_event():
+    await index_stations()

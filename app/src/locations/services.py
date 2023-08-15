@@ -1,8 +1,9 @@
 import json
 import os
-
 from database import get_client
 from config import MONGO_DB
+from utils import latin_to_cyrillic, simplify_latin_serbian
+from search.services import fill_index
 
 
 async def sync_stations() -> None:
@@ -32,3 +33,24 @@ async def read_stations():
     with open(file_path, 'r') as file:
         contents = file.read()
     return contents
+
+
+async def index_stations():
+    client = await get_client()
+    db = client[MONGO_DB]
+    stations = db["stations"]
+    documents = []
+    async for station in stations.find():
+        documents.append(make_document_for_index(station))
+
+    return fill_index(index_name="stations", documents=documents)
+
+
+def make_document_for_index(station):
+    return {
+        'id': station["id"],
+        'display_name': station['name'].title(),
+        'name': station["name"],
+        'name1': latin_to_cyrillic(station["name"]),
+        'names': simplify_latin_serbian(station["name"])
+    }
