@@ -1,5 +1,6 @@
 <template>
     <SearchInput @setRoutes="setRoutes"/>
+    <RouteInfo :routes="routes"/>
     <div style="width: 100%; height: 100vh;">
         <l-map ref="map" v-model:zoom="zoom" :center="[44.787197, 20.457273]">
             <l-tile-layer
@@ -7,7 +8,7 @@
                 layer-type="base"
                 name="OpenStreetMap"
             ></l-tile-layer>
-            <RouteView :stations="stations" />
+            <RouteView :stations="stations"/>
         </l-map>
     </div>
 </template>
@@ -17,9 +18,11 @@ import "leaflet/dist/leaflet.css";
 import {LMap, LTileLayer} from "vue3-leaflet";
 import SearchInput from "@/components/SearchInput.vue";
 import RouteView from "@/components/RouteView.vue";
+import RouteInfo from "@/components/RouteInfo.vue";
 
 export default {
     components: {
+        RouteInfo,
         RouteView,
         SearchInput,
         LMap,
@@ -39,6 +42,7 @@ export default {
                 })
             })
 
+            this.routes = routes
             let route = routes[0]
 
             route.stations.forEach(station => {
@@ -50,6 +54,7 @@ export default {
         return {
             zoom: 8,
             stations: [],
+            routes: []
         };
     },
 
