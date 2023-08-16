@@ -2,7 +2,7 @@
     <SearchInput @setRoutes="setRoutes"/>
     <RouteInfo :routes="routes"/>
     <div style="width: 100%; height: 100vh;">
-        <l-map ref="map" v-model:zoom="zoom" :center="[44.787197, 20.457273]">
+        <l-map ref="map" v-model:zoom="zoom" :center="[44.787197, 20.457273]" :maxBounds="maxBounds" :maxZoom="13" :minZoom="8">
             <l-tile-layer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 layer-type="base"
@@ -54,7 +54,11 @@ export default {
         return {
             zoom: 8,
             stations: [],
-            routes: []
+            routes: [],
+            maxBounds: [
+                [41.232407, 18.829536],
+                [47.181226, 23.034919],
+            ],
         };
     },
 
