@@ -1,35 +1,45 @@
 import json
 from datetime import datetime
 from typing import List
-import aiohttp
+import requests
 from bs4 import BeautifulSoup
 from pydantic import ValidationError
 
-from config import MONGO_DB
-from database import get_client
-from log import logger, trains_parsing_logger, routes_parsing_logger
+from config import MONGO_DB, MONGO_USER, MONGO_PASS, MONGO_HOST, MONGO_PORT
+from log import trains_parsing_logger, routes_parsing_logger
 from parser.schemas import TrainSchema, RouteStationSchema, RouteSchema
+from celery_config import app
+import pymongo
+from requests.exceptions import ConnectionError, HTTPError
 
 
-async def parse():
-    trains = await get_trains()
-    client = await get_client()
+def get_client():
+    client = pymongo.MongoClient(
+        f"mongodb://{MONGO_USER}:{MONGO_PASS}@{MONGO_HOST}:{MONGO_PORT}/"
+    )
+    return client
+
+
+@app.task
+def parse():
+    trains = get_trains()
+    client = get_client()
     for train in trains:
-        route = await get_routes_of_train(train)
+        route = get_routes_of_train(train)
         if route:
-            await save_route(route, client)
+            save_route(route, client)
 
 
-async def get_trains():
-    stations = await get_stations()
+def get_trains():
+    stations = get_stations()
     trains = []
     for station in stations:
-        trains.extend(await get_trains_for_station(station))
+        trains.extend(get_trains_for_station(station))
 
     return trains
 
 
-async def save_route(route, client):
+def save_route(route, client):
     db = client[MONGO_DB]
     collection = db["routes"]
     route = route.dict()
@@ -39,18 +49,21 @@ async def save_route(route, client):
         station["date"] = station["date"].isoformat()
 
     query = {"id": route["id"]}
-    existing_document = await collection.find_one(query)
+    existing_document = collection.find_one(query)
 
     if not existing_document:
-        await collection.insert_one(route)
+        collection.insert_one(route)
 
 
-async def get_trains_for_station(station) -> List[TrainSchema]:
+def get_trains_for_station(station) -> List[TrainSchema]:
     res = []
     url = f"https://w3.srbvoz.rs/redvoznje//stanicni/" \
           f"{station['name']}/{station['id']}/" \
           f"{datetime.now().strftime('%d.%m.%Y')}/0000/polazak/999/sr"
-    html = await fetch_url(url)
+    try:
+        html = fetch_url(url)
+    except HTTPError or ConnectionError:
+        return res
     try:
         soup = BeautifulSoup(html, 'html.parser')
         table = soup.find(id="rezultati")
@@ -81,14 +94,17 @@ async def get_trains_for_station(station) -> List[TrainSchema]:
     return res
 
 
-async def get_routes_of_train(train: TrainSchema):
+def get_routes_of_train(train: TrainSchema):
     url = f"https://w3.srbvoz.rs/redvoznje//api/vozdetalji1" \
           f"?idvoza={train.id}&brojvoza={train.number}" \
           f"&datum={train.date.strftime('%d-%m-%Y')}" \
           f"&stanicaod={train.station_from}" \
           f"&stanicado={train.station_to}"
 
-    json_data = await fetch_url(url)
+    try:
+        json_data = fetch_url(url)
+    except HTTPError or ConnectionError:
+        return False
 
     try:
         data = json.loads(json_data)[0]
@@ -118,21 +134,18 @@ async def get_routes_of_train(train: TrainSchema):
     return res
 
 
-async def get_stations():
-    client = await get_client()
+def get_stations():
+    client = get_client()
     db = client[MONGO_DB]
     collection = db["stations"]
     stations = []
-    async for document in collection.find():
+    for document in collection.find():
         stations.append(document)
-
-    client.close()
 
     return stations
 
 
-async def fetch_url(url) -> str:
-    # todo use single schema
-    async with aiohttp.ClientSession() as session:
-        async with session.get(url) as response:
-            return await response.text()
+def fetch_url(url):
+    response = requests.get(url)
+    response.raise_for_status()  # Raise an exception for HTTP errors
+    return response.text

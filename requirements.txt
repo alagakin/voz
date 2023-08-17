@@ -85,3 +85,5 @@ asyncio
 aiohttp[speedups]
 beautifulsoup4
 meilisearch
+pymongo
+requests
