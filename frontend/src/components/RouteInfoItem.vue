@@ -20,8 +20,8 @@
         </div>
         <div class="bg-white p-2 rounded-lg mb-2 text-xl block-container" :class="{'hidden': collapsed}">
             <div class="mb-2 pl-4">
-                <p>Departure: {{ format(this.start, 'HH:mm') }}</p>
-                <p>Arrival: {{ format(this.end, 'HH:mm') }}</p>
+                <p>Departure: {{ format(this.start, 'd.MM.Y HH:mm') }}</p>
+                <p>Arrival: {{ format(this.end, 'd.MM.Y HH:mm') }}</p>
             </div>
             <hr>
             <div class="mt-2 pl-4 max-h-48 overflow-scroll overflow-x-hidden">
