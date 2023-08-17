@@ -4,3 +4,4 @@ meilisearch_data/
 .env
 ssl/
 db_data/
+celerybeat-schedule

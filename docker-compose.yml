@@ -50,7 +50,22 @@ services:
       - redis_network
     command: [ "/usr/src/docker/celery-worker.sh" ]  # Command to start Celery worker
     restart: always
-
+  celery-beat:
+    container_name: celery-beat
+    depends_on:
+      - celery-worker
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/usr/src/app
+    env_file:
+      - .env
+    networks:
+      - app_network
+      - redis_network
+    command: [ "/usr/src/docker/celery-beat.sh" ]
+    restart: always
   frontend:
     container_name: frontend
     build:

@@ -8,7 +8,6 @@ from pydantic import ValidationError
 from config import MONGO_DB, MONGO_USER, MONGO_PASS, MONGO_HOST, MONGO_PORT
 from log import trains_parsing_logger, routes_parsing_logger
 from parser.schemas import TrainSchema, RouteStationSchema, RouteSchema
-from celery_config import app
 import pymongo
 from requests.exceptions import ConnectionError, HTTPError
 
@@ -20,7 +19,6 @@ def get_client():
     return client
 
 
-@app.task
 def parse():
     trains = get_trains()
     client = get_client()
