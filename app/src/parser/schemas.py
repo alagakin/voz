@@ -1,11 +1,12 @@
 import hashlib
 from typing import List
-
 from pydantic import BaseModel, validator, Field, root_validator
 from datetime import datetime, date
+import pytz
+
+timezone = pytz.timezone('Europe/Belgrade')
 
 
-# Define Pydantic Schema
 class TrainSchema(BaseModel):
     id: int = 1
     number: int
@@ -22,10 +23,9 @@ class TrainSchema(BaseModel):
         if isinstance(value, datetime):
             return value
         try:
-            # todo: what if days are different?
             parsed_time = datetime.strptime(value, "%H:%M")
             current_date = date.today()
-            return datetime.combine(current_date, parsed_time.time())
+            return timezone.localize(datetime.combine(current_date, parsed_time.time()))
         except ValueError:
             raise ValueError("Invalid datetime format. Expected 'HH:MM'.")
 
@@ -52,10 +52,9 @@ class RouteStationSchema(BaseModel):
         if isinstance(value, datetime):
             return value
         try:
-            # todo: what if days are different?
             parsed_time = datetime.strptime(value, "%H:%M")
             current_date = date.today()
-            return datetime.combine(current_date, parsed_time.time())
+            return timezone.localize(datetime.combine(current_date, parsed_time.time()))
         except ValueError:
             raise ValueError("Invalid datetime format. Expected 'HH:MM'.")
 
@@ -66,6 +65,7 @@ class RouteSchema(BaseModel):
     train_number: int
     first_station: str = ''
     last_station: str = ''
+    date: datetime = Field(default_factory=datetime.now)
     stations: List[RouteStationSchema]
 
     @root_validator
@@ -76,7 +76,8 @@ class RouteSchema(BaseModel):
 
         values["first_station"] = stations[0].name
         values["last_station"] = stations[len(stations) - 1].name
-
+        values["date"] = timezone.localize(
+            datetime(stations[0].arrival.year, stations[0].arrival.month, stations[0].arrival.day))
         return values
 
     @root_validator
@@ -87,4 +88,3 @@ class RouteSchema(BaseModel):
         hash_value = hash_object.hexdigest()
         values['id'] = hash_value
         return values
-

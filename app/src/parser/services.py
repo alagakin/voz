@@ -2,6 +2,7 @@ import json
 from datetime import datetime
 from typing import List
 import requests
+import pytz
 from bs4 import BeautifulSoup
 from pydantic import ValidationError
 
@@ -10,6 +11,8 @@ from log import trains_parsing_logger, routes_parsing_logger
 from parser.schemas import TrainSchema, RouteStationSchema, RouteSchema
 import pymongo
 from requests.exceptions import ConnectionError, HTTPError
+
+timezone = pytz.timezone('Europe/Belgrade')
 
 
 def get_client():
@@ -124,6 +127,9 @@ def get_routes_of_train(train: TrainSchema):
         except KeyError as e:
             message = f"Key {e} is not present in object {station}"
             routes_parsing_logger.error(message)
+
+    if len(stations) == 0:
+        return False
 
     train_id = data["IDVOZA"]
     train_number = data["BROJVOZA"]
