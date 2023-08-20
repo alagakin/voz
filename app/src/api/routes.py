@@ -1,10 +1,10 @@
 from typing import Dict
-
 import pytz
 from fastapi import APIRouter
-from datetime import datetime
 from config import MONGO_DB
 from database import get_client
+from datetime import datetime
+
 timezone = pytz.timezone('Europe/Belgrade')
 
 router = APIRouter(
@@ -14,7 +14,6 @@ router = APIRouter(
 
 @router.get('/find-routes/')
 async def index(station_from: int, station_to: int):
-    # return datetime.now(timezone)
     client = await get_client()
     db = client[MONGO_DB]
     collection = db["routes"]
@@ -44,6 +43,12 @@ def get_route(route, station_from: int, station_to: int) -> Dict or bool:
     if station_from_key >= station_to_key:
         return False
     route['stations'] = route['stations'][station_from_key:station_to_key + 1]
+
+    now = datetime.now(timezone)
+    arrival = datetime.fromisoformat(route['stations'][0]['arrival'])
+    if now < arrival:
+        return False
+
     return route
 
 
