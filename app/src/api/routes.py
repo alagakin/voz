@@ -19,7 +19,19 @@ async def index(station_from: int, station_to: int):
     collection = db["routes"]
     stations = db["stations"]
     routes = []
-    async for route in collection.find({}):
+
+    current_date = datetime.now(timezone).date()
+    start_of_day = timezone.localize(datetime.combine(current_date, datetime.min.time()))
+    end_of_day = timezone.localize(datetime.combine(current_date, datetime.max.time()))
+
+    query = {
+        "date": {
+            "$gte": start_of_day.isoformat(),
+            "$lt": end_of_day.isoformat()
+        }
+    }
+
+    async for route in collection.find(query):
         route = get_route(route, station_from, station_to)
         if route:
             route["_id"] = str(route["_id"])
@@ -46,7 +58,7 @@ def get_route(route, station_from: int, station_to: int) -> Dict or bool:
 
     now = datetime.now(timezone)
     arrival = datetime.fromisoformat(route['stations'][0]['arrival'])
-    if now < arrival:
+    if now > arrival:
         return False
 
     return route
