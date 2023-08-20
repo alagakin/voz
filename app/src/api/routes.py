@@ -1,9 +1,11 @@
 from typing import Dict
 
+import pytz
 from fastapi import APIRouter
-
+from datetime import datetime
 from config import MONGO_DB
 from database import get_client
+timezone = pytz.timezone('Europe/Belgrade')
 
 router = APIRouter(
     prefix="/api/v1",
@@ -12,6 +14,7 @@ router = APIRouter(
 
 @router.get('/find-routes/')
 async def index(station_from: int, station_to: int):
+    # return datetime.now(timezone)
     client = await get_client()
     db = client[MONGO_DB]
     collection = db["routes"]

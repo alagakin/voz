@@ -1,7 +1,6 @@
-from datetime import timedelta
-
 from celery import Celery
 from config import MONGO_HOST, MONGO_PASS, MONGO_PORT, MONGO_USER
+from celery.schedules import crontab
 
 app = Celery(
     'tasks',  # Name of the app
@@ -18,6 +17,6 @@ app.conf.update(
 app.conf.beat_schedule = {
     'parsing': {
         'task': 'scheduled.parsing.parse',
-        'schedule': timedelta(seconds=1),
+        'schedule': crontab(hour=2),
     },
 }

@@ -53,6 +53,7 @@ class RouteStationSchema(BaseModel):
             return value
         try:
             parsed_time = datetime.strptime(value, "%H:%M")
+            # todo: problem. need to move this to service
             current_date = date.today()
             return timezone.localize(datetime.combine(current_date, parsed_time.time()))
         except ValueError:
@@ -76,8 +77,7 @@ class RouteSchema(BaseModel):
 
         values["first_station"] = stations[0].name
         values["last_station"] = stations[len(stations) - 1].name
-        values["date"] = timezone.localize(
-            datetime(stations[0].arrival.year, stations[0].arrival.month, stations[0].arrival.day))
+        values['date'] = stations[0].arrival.replace(hour=0, minute=0, second=0, microsecond=0).isoformat()
         return values
 
     @root_validator
