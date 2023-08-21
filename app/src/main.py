@@ -1,12 +1,13 @@
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
+from config import FRONTEND_ORIGIN
 from locations.services import index_stations, sync_stations
 from api.routes import router as api_router
 from locations.routes import router as search_router
 
 app = FastAPI()
 origins = [
-    "http://localhost:50000"
+    FRONTEND_ORIGIN
 ]
 
 app.add_middleware(
