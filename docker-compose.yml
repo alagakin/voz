@@ -28,7 +28,7 @@ services:
     networks:
       - voz_app_network
     ports:
-      - "27017:27017"
+      - "50002:27017"
   redis:
     container_name: redis
     restart: always
@@ -84,7 +84,7 @@ services:
     networks:
       - voz_app_network
     ports:
-      - "7700:7700"
+      - "50003:7700"
     volumes:
       - voz_meilisearch_data:/data.ms
     environment:
