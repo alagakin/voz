@@ -15,7 +15,7 @@ services:
     networks:
       - voz_app_network
       - voz_redis_network
-    command: [ "/usr/src/docker/app.sh" ]
+    command: [ "sh", "-c", "uvicorn main:app --host 0.0.0.0 --port 8000 --reload" ]
     restart: always
   frontend:
     container_name: frontend
@@ -52,7 +52,7 @@ services:
     container_name: celery-worker
     build:
       context: .
-      dockerfile: Dockerfile  # Use your existing Dockerfile-dev or create a new one
+      dockerfile: Dockerfile
     volumes:
       - ./app:/usr/src/app
     env_file:
@@ -60,7 +60,7 @@ services:
     networks:
       - voz_app_network
       - voz_redis_network
-    command: [ "/usr/src/docker/celery-worker.sh" ]  # Command to start Celery worker
+    command: [ "sh", "-c", "celery -A celery_config:app worker --loglevel=info" ]
     restart: always
   celery-beat:
     container_name: celery-beat
@@ -76,7 +76,7 @@ services:
     networks:
       - voz_app_network
       - voz_redis_network
-    command: [ "/usr/src/docker/celery-beat.sh" ]
+    command: [ "sh", "-c", "celery -A celery_config:app beat --loglevel=debug" ]
     restart: always
   meilisearch:
     image: getmeili/meilisearch:latest
