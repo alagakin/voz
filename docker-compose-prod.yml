@@ -37,7 +37,7 @@ services:
     env_file:
       - .env
     volumes:
-      - mongodb_data:/data/db
+      - voz_mongodb_data:/data/db
     networks:
       - voz_app_network
     ports:
@@ -87,7 +87,7 @@ services:
     ports:
       - "7700:7700"
     volumes:
-      - ./meilisearch_data:/data.ms
+      - voz_meilisearch_data:/data.ms
     environment:
       - MEILI_DB_PATH=${MEILI_DB_PATH:-/data.ms}
       - MEILI_MASTER_KEY=${MEILI_MASTER_KEY:-masterKey}
@@ -101,6 +101,6 @@ networks:
   voz_redis_network:
 
 volumes:
-  mongodb_data:
-  meilisearch_data:
+  voz_mongodb_data:
+  voz_meilisearch_data:
 
