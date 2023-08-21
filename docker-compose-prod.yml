@@ -20,6 +20,8 @@ services:
   frontend:
     container_name: frontend
     command: ["sh", "-c", "npm run build && npx http-server dist --port 80"]
+    env_file:
+      - frontend/src/.env
     build:
       context: .
       dockerfile: frontend/Dockerfile
@@ -27,8 +29,6 @@ services:
       - "50000:80"
     volumes:
       - ./frontend:/app
-    networks:
-      - voz_app_network
     restart: always
   mongodb:
     container_name: mongodb

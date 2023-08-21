@@ -71,12 +71,12 @@ services:
     build:
       context: .
       dockerfile: frontend/Dockerfile-dev
+    env_file:
+      - frontend/src/.env
     ports:
-      - "8080:8080"
+      - "50000:80"
     volumes:
       - ./frontend:/app
-    networks:
-      - voz_app_network
     restart: always
   meilisearch:
     image: getmeili/meilisearch:latest

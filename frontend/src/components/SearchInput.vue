@@ -46,7 +46,7 @@ export default {
             const query = inputField === 'from' ? this.station_from.display_name : this.station_to.display_name;
 
             if (query.length >= 2) {
-                axios.get("http://localhost:8000/api/v1/station/search/?query=" + query)
+                axios.get(process.env.VUE_APP_BACKEND_HOST + "/api/v1/station/search/?query=" + query)
                     .then(response => {
                         if (inputField === 'from') {
                             this.suggestions_from = response.data.hits;
@@ -86,7 +86,7 @@ export default {
                 station_to: this.station_to.id
             };
 
-            axios.get("http://localhost:8000/api/v1/find-routes/", {params})
+            axios.get(process.env.VUE_APP_BACKEND_HOST + "/api/v1/find-routes/", {params})
                 .then(response => {
                     this.$emit('setRoutes', response.data)
                 })
