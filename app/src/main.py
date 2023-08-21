@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
-from locations.services import index_stations
+from locations.services import index_stations, sync_stations
 from api.routes import router as api_router
 from locations.routes import router as search_router
 
@@ -22,10 +22,5 @@ app.include_router(api_router)
 
 @app.on_event("startup")
 async def startup_event():
+    await sync_stations()
     await index_stations()
-
-
-@app.get("/")
-def index():
-    from parser.services import parse as ps
-    ps()
