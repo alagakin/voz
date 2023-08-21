@@ -1,1 +1,1 @@
-docker-compose -f docker-compose.yml -f docker-compose-flower.yml up
+docker-compose -f docker-compose.yml up

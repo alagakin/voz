@@ -1,12 +1,11 @@
 # Use the official Node.js image as the base image
-FROM node:latest
+FROM node:lts
 
 # Set the working directory inside the container
 WORKDIR /app
 
 # Install development dependencies
 COPY /frontend .
-RUN ls
 RUN npm install
 
 # Expose the port used by the development server

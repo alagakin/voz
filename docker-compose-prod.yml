@@ -17,7 +17,19 @@ services:
       - voz_redis_network
     command: [ "/usr/src/docker/app.sh" ]
     restart: always
-
+  frontend:
+    container_name: frontend
+    command: ["sh", "-c", "npm run build && npx http-server dist --port 80"]
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports:
+      - "50000:80"
+    volumes:
+      - ./frontend:/app
+    networks:
+      - voz_app_network
+    restart: always
   mongodb:
     container_name: mongodb
     image: mongo:latest
@@ -66,18 +78,6 @@ services:
       - voz_redis_network
     command: [ "/usr/src/docker/celery-beat.sh" ]
     restart: always
-  frontend:
-    container_name: frontend
-    build:
-      context: .
-      dockerfile: frontend/Dockerfile-dev
-    ports:
-      - "8080:8080"
-    volumes:
-      - ./frontend:/app
-    networks:
-      - voz_app_network
-    restart: always
   meilisearch:
     image: getmeili/meilisearch:latest
     env_file:
@@ -93,21 +93,6 @@ services:
       - MEILI_MASTER_KEY=${MEILI_MASTER_KEY:-masterKey}
       - MEILI_NO_ANALYTICS=${MEILI_NO_ANALYTICS:-true}
       - MEILI_ENV=${MEILI_ENV:-development}
-    restart: always
-  flower:
-    container_name: flower
-    image: mher/flower:latest
-    command: [ "celery", "flower" ]
-    environment:
-      - CELERY_BROKER_URL=redis://redis:6379/0
-      - FLOWER_PORT=5555
-    ports:
-      - "5555:5555"
-    networks:
-      - voz_app_network
-      - voz_redis_network
-    depends_on:
-      - celery-worker
     restart: always
 
 
