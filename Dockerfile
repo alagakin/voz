@@ -12,8 +12,6 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-RUN chmod +x app/*.sh
-RUN ls
 WORKDIR /usr/src/app/src
 
 EXPOSE 443
