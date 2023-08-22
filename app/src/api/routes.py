@@ -82,3 +82,13 @@ async def search_station(query: str, client=Depends(get_search_client)):
         'limit': 5,
         'attributesToSearchOn': ['name', 'display_name', 'name1', 'names']
     })
+
+
+@router.get("/available-days")
+async def get_available_day(client=Depends(get_async_client)):
+    db = client[MONGO_DB]
+    collection = db['datetable']
+    dates = []
+    async for item in collection.find({'fetched': True}):
+        dates.append(item['date'])
+    return dates
