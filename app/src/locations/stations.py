@@ -1,13 +1,13 @@
 import json
 import os
-from database import get_client
+from database import get_async_client
 from config import MONGO_DB
 from utils import latin_to_cyrillic, simplify_latin_serbian
 from meili import fill_index
 
 
 async def sync_stations() -> None:
-    client = await get_client()
+    client = await get_async_client()
     db = client[MONGO_DB]
     collection = db["stations"]
 
@@ -36,7 +36,7 @@ async def read_stations():
 
 
 async def index_stations():
-    client = await get_client()
+    client = await get_async_client()
     db = client[MONGO_DB]
     stations = db["stations"]
     documents = []

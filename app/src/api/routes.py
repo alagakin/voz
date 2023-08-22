@@ -2,7 +2,7 @@ from typing import Dict
 import pytz
 from fastapi import APIRouter, Depends
 from config import MONGO_DB
-from database import get_client
+from database import get_async_client
 from datetime import datetime
 from meili import get_client as get_search_client, get_index
 
@@ -15,7 +15,7 @@ router = APIRouter(
 
 @router.get('/find-routes/')
 async def index(station_from: int, station_to: int):
-    client = await get_client()
+    client = await get_async_client()
     db = client[MONGO_DB]
     collection = db["routes"]
     stations = db["stations"]
