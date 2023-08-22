@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 from config import FRONTEND_ORIGIN
+from locations.datetable import fill_date_table
 from locations.stations import index_stations, sync_stations
 from api.routes import router as api_router
 
@@ -23,3 +24,4 @@ app.include_router(api_router)
 async def startup_event():
     await sync_stations()
     await index_stations()
+    fill_date_table()
