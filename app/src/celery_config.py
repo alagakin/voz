@@ -17,6 +17,6 @@ app.conf.update(
 app.conf.beat_schedule = {
     'parsing': {
         'task': 'scheduled.parsing.parse',
-        'schedule': crontab(hour=2),
+        'schedule': crontab(minute='*/30'),
     },
 }

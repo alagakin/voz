@@ -16,13 +16,13 @@ def fill_date_table(days: int = 14):
             })
 
 
-def get_next_date():
+def get_next_date() -> bool | str:
     client = get_sync_client()
     db = client[MONGO_DB]
     query = {'fetched': False}
     count = db.datetable.count_documents(query)
     if count == 0:
-        fill_date_table()
+        return False
     result = db.datetable.find(query).sort('date', 1)
 
     return result[0]['date']
