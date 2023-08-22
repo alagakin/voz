@@ -4,7 +4,7 @@ from fastapi import APIRouter, Depends
 from config import MONGO_DB
 from database import get_client
 from datetime import datetime
-from search.services import get_client as get_search_client, get_index
+from meili import get_client as get_search_client, get_index
 
 timezone = pytz.timezone('Europe/Belgrade')
 

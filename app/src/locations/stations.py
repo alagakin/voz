@@ -3,7 +3,7 @@ import os
 from database import get_client
 from config import MONGO_DB
 from utils import latin_to_cyrillic, simplify_latin_serbian
-from search.services import fill_index
+from meili import fill_index
 
 
 async def sync_stations() -> None:
