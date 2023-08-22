@@ -66,7 +66,7 @@ class RouteSchema(BaseModel):
     train_number: int
     first_station: str = ''
     last_station: str = ''
-    date: datetime = Field(default_factory=datetime.now)
+    date: str = ''
     stations: List[RouteStationSchema]
 
     @root_validator
@@ -77,7 +77,6 @@ class RouteSchema(BaseModel):
 
         values["first_station"] = stations[0].name
         values["last_station"] = stations[len(stations) - 1].name
-        values['date'] = stations[0].arrival.replace(hour=0, minute=0, second=0, microsecond=0).isoformat()
         return values
 
     @root_validator

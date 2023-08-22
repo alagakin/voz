@@ -6,150 +6,144 @@ import pytz
 from bs4 import BeautifulSoup
 from pydantic import ValidationError
 
-from config import MONGO_DB, MONGO_USER, MONGO_PASS, MONGO_HOST, MONGO_PORT
+from config import MONGO_DB
 from log import trains_parsing_logger, routes_parsing_logger
 from locations.schemas import TrainSchema, RouteStationSchema, RouteSchema
-import pymongo
 from requests.exceptions import ConnectionError, HTTPError
+from database import get_sync_client
 
 timezone = pytz.timezone('Europe/Belgrade')
 
 
-def get_client():
-    client = pymongo.MongoClient(
-        f"mongodb://{MONGO_USER}:{MONGO_PASS}@{MONGO_HOST}:{MONGO_PORT}/"
-    )
-    return client
+class Parser:
+    date: datetime
 
+    def __init__(self, date: datetime):
+        self.date = date
 
-def parse():
-    trains = get_trains()
-    client = get_client()
-    for train in trains:
-        route = get_routes_of_train(train)
-        if route:
-            save_route(route, client)
+    def parse(self):
+        trains = self.get_trains()
+        client = get_sync_client()
+        for train in trains:
+            route = self.get_routes_of_train(train)
+            if route:
+                self.save_route(route, client)
 
+    def get_trains(self):
+        stations = self.get_stations()
+        trains = []
+        for station in stations:
+            trains.extend(self.get_trains_for_station(station))
 
-def get_trains():
-    stations = get_stations()
-    trains = []
-    for station in stations:
-        trains.extend(get_trains_for_station(station))
+        return trains
 
-    return trains
+    def save_route(self, route, client):
+        db = client[MONGO_DB]
+        collection = db["routes"]
+        route = route.dict()
+        for station in route["stations"]:
+            station["arrival"] = station["arrival"].isoformat()
+            station["departure"] = station["departure"].isoformat()
+            station["date"] = station["date"].isoformat()
 
+        query = {"id": route["id"]}
+        existing_document = collection.find_one(query)
 
-def save_route(route, client):
-    db = client[MONGO_DB]
-    collection = db["routes"]
-    route = route.dict()
-    for station in route["stations"]:
-        station["arrival"] = station["arrival"].isoformat()
-        station["departure"] = station["departure"].isoformat()
-        station["date"] = station["date"].isoformat()
+        if not existing_document:
+            collection.insert_one(route)
 
-    query = {"id": route["id"]}
-    existing_document = collection.find_one(query)
+    def get_trains_for_station(self, station) -> List[TrainSchema]:
+        res = []
+        url = f"https://w3.srbvoz.rs/redvoznje//stanicni/" \
+              f"{station['name']}/{station['id']}/" \
+              f"{self.date.strftime('%d.%m.%Y')}/0000/polazak/999/sr"
+        try:
+            html = self.fetch_url(url)
+        except HTTPError or ConnectionError:
+            return res
+        try:
+            soup = BeautifulSoup(html, 'html.parser')
+            table = soup.find(id="rezultati")
+            table = table.find('table')
+            rows = table.find_all(class_='tsmall')
+        except AttributeError:
+            return []
 
-    if not existing_document:
-        collection.insert_one(route)
+        for i in range(1, len(rows)):
+            try:
+                row = rows[i]
+                item = {}
+                cells = row.find_all('td')
+                item["number"] = int(cells[0].text.strip())
+                item["arrival"] = cells[1].text.strip()
+                item["departure"] = cells[3].text.strip()
+                item["rang"] = cells[4].find('img').get('title')
+                item["id"] = cells[8].find('button').get('data-idvoza')
+                item["station_from"] = cells[8].find('button').get('data-stod')
+                item["station_to"] = cells[8].find('button').get('data-stdo')
+                schema = TrainSchema(**item)
+                res.append(schema)
+            except ValidationError as validationError:
+                trains_parsing_logger.error(validationError)
+            except Exception as e:
+                trains_parsing_logger.error(f"{e} {e.__class__}")
 
-
-def get_trains_for_station(station) -> List[TrainSchema]:
-    res = []
-    url = f"https://w3.srbvoz.rs/redvoznje//stanicni/" \
-          f"{station['name']}/{station['id']}/" \
-          f"{datetime.now().strftime('%d.%m.%Y')}/0000/polazak/999/sr"
-    try:
-        html = fetch_url(url)
-    except HTTPError or ConnectionError:
         return res
-    try:
-        soup = BeautifulSoup(html, 'html.parser')
-        table = soup.find(id="rezultati")
-        table = table.find('table')
-        rows = table.find_all(class_='tsmall')
-    except AttributeError:
-        return []
 
-    for i in range(1, len(rows)):
+    def get_routes_of_train(self, train: TrainSchema):
+        url = f"https://w3.srbvoz.rs/redvoznje//api/vozdetalji1" \
+              f"?idvoza={train.id}&brojvoza={train.number}" \
+              f"&datum={self.date.strftime('%d-%m-%Y')}" \
+              f"&stanicaod={train.station_from}" \
+              f"&stanicado={train.station_to}"
+
         try:
-            row = rows[i]
+            json_data = self.fetch_url(url)
+        except HTTPError or ConnectionError:
+            return False
+
+        try:
+            data = json.loads(json_data)[0]
+        except KeyError:
+            return False
+
+        stations = []
+        for station in data['stanicavoza']:
             item = {}
-            cells = row.find_all('td')
-            item["number"] = int(cells[0].text.strip())
-            item["arrival"] = cells[1].text.strip()
-            item["departure"] = cells[3].text.strip()
-            item["rang"] = cells[4].find('img').get('title')
-            item["id"] = cells[8].find('button').get('data-idvoza')
-            item["station_from"] = cells[8].find('button').get('data-stod')
-            item["station_to"] = cells[8].find('button').get('data-stdo')
-            schema = TrainSchema(**item)
-            res.append(schema)
-        except ValidationError as validationError:
-            trains_parsing_logger.error(validationError)
-        except Exception as e:
-            trains_parsing_logger.error(f"{e} {e.__class__}")
+            try:
+                item['arrival'] = station["DOLAZAK"]
+                item["departure"] = station["POLAZAK"]
+                item["number"] = station["RBSTANICE"]
+                item["name"] = station["NAZIV"]
+                item["name1"] = station["NAZIV1"]
+                item["time"] = station["vremevoznje"]
+                item["id"] = station["Sifra"]
+                stations.append(RouteStationSchema(**item))
+            except KeyError as e:
+                message = f"Key {e} is not present in object {station}"
+                routes_parsing_logger.error(message)
 
-    return res
+        if len(stations) == 0:
+            return False
 
+        train_id = data["IDVOZA"]
+        train_number = data["BROJVOZA"]
+        res = RouteSchema(stations=stations, train_id=train_id, train_number=train_number,
+                          date=self.date.isoformat())
 
-def get_routes_of_train(train: TrainSchema):
-    url = f"https://w3.srbvoz.rs/redvoznje//api/vozdetalji1" \
-          f"?idvoza={train.id}&brojvoza={train.number}" \
-          f"&datum={train.date.strftime('%d-%m-%Y')}" \
-          f"&stanicaod={train.station_from}" \
-          f"&stanicado={train.station_to}"
+        return res
 
-    try:
-        json_data = fetch_url(url)
-    except HTTPError or ConnectionError:
-        return False
+    def get_stations(self):
+        client = get_sync_client()
+        db = client[MONGO_DB]
+        collection = db["stations"]
+        stations = []
+        for document in collection.find():
+            stations.append(document)
 
-    try:
-        data = json.loads(json_data)[0]
-    except KeyError:
-        return False
+        return stations
 
-    stations = []
-    for station in data['stanicavoza']:
-        item = {}
-        try:
-            item['arrival'] = station["DOLAZAK"]
-            item["departure"] = station["POLAZAK"]
-            item["number"] = station["RBSTANICE"]
-            item["name"] = station["NAZIV"]
-            item["name1"] = station["NAZIV1"]
-            item["time"] = station["vremevoznje"]
-            item["id"] = station["Sifra"]
-            stations.append(RouteStationSchema(**item))
-        except KeyError as e:
-            message = f"Key {e} is not present in object {station}"
-            routes_parsing_logger.error(message)
-
-    if len(stations) == 0:
-        return False
-
-    train_id = data["IDVOZA"]
-    train_number = data["BROJVOZA"]
-    res = RouteSchema(stations=stations, train_id=train_id, train_number=train_number)
-
-    return res
-
-
-def get_stations():
-    client = get_client()
-    db = client[MONGO_DB]
-    collection = db["stations"]
-    stations = []
-    for document in collection.find():
-        stations.append(document)
-
-    return stations
-
-
-def fetch_url(url):
-    response = requests.get(url)
-    response.raise_for_status()  # Raise an exception for HTTP errors
-    return response.text
+    def fetch_url(self, url):
+        response = requests.get(url)
+        response.raise_for_status()
+        return response.text
