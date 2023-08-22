@@ -1,9 +1,10 @@
 from typing import Dict
 import pytz
-from fastapi import APIRouter
+from fastapi import APIRouter, Depends
 from config import MONGO_DB
 from database import get_client
 from datetime import datetime
+from search.services import get_client as get_search_client, get_index
 
 timezone = pytz.timezone('Europe/Belgrade')
 
@@ -72,3 +73,12 @@ async def set_coordinates(route, stations):
             station["coordinates"] = coords
 
     return route
+
+
+@router.get("/station/search/")
+async def search_station(query: str, client=Depends(get_search_client)):
+    index = get_index('stations', client)
+    return index.search(query, {
+        'limit': 5,
+        'attributesToSearchOn': ['name', 'display_name', 'name1', 'names']
+    })

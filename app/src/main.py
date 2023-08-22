@@ -3,7 +3,6 @@ from starlette.middleware.cors import CORSMiddleware
 from config import FRONTEND_ORIGIN
 from locations.stations import index_stations, sync_stations
 from api.routes import router as api_router
-from locations.routes import router as search_router
 
 app = FastAPI()
 origins = [
@@ -17,7 +16,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-app.include_router(search_router)
 app.include_router(api_router)
 
 
