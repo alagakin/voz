@@ -126,10 +126,14 @@ class Parser:
         if len(stations) == 0:
             return False
 
-        train_id = data["IDVOZA"]
-        train_number = data["BROJVOZA"]
-        res = RouteSchema(stations=stations, train_id=train_id, train_number=train_number,
-                          date=self.date.isoformat())
+        try:
+            train_id = data["IDVOZA"]
+            train_number = data["BROJVOZA"]
+            res = RouteSchema(stations=stations, train_id=train_id, train_number=train_number,
+                              date=timezone.localize(self.date).isoformat())
+        except ValidationError as e:
+            routes_parsing_logger.error(e)
+            return False
 
         return res
 
