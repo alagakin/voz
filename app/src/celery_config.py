@@ -19,4 +19,8 @@ app.conf.beat_schedule = {
         'task': 'scheduled.parsing.parse',
         'schedule': crontab(minute='*/30'),
     },
+    'date_table': {
+        'task': 'scheduled.parsing.update_date_table',
+        'schedule': crontab(minute=0, hour=1)
+    }
 }
