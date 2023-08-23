@@ -1,30 +1,41 @@
 from typing import Dict
 import pytz
 from fastapi import APIRouter, Depends
+from starlette.status import HTTP_400_BAD_REQUEST
+
 from config import MONGO_DB
 from database import get_async_client
 from datetime import datetime
 from meili import get_client as get_search_client, get_index
+from fastapi.exceptions import HTTPException
 
 timezone = pytz.timezone('Europe/Belgrade')
 
 router = APIRouter(
     prefix="/api/v1",
 )
+iso_datetime_regex = r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[+-]\d{2}:\d{2})?$"
 
 
 @router.get('/find-routes/')
-async def index(station_from: int, station_to: int):
+async def index(station_from: int, station_to: int, date: str = None):
+    try:
+        if date is None:
+            date = datetime.now(tz=timezone)
+        else:
+            date = datetime.fromisoformat(date)
+            date = timezone.localize(date)
+    except ValueError as e:
+        raise HTTPException(status_code=HTTP_400_BAD_REQUEST)
+
     client = await get_async_client()
     db = client[MONGO_DB]
     collection = db["routes"]
     stations = db["stations"]
     routes = []
 
-    current_date = datetime.now(timezone).date()
-    start_of_day = timezone.localize(datetime.combine(current_date, datetime.min.time()))
-    end_of_day = timezone.localize(datetime.combine(current_date, datetime.max.time()))
-
+    start_of_day = timezone.localize(datetime.combine(date, datetime.min.time()))
+    end_of_day = timezone.localize(datetime.combine(date, datetime.max.time()))
     query = {
         "date": {
             "$gte": start_of_day.isoformat(),
@@ -56,11 +67,6 @@ def get_route(route, station_from: int, station_to: int) -> Dict or bool:
     if station_from_key >= station_to_key:
         return False
     route['stations'] = route['stations'][station_from_key:station_to_key + 1]
-
-    now = datetime.now(timezone)
-    arrival = datetime.fromisoformat(route['stations'][0]['arrival'])
-    if now > arrival:
-        return False
 
     return route
 
