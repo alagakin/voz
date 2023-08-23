@@ -29,7 +29,11 @@
                 </div>
             </div>
 
-            <button @click="search" class="px-4 py-2 bg-blue-500 text-white rounded">
+            <div class="relative">
+                <Calendar @selectDate="selectDate"/>
+            </div>
+
+            <button @click="search" class="px-4 py-2 bg-blue-500 text-white rounded" :class="{'bg-gray-400': !searchEnabled}">
                 Search
             </button>
         </div>
@@ -38,9 +42,12 @@
 
 <script>
 import axios from "axios";
+import Calendar from "@/components/Calendar.vue";
+import formatDateToYMD from "../utils/Dates"
 
 export default {
     name: "SearchInput",
+    components: {Calendar},
     methods: {
         getSuggestions(inputField) {
             const query = inputField === 'from' ? this.station_from.display_name : this.station_to.display_name;
@@ -81,9 +88,13 @@ export default {
             }
         },
         search() {
+            if (!this.searchEnabled){
+                return
+            }
             const params = {
                 station_from: this.station_from.id,
-                station_to: this.station_to.id
+                station_to: this.station_to.id,
+                date: this.date
             };
 
             axios.get(process.env.VUE_APP_BACKEND_HOST + "/api/v1/find-routes/", {params})
@@ -93,10 +104,19 @@ export default {
                 .catch(error => {
                     console.error("Error fetching data:", error);
                 });
+        },
+        selectDate(date) {
+            this.date = formatDateToYMD(date)
+        }
+    },
+    computed: {
+        searchEnabled() {
+            return this.date && this.station_from.id && this.station_to.id
         }
     },
     data() {
         return {
+            date: null,
             station_from: {
                 display_name: '',
                 id: false
