@@ -1,7 +1,7 @@
 import hashlib
 from typing import List
-from pydantic import BaseModel, validator, Field, root_validator
-from datetime import datetime, date
+from pydantic import BaseModel, root_validator
+from datetime import datetime, timedelta
 import pytz
 
 timezone = pytz.timezone('Europe/Belgrade')
@@ -10,24 +10,11 @@ timezone = pytz.timezone('Europe/Belgrade')
 class TrainSchema(BaseModel):
     id: int = 1
     number: int
-    # todo: how to get know of day of the date?
     arrival: datetime
     departure: datetime
     rang: str
-    date: datetime = Field(default_factory=datetime.now)
     station_from: int
     station_to: int
-
-    @validator("arrival", "departure", pre=True)
-    def parse_datetime(cls, value):
-        if isinstance(value, datetime):
-            return value
-        try:
-            parsed_time = datetime.strptime(value, "%H:%M")
-            current_date = date.today()
-            return timezone.localize(datetime.combine(current_date, parsed_time.time()))
-        except ValueError:
-            raise ValueError("Invalid datetime format. Expected 'HH:MM'.")
 
 
 class RouteStationSchema(BaseModel):
@@ -38,7 +25,6 @@ class RouteStationSchema(BaseModel):
     time: int
     arrival: datetime
     departure: datetime
-    date: datetime = Field(default_factory=datetime.now().date)
 
     @root_validator
     def strip_strings(cls, values):
@@ -46,18 +32,6 @@ class RouteStationSchema(BaseModel):
             if isinstance(value, str):
                 values[field] = value.strip()
         return values
-
-    @validator("arrival", "departure", pre=True)
-    def parse_datetime(cls, value):
-        if isinstance(value, datetime):
-            return value
-        try:
-            parsed_time = datetime.strptime(value, "%H:%M")
-            # todo: problem. need to move this to service
-            current_date = date.today()
-            return timezone.localize(datetime.combine(current_date, parsed_time.time()))
-        except ValueError:
-            raise ValueError("Invalid datetime format. Expected 'HH:MM'.")
 
 
 class RouteSchema(BaseModel):
@@ -86,4 +60,30 @@ class RouteSchema(BaseModel):
         hash_object = hashlib.sha256(json.encode())
         hash_value = hash_object.hexdigest()
         values['id'] = hash_value
+        return values
+
+    @root_validator
+    def change_dates_if_different_dates(cls, values):
+        stations = values.get('stations')
+        prev_arrival = stations[0].arrival
+        prev_departure = stations[0].departure
+        days_add_arrival = 0
+        days_add_departure = 0
+        for i in range(1, len(stations)):
+            arrival = stations[i].arrival
+            departure = stations[i].departure
+            if arrival.hour < prev_arrival.hour:
+                days_add_arrival += 1
+            if departure.hour < prev_departure.hour:
+                days_add_departure += 1
+
+            arrival += timedelta(days=days_add_arrival)
+            departure += timedelta(days=days_add_departure)
+
+            values['stations'][i].arrival = arrival
+            values['stations'][i].departure = departure
+
+            prev_arrival = arrival
+            prev_departure = departure
+
         return values

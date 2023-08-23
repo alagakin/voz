@@ -44,7 +44,6 @@ class Parser:
         for station in route["stations"]:
             station["arrival"] = station["arrival"].isoformat()
             station["departure"] = station["departure"].isoformat()
-            station["date"] = station["date"].isoformat()
 
         query = {"id": route["id"]}
         existing_document = collection.find_one(query)
@@ -75,12 +74,17 @@ class Parser:
                 item = {}
                 cells = row.find_all('td')
                 item["number"] = int(cells[0].text.strip())
-                item["arrival"] = cells[1].text.strip()
-                item["departure"] = cells[3].text.strip()
                 item["rang"] = cells[4].find('img').get('title')
                 item["id"] = cells[8].find('button').get('data-idvoza')
                 item["station_from"] = cells[8].find('button').get('data-stod')
                 item["station_to"] = cells[8].find('button').get('data-stdo')
+                item["date"] = self.date
+
+                arrival = datetime.strptime(cells[1].text.strip(), "%H:%M")
+                departure = datetime.strptime(cells[3].text.strip(), "%H:%M")
+                item["arrival"] = timezone.localize(datetime.combine(self.date, arrival.time()))
+                item["departure"] = timezone.localize(datetime.combine(self.date, departure.time()))
+
                 schema = TrainSchema(**item)
                 res.append(schema)
             except ValidationError as validationError:
@@ -111,8 +115,10 @@ class Parser:
         for station in data['stanicavoza']:
             item = {}
             try:
-                item['arrival'] = station["DOLAZAK"]
-                item["departure"] = station["POLAZAK"]
+                arrival = datetime.strptime(station["DOLAZAK"], "%H:%M")
+                departure = datetime.strptime(station["POLAZAK"], "%H:%M")
+                item["arrival"] = timezone.localize(datetime.combine(self.date, arrival.time()))
+                item["departure"] = timezone.localize(datetime.combine(self.date, departure.time()))
                 item["number"] = station["RBSTANICE"]
                 item["name"] = station["NAZIV"]
                 item["name1"] = station["NAZIV1"]
