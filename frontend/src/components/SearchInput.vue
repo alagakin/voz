@@ -33,7 +33,8 @@
                 <Calendar @selectDate="selectDate"/>
             </div>
 
-            <button @click="search" class="px-4 py-2 bg-blue-500 text-white rounded" :class="{'bg-gray-400': !searchEnabled}">
+            <button @click="search" class="px-4 py-2 bg-blue-500 text-white rounded"
+                    :class="{'bg-gray-400': !searchEnabled}">
                 Search
             </button>
         </div>
@@ -88,7 +89,7 @@ export default {
             }
         },
         search() {
-            if (!this.searchEnabled){
+            if (!this.searchEnabled) {
                 return
             }
             const params = {
@@ -106,7 +107,11 @@ export default {
                 });
         },
         selectDate(date) {
-            this.date = formatDateToYMD(date)
+            if (date) {
+                this.date = formatDateToYMD(date)
+            } else {
+                this.date = null
+            }
         }
     },
     computed: {
