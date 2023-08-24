@@ -1,0 +1,17 @@
+city,lat,lng,country,iso2,admin_name,capital,population,population_proper
+Sarajevo,43.8564,18.4131,Bosnia and Herzegovina,BA,"Bosnia and Herzegovina, Federation of",primary,419957,275524
+Banja Luka,44.7725,17.1925,Bosnia and Herzegovina,BA,"Srpska, Republika",admin,199191,185042
+Bijeljina,44.7500,19.2167,Bosnia and Herzegovina,BA,"Srpska, Republika",minor,114663,114663
+Mostar,43.3436,17.8075,Bosnia and Herzegovina,BA,"Bosnia and Herzegovina, Federation of",minor,113169,113169
+Tuzla,44.5381,18.6761,Bosnia and Herzegovina,BA,"Bosnia and Herzegovina, Federation of",minor,110979,110979
+Ilidža,43.8167,18.3000,Bosnia and Herzegovina,BA,"Bosnia and Herzegovina, Federation of",minor,66730,66730
+Tešanj,44.6142,17.9894,Bosnia and Herzegovina,BA,"Bosnia and Herzegovina, Federation of",minor,43063,43063
+Brčko,44.8783,18.8092,Bosnia and Herzegovina,BA,Brcko District,admin,39893,39893
+Vrapčići,43.3740,17.8510,Bosnia and Herzegovina,BA,"Bosnia and Herzegovina, Federation of",,3266,3266
+Jelah,44.6544,17.9594,Bosnia and Herzegovina,BA,"Bosnia and Herzegovina, Federation of",,2911,2911
+Matuzići,44.6833,18.0500,Bosnia and Herzegovina,BA,"Bosnia and Herzegovina, Federation of",minor,2591,2591
+Vogošća,43.9000,18.3500,Bosnia and Herzegovina,BA,"Bosnia and Herzegovina, Federation of",minor,,
+Teočak,44.6032,18.9797,Bosnia and Herzegovina,BA,"Bosnia and Herzegovina, Federation of",minor,,
+Lukavica,43.8269,18.3832,Bosnia and Herzegovina,BA,"Srpska, Republika",minor,,
+Klokotnica,44.7329,18.1888,Bosnia and Herzegovina,BA,"Bosnia and Herzegovina, Federation of",minor,,
+Omanjska,44.6939,17.9550,Bosnia and Herzegovina,BA,"Bosnia and Herzegovina, Federation of",minor,,

@@ -28,7 +28,7 @@ async def sync_stations() -> None:
 
 async def read_stations():
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    file_path = os.path.join(script_dir, 'stations.json')
+    file_path = os.path.join(script_dir, 'files/stations.json')
 
     with open(file_path, 'r') as file:
         contents = file.read()

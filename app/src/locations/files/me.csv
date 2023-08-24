@@ -1,0 +1,194 @@
+city,lat,lng,country,iso2,admin_name,capital,population,population_proper
+Podgorica,42.4413,19.2629,Montenegro,ME,Podgorica,primary,150977,150977
+Nikšić,42.7778,18.9500,Montenegro,ME,Nikšić,admin,56970,56970
+Ulcinj,41.9200,19.2000,Montenegro,ME,Ulcinj,admin,19921,19921
+Herceg Novi,42.4530,18.5312,Montenegro,ME,Herceg Novi,admin,19536,16493
+Budva,42.2881,18.8425,Montenegro,ME,Budva,admin,19218,19218
+Pljevlja,43.3567,19.3583,Montenegro,ME,Pljevlja,admin,19136,19136
+Bijelo Polje,43.0400,19.7500,Montenegro,ME,Bijelo Polje,admin,15883,15883
+Cetinje,42.3800,18.9200,Montenegro,ME,Cetinje,admin,14093,13991
+Plav,42.6000,19.9400,Montenegro,ME,Plav,admin,13805,13805
+Bar,42.1000,19.1000,Montenegro,ME,Bar,admin,13719,13719
+Kotor,42.4300,18.7700,Montenegro,ME,Kotor,admin,12583,12583
+Berane,42.8400,19.8600,Montenegro,ME,Berane,admin,11776,11776
+Mojkovac,42.9600,19.5800,Montenegro,ME,Mojkovac,admin,10066,10066
+Rožaje,42.8400,20.1600,Montenegro,ME,Rožaje,admin,9422,9422
+Tivat,42.4300,18.7000,Montenegro,ME,Tivat,admin,9367,9367
+Petnjica,42.9089,19.9644,Montenegro,ME,Petnjica,admin,5482,5482
+Danilovgrad,42.6100,19.0500,Montenegro,ME,Danilovgrad,admin,5156,5156
+Tuzi,42.3656,19.3314,Montenegro,ME,Tuzi,admin,4748,4748
+Bijela,42.4533,18.6556,Montenegro,ME,Kotor,,3691,3691
+Igalo,42.4589,18.5122,Montenegro,ME,Herceg Novi,,3355,3355
+Golubovci,42.3344,19.2253,Montenegro,ME,Zeta,admin,3110,3110
+Kolašin,42.8236,19.5225,Montenegro,ME,Kolašin,admin,2725,2725
+Mojanovići,42.3383,19.2194,Montenegro,ME,Podgorica,,2593,2593
+Rakonje,43.0197,19.7367,Montenegro,ME,Bijelo Polje,,2291,2291
+Mrčevac,42.4186,18.7175,Montenegro,ME,Tivat,,2110,2110
+Žabljak,43.1550,19.1208,Montenegro,ME,Žabljak,admin,1937,1937
+Gusinje,42.5619,19.8339,Montenegro,ME,Gusinje,admin,1673,1673
+Zelenika,42.4515,18.5767,Montenegro,ME,Herceg Novi,,1431,1431
+Petrovac na Moru,42.2056,18.9425,Montenegro,ME,Budva,,1398,1398
+Podi,42.4636,18.5433,Montenegro,ME,Herceg Novi,,1358,1358
+Mahala,42.3506,19.2189,Montenegro,ME,Podgorica,,1346,1346
+Baošići,42.4429,18.6270,Montenegro,ME,Herceg Novi,,1346,1346
+Plužine,43.1500,18.8300,Montenegro,ME,Plužine,admin,1341,1341
+Loznica,43.0361,19.7569,Montenegro,ME,Bijelo Polje,,1296,1296
+Mataguži,42.3208,19.2703,Montenegro,ME,Podgorica,,1292,1292
+Goričani,42.3300,19.2117,Montenegro,ME,Podgorica,,1205,1205
+Ðenovići,42.4369,18.6019,Montenegro,ME,Herceg Novi,,1161,1161
+Meljine,42.4558,18.5619,Montenegro,ME,Herceg Novi,,1123,1123
+Andrijevica,42.7300,19.7900,Montenegro,ME,Andrijevica,admin,1073,1073
+Donji Kokoti,42.4000,19.1833,Montenegro,ME,Podgorica,,1073,1073
+Dobra Voda,42.0439,19.1432,Montenegro,ME,Bar,,1046,1046
+Balabani,42.3248,19.2385,Montenegro,ME,Podgorica,,1014,1014
+Vranj,42.3260,19.2974,Montenegro,ME,Tuzi,,1012,1012
+Kodre,41.9297,19.2389,Montenegro,ME,Ulcinj,,997,997
+Kumbor,42.4406,18.5858,Montenegro,ME,Herceg Novi,,925,925
+Bečići,42.2839,18.8692,Montenegro,ME,Budva,,895,895
+Srpska,42.3701,19.2172,Montenegro,ME,Podgorica,,880,880
+Bijelo Polje,42.3031,19.1966,Montenegro,ME,Podgorica,,823,823
+Prošćenje,42.9994,19.4936,Montenegro,ME,Mojkovac,,755,755
+Donja Lastva,42.4431,18.6886,Montenegro,ME,Tivat,,751,751
+Kuti,42.4613,18.5810,Montenegro,ME,Herceg Novi,,729,729
+Prijevor,42.2949,18.8079,Montenegro,ME,Budva,,713,713
+Botun,42.3826,19.1986,Montenegro,ME,Podgorica,,697,697
+Martinoviće,42.5774,19.8789,Montenegro,ME,Gusinje,,689,689
+Muo,42.4304,18.7583,Montenegro,ME,Kotor,,677,677
+Sukurić,42.3263,19.3211,Montenegro,ME,Tuzi,,661,661
+Vojno Selo,42.5792,19.9174,Montenegro,ME,Plav,,642,642
+Rasovo,43.0453,19.7773,Montenegro,ME,Bijelo Polje,,578,578
+Grbavci,42.3664,19.1884,Montenegro,ME,Podgorica,,575,575
+Pečurice,42.0310,19.1732,Montenegro,ME,Bar,,573,573
+Beri,42.4328,19.1849,Montenegro,ME,Podgorica,,556,556
+Ćurilac,42.5429,19.1213,Montenegro,ME,Danilovgrad,,548,548
+Sušćepan,42.4668,18.5097,Montenegro,ME,Herceg Novi,,544,544
+Pitoma Loza,42.5099,19.1550,Montenegro,ME,Danilovgrad,,529,529
+Radovići,42.3929,18.6702,Montenegro,ME,Tivat,,515,515
+Kosić,42.5212,19.1581,Montenegro,ME,Danilovgrad,,515,515
+Donji Mileš,42.3892,19.3264,Montenegro,ME,Tuzi,,512,512
+Dinoša,42.4130,19.3390,Montenegro,ME,Tuzi,,500,500
+Sustaš,42.1118,19.1192,Montenegro,ME,Bar,,498,498
+Berislavci,42.3027,19.2176,Montenegro,ME,Podgorica,,496,496
+Lajkovići,42.3669,19.2150,Montenegro,ME,Podgorica,,486,486
+Lagatori,42.9137,19.9884,Montenegro,ME,Petnjica,,482,482
+Vladni,42.3417,19.2865,Montenegro,ME,Tuzi,,474,474
+Šavnik,42.9500,19.1000,Montenegro,ME,Šavnik,admin,472,472
+Ðuraševići,42.3938,18.6895,Montenegro,ME,Tivat,,471,471
+Crnča,42.9386,19.8519,Montenegro,ME,Bijelo Polje,,466,466
+Farmaci,42.4120,19.1928,Montenegro,ME,Podgorica,,462,462
+Stijena,42.4558,19.2048,Montenegro,ME,Podgorica,,457,457
+Desni Meteh,42.6303,19.9949,Montenegro,ME,Plav,,452,452
+Slatina,42.7544,19.7728,Montenegro,ME,Andrijevica,,449,449
+Kavač,42.4104,18.7498,Montenegro,ME,Kotor,,443,443
+Bogajići,42.5838,19.9534,Montenegro,ME,Plav,,427,427
+Sasovići,42.4638,18.5701,Montenegro,ME,Herceg Novi,,422,422
+Klikovače,42.4999,19.1852,Montenegro,ME,Danilovgrad,,422,422
+Vuča,42.9312,20.2703,Montenegro,ME,Rožaje,,418,418
+Gornji Vukovci,42.3338,19.2013,Montenegro,ME,Podgorica,,416,416
+Kunje,42.0131,19.1832,Montenegro,ME,Ulcinj,,415,415
+Babin,42.9040,19.9034,Montenegro,ME,Berane,,413,413
+Sveti Stefan,42.2558,18.8911,Montenegro,ME,Budva,,411,411
+Grižice,42.9016,20.1400,Montenegro,ME,Rožaje,,409,409
+Gornja Jošica,42.4625,18.6719,Montenegro,ME,Kotor,,406,406
+Njegnjevo,43.0836,19.7842,Montenegro,ME,Bijelo Polje,,404,404
+Palež,43.1821,19.1409,Montenegro,ME,Žabljak,,404,404
+Zoganj,41.9489,19.2836,Montenegro,ME,Ulcinj,,397,397
+Radetina,42.8960,20.2571,Montenegro,ME,Rožaje,,394,394
+Donji Martinići,42.5391,19.1804,Montenegro,ME,Danilovgrad,,387,387
+Žari,43.0569,19.4747,Montenegro,ME,Bijelo Polje,,385,385
+Pistula,41.9420,19.2675,Montenegro,ME,Ulcinj,,384,384
+Velike Crnokrpe,42.9159,20.2347,Montenegro,ME,Rožaje,,379,379
+Boljanina,43.0378,19.7992,Montenegro,ME,Bijelo Polje,,379,379
+Dragovoljići,42.7728,19.0430,Montenegro,ME,Nikšić,,370,370
+Sukobin,42.0118,19.3625,Montenegro,ME,Ulcinj,,367,367
+Radmanci,42.9217,19.9659,Montenegro,ME,Petnjica,,365,365
+Podostrog,42.3002,18.8407,Montenegro,ME,Budva,,364,364
+Dacići,42.8087,20.1778,Montenegro,ME,Rožaje,,364,364
+Zagrađe,42.1453,19.0236,Montenegro,ME,Bar,,364,364
+Gornja Lovnica,42.9024,20.1077,Montenegro,ME,Rožaje,,361,361
+Rastiš,42.0477,19.3291,Montenegro,ME,Ulcinj,,358,358
+Bartula,42.0837,19.1368,Montenegro,ME,Bar,,355,355
+Goduša,42.9669,19.9397,Montenegro,ME,Bijelo Polje,,355,355
+Dobrakovo,43.1394,19.7744,Montenegro,ME,Bijelo Polje,,350,350
+Gornja Korita,43.0044,19.9597,Montenegro,ME,Bijelo Polje,,346,346
+Kruševo,42.5623,19.8651,Montenegro,ME,Gusinje,,340,340
+Prijelozi,42.9528,19.7911,Montenegro,ME,Bijelo Polje,,339,339
+Donji Stoliv,42.4724,18.7124,Montenegro,ME,Kotor,,336,336
+Morakovo,42.7166,19.1571,Montenegro,ME,Nikšić,,336,336
+Veliki Ostros,42.0783,19.3160,Montenegro,ME,Ulcinj,,332,332
+Obrov,43.0236,19.7431,Montenegro,ME,Bijelo Polje,,330,330
+Sutvara,42.3774,18.7669,Montenegro,ME,Kotor,,325,325
+Potkula,42.5680,19.1424,Montenegro,ME,Danilovgrad,,325,325
+Staro Selo,42.7188,19.1064,Montenegro,ME,Nikšić,,323,323
+Velje Brdo,42.4908,19.2183,Montenegro,ME,Podgorica,,319,319
+Bistrice,42.3057,19.1855,Montenegro,ME,Podgorica,,316,316
+Brezovik,42.8188,18.9279,Montenegro,ME,Nikšić,,312,312
+Luštica,42.3967,18.6019,Montenegro,ME,Herceg Novi,,311,311
+Pržno,42.2692,18.8942,Montenegro,ME,Budva,,310,310
+Majstorovina,42.9742,19.6917,Montenegro,ME,Bijelo Polje,,310,310
+Crljenice,43.3569,19.3922,Montenegro,ME,Pljevlja,,310,310
+Kosići,42.0258,19.2731,Montenegro,ME,Ulcinj,,306,306
+Zankovići,42.1446,19.0478,Montenegro,ME,Bar,,305,305
+Jastreb,42.5274,19.1360,Montenegro,ME,Danilovgrad,,303,303
+Štitari,42.9432,19.8375,Montenegro,ME,Berane,,303,303
+Skić,42.6067,19.9418,Montenegro,ME,Plav,,302,302
+Ðurići,42.4718,18.6806,Montenegro,ME,Kotor,,300,300
+Mitrovići,42.3644,19.2174,Montenegro,ME,Podgorica,,299,299
+Mašnica,42.6671,19.8865,Montenegro,ME,Andrijevica,,299,299
+Marsenića Rijeka,42.7816,19.8376,Montenegro,ME,Berane,,298,298
+Brajovići,42.5536,19.1506,Montenegro,ME,Danilovgrad,,296,296
+Martići,42.0919,19.2976,Montenegro,ME,Bar,,293,293
+Dobrinje,43.1514,19.7197,Montenegro,ME,Bijelo Polje,,293,293
+Kanje,43.1369,19.7542,Montenegro,ME,Bijelo Polje,,293,293
+Tucanje,42.9311,19.9316,Montenegro,ME,Petnjica,,289,289
+Orahovića,43.1131,19.7500,Montenegro,ME,Bijelo Polje,,282,282
+Pripčići,43.0033,19.7364,Montenegro,ME,Bijelo Polje,,282,282
+Unevina,43.1056,19.7694,Montenegro,ME,Bijelo Polje,,280,280
+Kaluđerac,42.1997,18.9655,Montenegro,ME,Budva,,279,279
+Rakića Kuće,42.3883,19.2801,Montenegro,ME,Tuzi,,279,279
+Orja Luka,42.5642,19.0793,Montenegro,ME,Danilovgrad,,279,279
+Liverovići,42.7417,19.0718,Montenegro,ME,Nikšić,,279,279
+Štitarica,42.9253,19.5428,Montenegro,ME,Mojkovac,,273,273
+Gračanica,42.6960,19.8458,Montenegro,ME,Andrijevica,,272,272
+Gornja Ržanica,42.6626,19.9161,Montenegro,ME,Plav,,269,269
+Šušunja,42.3201,19.2226,Montenegro,ME,Podgorica,,267,267
+Vuksanlekići,42.3373,19.3399,Montenegro,ME,Tuzi,,267,267
+Mojdež,42.4851,18.4907,Montenegro,ME,Herceg Novi,,264,264
+Donji Morinj,42.4892,18.6491,Montenegro,ME,Kotor,,261,261
+Potrk,43.0447,19.6144,Montenegro,ME,Bijelo Polje,,259,259
+Donji Orahovac,42.4905,18.7593,Montenegro,ME,Kotor,,257,257
+Ponari,42.3167,19.1813,Montenegro,ME,Podgorica,,256,256
+Lekovina,43.1519,19.6125,Montenegro,ME,Bijelo Polje,,256,256
+Kalušići,43.2414,19.0850,Montenegro,ME,Pljevlja,,256,256
+Savin Bor,42.9498,20.0441,Montenegro,ME,Petnjica,,255,255
+Srđevac,42.9544,19.8519,Montenegro,ME,Bijelo Polje,,255,255
+Pothum,42.3097,19.3386,Montenegro,ME,Tuzi,,253,253
+Vijenac,43.3885,19.0952,Montenegro,ME,Pljevlja,,246,246
+Murino,42.6619,19.8857,Montenegro,ME,Plav,,245,245
+Otilovići,43.3433,19.4230,Montenegro,ME,Pljevlja,,245,245
+Tomaševo,43.0578,19.6364,Montenegro,ME,Bijelo Polje,,243,243
+Daljam,42.4866,19.1793,Montenegro,ME,Podgorica,,241,241
+Kruševice,42.5346,18.4944,Montenegro,ME,Herceg Novi,,240,240
+Fundina,42.4438,19.3643,Montenegro,ME,Podgorica,,237,237
+Šipačno,42.8708,18.9431,Montenegro,ME,Nikšić,,237,237
+Paučina,42.9320,20.1537,Montenegro,ME,Rožaje,,236,236
+Bobulja,42.5536,19.1636,Montenegro,ME,Danilovgrad,,235,235
+Kotrabudan,42.3180,19.3271,Montenegro,ME,Tuzi,,233,233
+Velje Selo,42.0330,19.1983,Montenegro,ME,Bar,,233,233
+Bratica,41.9513,19.1950,Montenegro,ME,Ulcinj,,233,233
+Boreti,42.2837,18.8630,Montenegro,ME,Budva,,231,231
+Gornja Brvenica,43.3786,19.2353,Montenegro,ME,Pljevlja,,231,231
+Stevanovac,42.9903,19.5465,Montenegro,ME,Mojkovac,,230,230
+Kolonza,41.9406,19.2409,Montenegro,ME,Ulcinj,,228,228
+Ubli,42.4906,19.3958,Montenegro,ME,Podgorica,,227,227
+Zagrađe,42.8710,19.9351,Montenegro,ME,Berane,,226,226
+Vrševo,42.9444,19.9597,Montenegro,ME,Petnjica,,226,226
+Godočelje,42.9159,19.9401,Montenegro,ME,Petnjica,,225,225
+Ulotina,42.6833,19.8459,Montenegro,ME,Andrijevica,,225,225
+Trebesinj,42.4723,18.5239,Montenegro,ME,Herceg Novi,,224,224
+Žiljak,43.0747,19.8219,Montenegro,ME,Bijelo Polje,,222,222
+Bjeloševina,42.7204,19.1375,Montenegro,ME,Nikšić,,217,217
+Gošići,42.3975,18.6624,Montenegro,ME,Tivat,,212,212
+Stanjevića Rupa,42.5386,19.2196,Montenegro,ME,Danilovgrad,,211,211
+Zbljevo,43.3231,19.3039,Montenegro,ME,Pljevlja,,209,209
+Vranjina,42.2783,19.1347,Montenegro,ME,Podgorica,,209,209

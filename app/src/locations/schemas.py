@@ -87,3 +87,15 @@ class RouteSchema(BaseModel):
             prev_departure = departure
 
         return values
+
+
+class Coordinates(BaseModel):
+    type: str = "Point"
+    coordinates: list[float]
+
+
+class CitySchema(BaseModel):
+    name: str
+    alias: str
+    country: str
+    coordinates: Coordinates
