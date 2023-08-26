@@ -14,7 +14,6 @@ timezone = pytz.timezone('Europe/Belgrade')
 router = APIRouter(
     prefix="/api/v1",
 )
-iso_datetime_regex = r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[+-]\d{2}:\d{2})?$"
 
 
 @router.get('/find-routes/')
@@ -98,12 +97,3 @@ async def get_available_day(client=Depends(get_async_client)):
     async for item in collection.find({'fetched': True}):
         dates.append(item['date'])
     return dates
-
-
-@router.get("/city/search/")
-async def search_station(query: str, client=Depends(get_search_client)):
-    index = get_index("cities", client)
-    return index.search(query, {
-        'limit': 5,
-        'attributesToSearchOn': ['name', 'name1', 'names']
-    })
