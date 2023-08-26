@@ -60,7 +60,7 @@ def read_cities(file) -> List[CitySchema]:
         return res
 
 
-async def index_cities():
+async def create_cities_search_index():
     client = await get_async_client()
     db = client[MONGO_DB]
     stations = db["cities"]

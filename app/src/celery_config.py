@@ -3,8 +3,8 @@ from config import MONGO_HOST, MONGO_PASS, MONGO_PORT, MONGO_USER
 from celery.schedules import crontab
 
 app = Celery(
-    'tasks',  # Name of the app
-    broker='redis://redis:6379/0',  # URL to the Redis broker
+    'tasks',
+    broker='redis://redis:6379/0',
     include=["scheduled.parsing"],
     backend='celery.backends.mongodb.MongoBackend'
 )
@@ -22,5 +22,6 @@ app.conf.beat_schedule = {
     'date_table': {
         'task': 'scheduled.parsing.update_date_table',
         'schedule': crontab(minute=0, hour=1)
-    }
+    },
+    # todo: mongo stations index
 }

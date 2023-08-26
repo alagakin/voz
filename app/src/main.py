@@ -1,10 +1,11 @@
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 from config import FRONTEND_ORIGIN
-from locations.cities import load_cities_to_db, index_cities
+from locations.cities import load_cities_to_db, create_cities_search_index
 from locations.datetable import fill_date_table
-from locations.stations import index_stations, sync_stations
-from api.routes import router as api_router
+from locations.stations import create_stations_search_index, sync_stations, create_stations_index
+from api.router import router as api_router
+from routes.router import router as routes_router
 
 app = FastAPI()
 origins = [
@@ -19,12 +20,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 app.include_router(api_router)
+app.include_router(routes_router)
 
 
 @app.on_event("startup")
 async def startup_event():
     await sync_stations()
-    await index_stations()
+    await create_stations_search_index()
     fill_date_table()
     await load_cities_to_db()
-    await index_cities()
+    await create_cities_search_index()
+    await create_stations_index()

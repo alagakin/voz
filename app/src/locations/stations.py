@@ -35,7 +35,7 @@ async def read_stations():
     return contents
 
 
-async def index_stations():
+async def create_stations_search_index():
     client = await get_async_client()
     db = client[MONGO_DB]
     stations = db["stations"]
@@ -54,3 +54,9 @@ def make_document_for_index(station):
         'name1': latin_to_cyrillic(station["name"]),
         'names': simplify_latin_serbian(station["name"])
     }
+
+
+async def create_stations_index():
+    client = await get_async_client()
+    db = client[MONGO_DB]
+    await db.stations.create_index([("coordinates", "2dsphere")])
