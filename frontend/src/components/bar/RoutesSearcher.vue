@@ -1,23 +1,22 @@
 <template>
     <div :class="{'open': isOpen}"
-         class="sidebar fixed top-0 left-0 bg-white p-4 shadow-xl h-full w-1/5 border-gray-200 border-r-2"
+         class="sidebar fixed top-0 left-0 bg-white p-4 shadow-xl h-full w-1/5 "
          style="z-index: 10000000;">
 
         <SearchInputs @setRoutes="(routes) => $emit('setRoutes', routes)" />
-
-
-            <CloseButton :isOpen="isOpen" @toggle="toggle"/>
+        <CloseButton :isOpen="isOpen" @toggle="toggle"/>
+        <LoaderPlug v-if="isLoading"/>
     </div>
-
 </template>
 <script>
 
 import CloseButton from "@/components/bar/CloseButton.vue";
 import SearchInputs from "@/components/bar/SearchInputs.vue";
+import LoaderPlug from "@/components/bar/LoaderPlug.vue";
 
 export default {
-    name: "SideBar",
-    components: {SearchInputs, CloseButton},
+    name: "RoutesSearcher",
+    components: {LoaderPlug, SearchInputs, CloseButton},
     methods: {
         toggle(){
             this.isOpen = !this.isOpen
@@ -25,7 +24,8 @@ export default {
     },
     data() {
         return {
-            isOpen: true
+            isOpen: true,
+            isLoading: false
         }
     },
     emits: ['setRoutes']
@@ -33,7 +33,7 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
 
 .sidebar {
     width: 20%;
