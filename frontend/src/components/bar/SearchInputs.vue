@@ -40,6 +40,7 @@
             :class="{'bg-gray-400': !searchEnabled}">
         Search
     </button>
+
 </template>
 <script>
 import axios from "axios";

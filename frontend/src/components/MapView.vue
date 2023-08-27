@@ -1,6 +1,5 @@
 <template>
-<!--    <SearchInput @setRoutes="setRoutes"/>-->
-    <SideBar @setRoutes="setRoutes"/>
+    <RoutesSearcher @setRoutes="setRoutes"/>
     <RouteInfo :routes="routes"/>
     <div style="width: 100%; height: 100vh;">
         <l-map ref="map" v-model:zoom="zoom" :center="[44.787197, 20.457273]" :maxBounds="maxBounds" :maxZoom="13" :minZoom="8">
@@ -17,17 +16,15 @@
 <script>
 import "leaflet/dist/leaflet.css";
 import {LMap, LTileLayer} from "vue3-leaflet";
-// import SearchInput from "@/components/SearchInput.vue";
 import RouteView from "@/components/RouteView.vue";
 import RouteInfo from "@/components/RouteInfo.vue";
-import SideBar from "@/components/bar/SideBar.vue";
+import RoutesSearcher from "@/components/bar/RoutesSearcher.vue";
 
 export default {
     components: {
-        SideBar,
+        RoutesSearcher,
         RouteInfo,
         RouteView,
-        // SearchInput,
         LMap,
         LTileLayer,
     },
