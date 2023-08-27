@@ -11,7 +11,7 @@ import '@vuepic/vue-datepicker/dist/main.css'
 import axios from "axios";
 
 export default {
-    name: "Calendar",
+    name: "CalendarView",
     components: {VueDatePicker},
     data() {
         return {

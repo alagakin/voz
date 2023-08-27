@@ -30,7 +30,7 @@
             </div>
 
             <div class="relative">
-                <Calendar @selectDate="selectDate"/>
+                <CalendarView @selectDate="selectDate"/>
             </div>
 
             <button @click="search" class="px-4 py-2 bg-blue-500 text-white rounded"
@@ -43,12 +43,12 @@
 
 <script>
 import axios from "axios";
-import Calendar from "@/components/Calendar.vue";
+import CalendarView from "@/components/CalendarView.vue";
 import formatDateToYMD from "../utils/Dates"
 
 export default {
     name: "SearchInput",
-    components: {Calendar},
+    components: {CalendarView},
     methods: {
         getSuggestions(inputField) {
             const query = inputField === 'from' ? this.station_from.display_name : this.station_to.display_name;

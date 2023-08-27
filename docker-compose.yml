@@ -73,7 +73,7 @@ services:
     env_file:
       - frontend/src/.env
     ports:
-      - "50000:80"
+      - "50000:50000"
     volumes:
       - ./frontend:/app
     restart: always
