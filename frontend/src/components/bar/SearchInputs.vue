@@ -1,46 +1,47 @@
 <template>
-    <div class="relative">
-        <input v-model="station_from.display_name" placeholder="Station from"
-               class="p-2 border rounded w-full focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
-               @input="getSuggestions('from')"/>
+    <div>
+        <div class="relative">
+            <input v-model="station_from.display_name" placeholder="Station from"
+                   class="p-2 border rounded w-full focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
+                   @input="getSuggestions('from')"/>
 
-        <div v-if="suggestions_from.length > 0"
-             class="absolute mt-2 w-full bg-white border border-gray-300 rounded shadow-md cursor-pointer"
-             style="z-index: 100000000;">
-            <ul>
-                <li v-for="suggestion in suggestions_from" :key="suggestion.id"
-                    @click="selectSuggestion('from', suggestion)">
-                    {{ suggestion['display_name'] }}
-                </li>
-            </ul>
+            <div v-if="suggestions_from.length > 0"
+                 class="absolute mt-2 w-full bg-white border border-gray-300 rounded shadow-md cursor-pointer"
+                 style="z-index: 100000000;">
+                <ul>
+                    <li v-for="suggestion in suggestions_from" :key="suggestion.id"
+                        @click="selectSuggestion('from', suggestion)">
+                        {{ suggestion['display_name'] }}
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <div class="relative mt-3">
-        <input v-model="station_to.display_name" placeholder="Station to"
-               class="p-2 border rounded w-full focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
-               @input="getSuggestions('to')"/>
-        <div v-if="suggestions_to.length > 0"
-             class="absolute mt-2 w-full bg-white border border-gray-300 rounded shadow-md cursor-pointer"
-             style="z-index: 100000000;">
-            <ul>
-                <li v-for="suggestion in suggestions_to" :key="suggestion.id"
-                    @click="selectSuggestion('to', suggestion)">
-                    {{ suggestion['display_name'] }}
-                </li>
-            </ul>
+        <div class="relative mt-3">
+            <input v-model="station_to.display_name" placeholder="Station to"
+                   class="p-2 border rounded w-full focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
+                   @input="getSuggestions('to')"/>
+            <div v-if="suggestions_to.length > 0"
+                 class="absolute mt-2 w-full bg-white border border-gray-300 rounded shadow-md cursor-pointer"
+                 style="z-index: 100000000;">
+                <ul>
+                    <li v-for="suggestion in suggestions_to" :key="suggestion.id"
+                        @click="selectSuggestion('to', suggestion)">
+                        {{ suggestion['display_name'] }}
+                    </li>
+                </ul>
+            </div>
         </div>
+
+        <div class="relative mt-3">
+            <CalendarView @selectDate="selectDate"/>
+        </div>
+
+        <button @click="search" class="mt-6 px-4 py-2 bg-blue-500 text-white rounded"
+                :class="{'bg-gray-400': !searchEnabled}">
+            Search
+        </button>
     </div>
-
-    <div class="relative mt-3">
-        <CalendarView @selectDate="selectDate"/>
-    </div>
-
-    <button @click="search" class="mt-6 px-4 py-2 bg-blue-500 text-white rounded"
-            :class="{'bg-gray-400': !searchEnabled}">
-        Search
-    </button>
-
 </template>
 <script>
 import axios from "axios";
