@@ -47,4 +47,9 @@ export default {
 .dp__action_select {
     background: var(--dp-primary-color) !important;
 }
+
+:root {
+    --dp-input-padding: 8px 40px 8px 12px!important; /*Padding in the input*/
+
+}
 </style>

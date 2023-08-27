@@ -2,19 +2,22 @@
     <div :class="{'open': isOpen}"
          class="sidebar fixed top-0 left-0 bg-white p-4 shadow-xl h-full w-1/5 border-gray-200 border-r-2"
          style="z-index: 10000000;">
-        <div class="flex gap-4 relative w-full h-full">
+
+        <SearchInputs @setRoutes="(routes) => $emit('setRoutes', routes)" />
+
+
             <CloseButton :isOpen="isOpen" @toggle="toggle"/>
-        </div>
     </div>
 
 </template>
 <script>
 
 import CloseButton from "@/components/bar/CloseButton.vue";
+import SearchInputs from "@/components/bar/SearchInputs.vue";
 
 export default {
     name: "SideBar",
-    components: {CloseButton},
+    components: {SearchInputs, CloseButton},
     methods: {
         toggle(){
             this.isOpen = !this.isOpen
@@ -24,7 +27,8 @@ export default {
         return {
             isOpen: true
         }
-    }
+    },
+    emits: ['setRoutes']
 }
 </script>
 

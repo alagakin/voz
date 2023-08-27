@@ -1,6 +1,6 @@
 <template>
 <!--    <SearchInput @setRoutes="setRoutes"/>-->
-    <SideBar />
+    <SideBar @setRoutes="setRoutes"/>
     <RouteInfo :routes="routes"/>
     <div style="width: 100%; height: 100vh;">
         <l-map ref="map" v-model:zoom="zoom" :center="[44.787197, 20.457273]" :maxBounds="maxBounds" :maxZoom="13" :minZoom="8">
