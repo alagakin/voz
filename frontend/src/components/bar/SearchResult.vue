@@ -1,5 +1,5 @@
 <template>
-    <div class="p-2"
+    <div class="h-full max-h-fit overflow-scroll overflow-x-hidden"
          v-show="routes.length">
         <RouteInfoItem v-for="route in routes" :route="route" v-bind:key="route"/>
     </div>
