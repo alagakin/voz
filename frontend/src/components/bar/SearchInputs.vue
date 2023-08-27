@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="p-4">
         <div class="relative">
             <input v-model="station_from.display_name" placeholder="Station from"
                    class="p-2 border rounded w-full focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"

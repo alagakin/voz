@@ -1,48 +1,27 @@
 <template>
-    <div>
-        <div class="bg-white p-2 rounded-lg mb-2 text-xl flex justify-between pr-4 pl-4 cursor-pointer"
-             @click="collapse()">
-            <div class="flex">
-                <div>
-                    <span class="mr-4" v-text="firstStation"></span>
-                    <font-awesome-icon :icon="['fas', 'arrow-right']" class="mr-4"/>
-                    <span v-text="lastStation"></span>
-                </div>
-                <span class="mr-2 ml-2">|</span>
+    <div class="bg-white p-2 rounded-lg mb-2 text-sm flex justify-between pr-4 pl-4 cursor-pointer border-b-2"
+         @click="collapse()">
+        <div class="flex flex-col w-full">
+            <div class="">
+                <span class="mr-4" v-text="firstStation"></span>
+                <font-awesome-icon :icon="['fas', 'arrow-right']" class="mr-4"/>
+                <span v-text="lastStation"></span>
+            </div>
+            <div class="flex justify-between">
                 <div>
                     <font-awesome-icon :icon="['far', 'clock']" class="mr-2"/>
                     <span v-text="totalTime"></span>
                 </div>
-            </div>
-            <div>
-                <span><font-awesome-icon :icon="['fas', 'chevron-up']" :class="{'rotate-180': collapsed}"/></span>
-            </div>
-        </div>
-        <div class="bg-white p-2 rounded-lg mb-2 text-xl block-container" :class="{'hidden': collapsed}">
-            <div class="mb-2 pl-4">
-                <p>Departure: {{ format(start, 'd.MM.Y HH:mm') }}</p>
-                <p>Arrival: {{ format(end, 'd.MM.Y HH:mm') }}</p>
-            </div>
-            <hr>
-            <div class="mt-2 pl-4 max-h-48 overflow-scroll overflow-x-hidden">
-
-                <div class="flex items-center mb-2" v-for="(station, key) in route['stations']"
-                     v-bind:key="station['id']">
-                    <div class="mr-2" v-text="station['name']"></div>
-                    <template v-if="station['departure']">
-                        <span class="text-gray-600">|</span>
-                        <span class="ml-2 mr-2 text-gray-600" v-text="format(station['departure'], 'HH:mm')"></span>
-                        <font-awesome-icon :icon="['fas', 'arrow-right']" class="mr-4 text-gray-600"
-                                           v-if="key < (route['stations'].length - 1)"/>
-                    </template>
+                <div>
+                    <a href="" class="text-blue-500">-></a>
                 </div>
+
             </div>
         </div>
-
     </div>
 </template>
 <script setup>
-import {format} from "date-fns";
+// import {format} from "date-fns";
 </script>
 <script>
 
@@ -66,20 +45,31 @@ export default {
     },
     computed: {
         start() {
-            return this.route.stations[0]['arrival']
+            return this.route.stations[0]['departure']
         },
         end() {
-            return this.route.stations[this.route.stations.length - 1]['departure']
+            return this.route.stations[this.route.stations.length - 1]['arrival']
         },
         totalTime() {
-            return format(this.end - this.start, "H 'h' m 'min'")
+            const timeDifference = this.end - this.start;
+            const hours = Math.floor(timeDifference / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            if (hours === 0 && minutes === 0) {
+                return '0m'; // If both hours and minutes are zero
+            }
+
+            const formattedHours = hours > 0 ? `${hours.toString().padStart(2, '0')}h` : '';
+            const formattedMinutes = minutes > 0 ? `${minutes.toString().padStart(2, '0')}m` : '';
+
+            return `${formattedHours} ${formattedMinutes}`.trim();
         },
         firstStation() {
             return this.route.stations[0]['name']
         },
         lastStation() {
             return this.route.stations[this.route.stations.length - 1]['name']
-        }
+        },
+
     },
 }
 

@@ -1,12 +1,12 @@
 <template>
     <div :class="{'open': isOpen}"
-         class="sidebar fixed top-0 left-0 bg-white p-4 shadow-xl h-full w-1/5 max-h-screen"
+         class="sidebar fixed top-0 left-0 bg-white shadow-xl h-full w-1/5 max-h-screen"
          style="z-index: 10000000;">
 
         <div class="flex flex-col h-full">
             <SearchInputs @setRoutes="setRoutes"/>
 
-            <div class="border mt-2 h-full pb-2 max-h-fit">
+            <div class="mt-2 h-full pb-2 max-h-fit">
                 <SearchResult :routes="routes"/>
             </div>
         </div>
