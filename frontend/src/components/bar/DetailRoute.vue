@@ -23,13 +23,10 @@ export default {
     },
     methods: {
         willVisit(stationId) {
-            console.log(stationId)
-            console.log(this.stationsToVisitIds)
             return this.stationsToVisitIds.includes(stationId)
         },
         calcStationsToVisitIds(route) {
             this.stationsToVisitIds = []
-            console.log(route)
             if (!route) {
                 return
             }
