@@ -54,19 +54,38 @@ export default {
             this.isOpen = !this.isOpen
         },
         setRoutes(routes) {
-            this.stations = []
             if (!routes.length) {
                 alert('Not found')
             }
-            //todo function for formatting
+            //date-time-formatting
             routes.forEach(route => {
                 route.stations.forEach(station => {
                     station.arrival = new Date(station.arrival)
                     station.departure = new Date(station.departure)
                 })
+                route["stations_from"].forEach(station => {
+                    station.arrival = new Date(station.arrival)
+                    station.departure = new Date(station.departure)
+                })
+                route["stations_to"].forEach(station => {
+                    station.arrival = new Date(station.arrival)
+                    station.departure = new Date(station.departure)
+                })
             })
-
-            this.routes = routes
+            let all_routes = []
+            routes.forEach(route => {
+                route["stations_from"].forEach(station_from => {
+                    route["stations_to"].forEach(station_to => {
+                        let new_route = {...route}
+                        delete new_route["stations_from"]
+                        delete new_route["stations_to"]
+                        new_route["from"] = station_from
+                        new_route["to"] = station_to
+                        all_routes.push(new_route)
+                    })
+                })
+            })
+            this.routes = all_routes
             let route = routes[0]
 
             this.$emit('showRouteOnMap', route)

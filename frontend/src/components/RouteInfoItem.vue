@@ -42,10 +42,10 @@ export default {
     },
     computed: {
         start() {
-            return this.route.stations[0]['departure']
+            return this.route.from['departure']
         },
         end() {
-            return this.route.stations[this.route.stations.length - 1]['arrival']
+            return this.route.to['arrival']
         },
         totalTime() {
             const timeDifference = this.end - this.start;
@@ -61,10 +61,10 @@ export default {
             return `${formattedHours} ${formattedMinutes}`.trim();
         },
         firstStation() {
-            return formatName(this.route.stations[0]['name'])
+            return formatName(this.route.from['name'])
         },
         lastStation() {
-            return formatName(this.route.stations[this.route.stations.length - 1]['name'])
+            return formatName(this.route.to['name'])
         },
 
     },
