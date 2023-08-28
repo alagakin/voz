@@ -38,6 +38,12 @@ export default {
             this.query_name = suggestion['display_name']
             this.$emit('setLocation', suggestion['type'], suggestion['id'])
             this.suggestions = []
+        },
+        setQuery(value){
+            this.query_name = value
+        },
+        getQuery() {
+            return this.query_name
         }
     },
     data() {

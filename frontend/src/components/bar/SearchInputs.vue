@@ -1,14 +1,14 @@
 <template>
     <div class="relative">
-        <LocationInput @setLocation="setLocationFrom"/>
+        <LocationInput ref="from" @setLocation="setLocationFrom"/>
     </div>
     <div class="mt-2 flex justify-center">
-        <span class="cursor-pointer" @click="() => $emit('reverse')">
-            <font-awesome-icon :icon="['fas', 'rotate']" style="color: #5e6064;" size="xl"/>
+        <span class="cursor-pointer" @click="reverse">
+            <font-awesome-icon :icon="['fas', 'rotate']" :spin-pulse="reverseSpin" style="color: #5e6064;" size="xl"/>
         </span>
     </div>
     <div class="relative mt-3">
-        <LocationInput @setLocation="setLocationTo"/>
+        <LocationInput ref="to" @setLocation="setLocationTo"/>
     </div>
 
     <div class="relative mt-3">
@@ -24,6 +24,16 @@ export default {
     name: "SearchInputs",
     components: {LocationInput, CalendarView},
     methods: {
+        reverse() {
+            let temp = this.$refs.from.getQuery()
+            this.$refs.from.setQuery(this.$refs.to.getQuery())
+            this.$refs.to.setQuery(temp)
+            this.reverseSpin = true
+            setTimeout(() => {
+                this.reverseSpin = false
+            }, 500)
+            this.$emit('reverse')
+        },
         setLocationFrom(type, id) {
             let from = {
                 id: id,
@@ -61,7 +71,8 @@ export default {
         return {
             date: null,
             from: {},
-            to: {}
+            to: {},
+            reverseSpin: false
         };
 
     },
