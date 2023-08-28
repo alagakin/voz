@@ -2,9 +2,16 @@
     <div :class="{'open': isOpen}"
          class="sidebar fixed top-0 left-0 bg-white shadow-xl h-full w-1/5 max-h-screen"
          style="z-index: 10000000;">
-
         <div class="flex flex-col h-full">
-            <SearchInputs @setRoutes="setRoutes"/>
+
+            <div class="p-4">
+                <SearchInputs @setRoutes="setRoutes" @set-date="setDate" @set-request-param="setRequestParam"
+                              :request="request"/>
+                <button @click="search" class="mt-6 px-4 py-2 bg-blue-500 text-white rounded"
+                        :class="{'bg-gray-400': !isSearchEnabled}">
+                    Search
+                </button>
+            </div>
 
             <div class="mt-2 pb-2 max-h-fit overflow-y-auto">
                 <SearchResult :routes="routes"/>
@@ -21,11 +28,28 @@ import CloseButton from "@/components/bar/CloseButton.vue";
 import SearchInputs from "@/components/bar/SearchInputs.vue";
 import LoaderPlug from "@/components/bar/LoaderPlug.vue";
 import SearchResult from "@/components/bar/SearchResult.vue";
+import axios from "axios";
 
 export default {
     name: "RoutesSearcher",
     components: {SearchResult, LoaderPlug, SearchInputs, CloseButton},
     methods: {
+        setDate(date) {
+            this.request.date = date
+        },
+        setRequestParam(param) {
+            if (param.direction === 'from') {
+                this.request.from = {
+                    id: param.id,
+                    type: param.type
+                }
+            } else {
+                this.request.to = {
+                    id: param.id,
+                    type: param.type
+                }
+            }
+        },
         toggle() {
             this.isOpen = !this.isOpen
         },
@@ -46,10 +70,44 @@ export default {
             let route = routes[0]
 
             this.$emit('showRouteOnMap', route)
+        },
+        search() {
+            if (!this.isSearchEnabled) {
+                return
+            }
+            let params = {
+                data: this.date
+            }
+            if (this.request.from.type === 'station') {
+                params['station_from_id'] = this.request.from.id
+            }
+            if (this.request.to.type === 'station') {
+                params['station_to_id'] = this.request.to.id
+            }
+            this.isLoading = true
+            axios.get(process.env.VUE_APP_BACKEND_HOST + "/api/v1/routes/", {params})
+                .then(response => {
+                    this.setRoutes(response.data)
+                    this.isLoading = false
+                })
+                .catch(error => {
+                    console.error("Error fetching data:", error);
+                    this.isLoading = false
+                });
+        }
+    },
+    computed: {
+        isSearchEnabled() {
+            return true
         }
     },
     data() {
         return {
+            request: {
+                date: null,
+                from: {},
+                to: {}
+            },
             isOpen: true,
             isLoading: false,
             routes: [],
@@ -70,11 +128,5 @@ export default {
 
 .sidebar.open {
     transform: translateX(0);
-}
-
-.content {
-    flex: 1;
-    background-color: #ffffff;
-    padding: 20px;
 }
 </style>
