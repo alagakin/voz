@@ -6,10 +6,6 @@
             <div class="p-4">
                 <SearchInputs @setRoutes="setRoutes" @set-date="setDate" @set-request-param="setRequestParam"
                               :request="request" @reverse="reverse"/>
-                <button @click="search" class="mt-6 px-4 py-2 bg-blue-500 text-white rounded"
-                        :class="{'bg-gray-400': !isSearchEnabled}">
-                    Search
-                </button>
             </div>
             <SearchResult ref="result" :routes="routes" @select-route="(route) => $emit('selectRoute', route)"/>
 
@@ -109,7 +105,7 @@ export default {
                 return
             }
             let params = {
-                data: this.date
+                date: this.request.date
             }
             if (this.request.from.type === 'station') {
                 params['station_from_id'] = this.request.from.id
@@ -141,7 +137,17 @@ export default {
     },
     computed: {
         isSearchEnabled() {
-            return true
+            return this.request.from.id && this.request.to.id && this.request.date
+        }
+    },
+    watch: {
+        request: {
+            deep: true,
+            handler() {
+                if (this.isSearchEnabled) {
+                    this.search()
+                }
+            }
         }
     },
     data() {
