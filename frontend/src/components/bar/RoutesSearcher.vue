@@ -82,11 +82,26 @@ export default {
                     })
                 })
             })
-            this.routes = all_routes
+            this.routes = this.sortRoutes(all_routes)
             let route = this.routes[0]
             this.$emit('selectRoute', route)
             this.$refs.result.selectRoute(0)
 
+        },
+        sortRoutes(routes) {
+            let available_routes = []
+            let not_available_routes = []
+            let now = new Date()
+            routes = routes.sort((a, b) => a.from.departure - b.from.departure)
+            routes.forEach((route) => {
+                if (route.from.departure > now) {
+                    available_routes.push(route)
+                } else {
+                    route['not_available'] = true
+                    not_available_routes.push(route)
+                }
+            })
+            return available_routes.concat(not_available_routes)
         },
         search() {
             if (!this.isSearchEnabled) {

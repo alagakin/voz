@@ -1,7 +1,7 @@
 <template>
     <div class="bg-white p-2 rounded-lg mb-2 text-sm flex justify-between pr-4 pl-4 cursor-pointer border-b-2"
          @click="select">
-        <div class="flex flex-col w-full pl-2" :class="{'border-blue-500': selected, 'border-l-4': selected}">
+        <div class="flex flex-col w-full pl-2" :class="{'border-blue-500': selected, 'border-l-4': selected, 'text-gray-400': route['not_available']}">
             <div class="">
                 <span class="mr-4" v-text="firstStationName"></span>
                 <font-awesome-icon :icon="['fas', 'arrow-right']" class="mr-4"/>
@@ -15,7 +15,7 @@
                     <font-awesome-icon :icon="['far', 'clock']" class="mr-2"/>
                     <span v-text="totalTime"></span>
                 </div>
-                <div>
+                <div v-show="!route['not_available']">
                     <span @click="showMore(route)" class="text-blue-500 hover:underline">more</span>
                 </div>
             </div>
