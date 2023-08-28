@@ -3,16 +3,14 @@
          class="sidebar fixed top-0 left-0 bg-white shadow-xl h-full w-1/5 max-h-screen"
          style="z-index: 10000000;">
         <div class="flex flex-col h-full">
-
             <div class="p-4">
                 <SearchInputs @setRoutes="setRoutes" @set-date="setDate" @set-request-param="setRequestParam"
-                              :request="request"/>
+                              :request="request" @reverse="reverse"/>
                 <button @click="search" class="mt-6 px-4 py-2 bg-blue-500 text-white rounded"
                         :class="{'bg-gray-400': !isSearchEnabled}">
                     Search
                 </button>
             </div>
-
             <SearchResult ref="result" :routes="routes" @select-route="(route) => $emit('selectRoute', route)"/>
 
         </div>
@@ -117,6 +115,12 @@ export default {
                     console.error("Error fetching data:", error);
                     this.isLoading = false
                 });
+        },
+        reverse() {
+            let temp = this.request.from
+            this.request.from = this.request.to
+            this.request.to = temp
+            this.search()
         }
     },
     computed: {

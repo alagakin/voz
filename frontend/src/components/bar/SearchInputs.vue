@@ -2,7 +2,11 @@
     <div class="relative">
         <LocationInput @setLocation="setLocationFrom"/>
     </div>
-
+    <div class="mt-2 flex justify-center">
+        <span class="cursor-pointer" @click="() => $emit('reverse')">
+            <font-awesome-icon :icon="['fas', 'rotate']" style="color: #5e6064;" size="xl"/>
+        </span>
+    </div>
     <div class="relative mt-3">
         <LocationInput @setLocation="setLocationTo"/>
     </div>
@@ -61,6 +65,6 @@ export default {
         };
 
     },
-    emits: ['setRoutes', 'setRequestParam', 'setDate']
+    emits: ["setRoutes", "setRequestParam", "setDate", "reverse"]
 }
 </script>
