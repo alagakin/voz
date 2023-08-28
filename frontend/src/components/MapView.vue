@@ -1,7 +1,7 @@
 <template>
     <RoutesSearcher @selectRoute="showRouteOnMap"/>
     <div style="width: 100%; height: 100vh;">
-        <l-map ref="map" v-model:zoom="zoom" :center="[44.787197, 20.457273]" :maxBounds="maxBounds" :maxZoom="13"
+        <l-map ref="map" v-model:zoom="zoom" :center="[44.787197, 20.457273]" :maxBounds="maxBounds" :maxZoom="20"
                :minZoom="8">
             <l-tile-layer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
