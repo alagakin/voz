@@ -1,5 +1,5 @@
 <template>
-    <input v-model="query_name" placeholder="Station from"
+    <input v-model="query_name" :placeholder="placeholder"
                    class="p-2 border rounded w-full focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
                    @input="getSuggestions()"/>
 
@@ -20,6 +20,9 @@ import axios from "axios";
 
 export default {
     name: "LocationInput",
+    props: {
+        placeholder: String
+    },
     methods: {
         getSuggestions() {
             if (this.query_name.length >= 2) {
