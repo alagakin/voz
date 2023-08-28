@@ -1,7 +1,7 @@
 <template>
     <div class="bg-white p-2 rounded-lg mb-2 text-sm flex justify-between pr-4 pl-4 cursor-pointer border-b-2"
-         @click="collapse()">
-        <div class="flex flex-col w-full">
+         @click="select">
+        <div class="flex flex-col w-full pl-2" :class="{'border-blue-500': selected, 'border-l-4': selected}">
             <div class="">
                 <span class="mr-4" v-text="firstStation"></span>
                 <font-awesome-icon :icon="['fas', 'arrow-right']" class="mr-4"/>
@@ -22,6 +22,7 @@
 </template>
 <script>
 import formatName from "../utils/Text"
+
 export default {
     components: {},
     props: {
@@ -32,42 +33,46 @@ export default {
     },
     data() {
         return {
-            collapsed: true
+            selected: false
         }
     },
     methods: {
-        collapse() {
-            this.collapsed = !this.collapsed
+        select() {
+            this.$emit("unselectAll")
+            this.$emit("selectRoute", this.route)
+            this.selected = true
+        },
+        unselect() {
+            this.selected = false
         }
     },
     computed: {
         start() {
-            return this.route.from['departure']
+            return this.route.from["departure"]
         },
         end() {
-            return this.route.to['arrival']
+            return this.route.to["arrival"]
         },
         totalTime() {
             const timeDifference = this.end - this.start;
             const hours = Math.floor(timeDifference / (1000 * 60 * 60));
             const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
             if (hours === 0 && minutes === 0) {
-                return '0m'; // If both hours and minutes are zero
+                return '0m';
             }
-
             const formattedHours = hours > 0 ? `${hours.toString().padStart(2, '0')}h` : '';
             const formattedMinutes = minutes > 0 ? `${minutes.toString().padStart(2, '0')}m` : '';
 
             return `${formattedHours} ${formattedMinutes}`.trim();
         },
         firstStation() {
-            return formatName(this.route.from['name'])
+            return formatName(this.route.from["name"])
         },
         lastStation() {
-            return formatName(this.route.to['name'])
+            return formatName(this.route.to["name"])
         },
-
     },
+    emits: ["unselectAll", "selectRoute"]
 }
 
 </script>

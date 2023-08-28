@@ -14,7 +14,7 @@
             </div>
 
             <div class="mt-2 pb-2 max-h-fit overflow-y-auto">
-                <SearchResult :routes="routes"/>
+                <SearchResult :routes="routes" @select-route="(route) => $emit('selectRoute', route)"/>
             </div>
         </div>
 
