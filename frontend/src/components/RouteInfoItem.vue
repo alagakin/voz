@@ -13,18 +13,15 @@
                     <span v-text="totalTime"></span>
                 </div>
                 <div>
-                    <a href="" class="text-blue-500">-></a>
+                    <a href="" class="text-blue-500 hover:underline">more</a>
                 </div>
 
             </div>
         </div>
     </div>
 </template>
-<script setup>
-// import {format} from "date-fns";
-</script>
 <script>
-
+import formatName from "../utils/Text"
 export default {
     components: {},
     props: {
@@ -64,10 +61,10 @@ export default {
             return `${formattedHours} ${formattedMinutes}`.trim();
         },
         firstStation() {
-            return this.route.stations[0]['name']
+            return formatName(this.route.stations[0]['name'])
         },
         lastStation() {
-            return this.route.stations[this.route.stations.length - 1]['name']
+            return formatName(this.route.stations[this.route.stations.length - 1]['name'])
         },
 
     },

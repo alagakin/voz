@@ -6,7 +6,7 @@
         <div class="flex flex-col h-full">
             <SearchInputs @setRoutes="setRoutes"/>
 
-            <div class="mt-2 h-full pb-2 max-h-fit">
+            <div class="mt-2 pb-2 max-h-fit overflow-y-auto">
                 <SearchResult :routes="routes"/>
             </div>
         </div>
