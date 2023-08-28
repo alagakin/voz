@@ -14,7 +14,7 @@
             </div>
 
             <div class="mt-2 pb-2 max-h-fit overflow-y-auto">
-                <SearchResult :routes="routes" @select-route="(route) => $emit('selectRoute', route)"/>
+                <SearchResult ref="result" :routes="routes" @select-route="(route) => $emit('selectRoute', route)"/>
             </div>
         </div>
 
@@ -87,8 +87,9 @@ export default {
             })
             this.routes = all_routes
             let route = this.routes[0]
-
             this.$emit('selectRoute', route)
+            this.$refs.result.selectRoute(0)
+
         },
         search() {
             if (!this.isSearchEnabled) {
