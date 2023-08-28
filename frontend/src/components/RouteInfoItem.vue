@@ -3,12 +3,15 @@
          @click="select">
         <div class="flex flex-col w-full pl-2" :class="{'border-blue-500': selected, 'border-l-4': selected}">
             <div class="">
-                <span class="mr-4" v-text="firstStation"></span>
+                <span class="mr-4" v-text="firstStationName"></span>
                 <font-awesome-icon :icon="['fas', 'arrow-right']" class="mr-4"/>
-                <span v-text="lastStation"></span>
+                <span v-text="lastStationName"></span>
             </div>
             <div class="flex justify-between">
                 <div>
+                    <div>
+                        {{fromDepartureTime}} - {{toArrivalTime}}
+                    </div>
                     <font-awesome-icon :icon="['far', 'clock']" class="mr-2"/>
                     <span v-text="totalTime"></span>
                 </div>
@@ -20,7 +23,8 @@
     </div>
 </template>
 <script>
-import formatName from "../utils/Text"
+import formatName from "../utils/Text";
+import {format} from "date-fns";
 
 export default {
     components: {},
@@ -67,12 +71,18 @@ export default {
 
             return `${formattedHours} ${formattedMinutes}`.trim();
         },
-        firstStation() {
+        firstStationName() {
             return formatName(this.route.from["name"])
         },
-        lastStation() {
+        lastStationName() {
             return formatName(this.route.to["name"])
         },
+        fromDepartureTime() {
+            return format(this.route.from.departure, 'HH:mm')
+        },
+        toArrivalTime() {
+            return format(this.route.to.arrival, 'HH:mm')
+        }
     },
     emits: ["unselectAll", "selectRoute", "showMore"]
 }
