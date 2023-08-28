@@ -13,9 +13,8 @@
                 </button>
             </div>
 
-            <div class="mt-2 pb-2 max-h-fit overflow-y-auto">
-                <SearchResult ref="result" :routes="routes" @select-route="(route) => $emit('selectRoute', route)"/>
-            </div>
+            <SearchResult ref="result" :routes="routes" @select-route="(route) => $emit('selectRoute', route)"/>
+
         </div>
 
         <LoaderPlug v-if="isLoading"/>

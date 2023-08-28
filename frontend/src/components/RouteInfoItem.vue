@@ -13,9 +13,8 @@
                     <span v-text="totalTime"></span>
                 </div>
                 <div>
-                    <a href="" class="text-blue-500 hover:underline">more</a>
+                    <span @click="showMore(route)" class="text-blue-500 hover:underline">more</span>
                 </div>
-
             </div>
         </div>
     </div>
@@ -37,6 +36,9 @@ export default {
         }
     },
     methods: {
+        showMore(route) {
+            this.$emit("showMore", route)
+        },
         select() {
             this.$emit("unselectAll")
             this.$emit("selectRoute", this.route)
@@ -72,7 +74,7 @@ export default {
             return formatName(this.route.to["name"])
         },
     },
-    emits: ["unselectAll", "selectRoute"]
+    emits: ["unselectAll", "selectRoute", "showMore"]
 }
 
 </script>

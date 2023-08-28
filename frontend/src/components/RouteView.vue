@@ -29,7 +29,6 @@ export default {
             if (!route) {
                 return
             }
-            console.log(route)
             let stations = []
             let from_id = route["from"]["id"]
             let to_id = route["to"]["id"]
