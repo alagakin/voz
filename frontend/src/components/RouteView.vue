@@ -7,7 +7,7 @@
         <station-marker :point="point" v-else></station-marker>
 
     </template>
-    <ArrowMarker v-for="arrow in arrows" :start="arrow[0]" :end="arrow[1]" v-bind:key="arrow"  />
+    <ArrowMarker v-for="arrow in arrows" :start="arrow[0]" :end="arrow[1]" v-bind:key="arrow"/>
 </template>
 <script>
 import FinishMarker from "@/components/markers/FinishMarker.vue";
@@ -18,15 +18,45 @@ import ArrowMarker from "@/components/markers/ArrowMarker.vue";
 export default {
     components: {ArrowMarker, StationMarker, StartMarker, FinishMarker},
     props: {
-        stations: {
-            type: Array
+        route: {
+            type: Object
         }
     },
     watch: {
-        stations() {
+        route(route) {
             this.points = []
             this.arrows = []
-            this.stations.forEach((station, index) => {
+            if (!route) {
+                return
+            }
+            console.log(route)
+            let stations = []
+            let from_id = route["from"]["id"]
+            let to_id = route["to"]["id"]
+            let from_is_set = false
+            let to_is_set = false
+            for (let index in route["stations"]) {
+                let station = route["stations"][index]
+                if (from_is_set && to_is_set) {
+                    continue
+                }
+                if (station["id"] === from_id) {
+                    stations.push(station)
+                    from_is_set = true
+                    continue
+                }
+                if (station["id"] === to_id) {
+                    stations.push(station)
+                    to_is_set = true
+                    continue
+                }
+                if (from_is_set) {
+                    stations.push(station)
+                }
+
+            }
+
+            stations.forEach((station, index) => {
                 let point = {
                     coordinates: station.coordinates,
                     name: station['name'],
@@ -36,7 +66,7 @@ export default {
                 if (index === 0) {
                     point.start = true
                 }
-                if (index === this.stations.length - 1) {
+                if (index === stations.length - 1) {
                     point.finish = true
                 }
                 if (index > 0) {
@@ -49,7 +79,6 @@ export default {
                     point['time'] = 0
                 }
                 this.points.push(point)
-
             })
         }
     },

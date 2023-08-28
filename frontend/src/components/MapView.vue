@@ -1,5 +1,5 @@
 <template>
-    <RoutesSearcher @showRouteOnMap="showRouteOnMap"/>
+    <RoutesSearcher @selectRoute="showRouteOnMap"/>
     <div style="width: 100%; height: 100vh;">
         <l-map ref="map" v-model:zoom="zoom" :center="[44.787197, 20.457273]" :maxBounds="maxBounds" :maxZoom="13"
                :minZoom="8">
@@ -8,7 +8,7 @@
                 layer-type="base"
                 name="OpenStreetMap"
             ></l-tile-layer>
-            <RouteView :stations="stations"/>
+            <RouteView :route="selectedRoute"/>
         </l-map>
     </div>
 </template>
@@ -28,18 +28,13 @@ export default {
     },
     methods: {
         showRouteOnMap(route) {
-            // todo: bad idea
-            this.stations = []
-            route.stations.forEach(station => {
-                this.stations.push(station)
-            })
+            this.selectedRoute = route
         }
     },
     data() {
         return {
             zoom: 8,
-            stations: [],
-            routes: [],
+            selectedRoute: null,
             maxBounds: [
                 [38.232407, 10.829536],
                 [50.181226, 36.034919],

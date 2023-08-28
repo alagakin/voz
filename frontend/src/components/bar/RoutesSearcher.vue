@@ -86,9 +86,9 @@ export default {
                 })
             })
             this.routes = all_routes
-            let route = routes[0]
+            let route = this.routes[0]
 
-            this.$emit('showRouteOnMap', route)
+            this.$emit('selectRoute', route)
         },
         search() {
             if (!this.isSearchEnabled) {
@@ -136,7 +136,7 @@ export default {
             routes: [],
         }
     },
-    emits: ['setRoutes', 'showRouteOnMap']
+    emits: ['setRoutes', 'selectRoute']
 }
 </script>
 
