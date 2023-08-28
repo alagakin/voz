@@ -40,7 +40,9 @@ export default {
         },
         selectRoute(index) {
             nextTick(() => {
-                this.$refs.item[index].select()
+                if (this.$refs.item) {
+                    this.$refs.item[index].select()
+                }
             })
         }
     },
