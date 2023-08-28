@@ -9,7 +9,7 @@
             />
         </div>
         <DetailRoute :route="detailRoute" @back="back" v-if="detailRoute != null"/>
-
+        <NotFound v-if="routes.length === 0" />
     </div>
 </template>
 <script>
@@ -18,13 +18,12 @@
 import RouteInfoItem from "@/components/RouteInfoItem.vue";
 import {nextTick} from "vue";
 import DetailRoute from "@/components/bar/DetailRoute.vue";
+import NotFound from "@/components/bar/NotFound.vue";
 
 export default {
-    components: {DetailRoute, RouteInfoItem},
+    components: {NotFound, DetailRoute, RouteInfoItem},
     props: {
-        routes: {
-            type: Array,
-        }
+        routes: [Array, Boolean]
     },
     methods: {
         back() {

@@ -52,7 +52,8 @@ export default {
         },
         setRoutes(routes) {
             if (!routes.length) {
-                alert('Not found')
+                this.routes = []
+                return
             }
             //date-time-formatting
             routes.forEach(route => {
@@ -152,7 +153,7 @@ export default {
             },
             isOpen: true,
             isLoading: false,
-            routes: [],
+            routes: false,
         }
     },
     emits: ['setRoutes', 'selectRoute']
