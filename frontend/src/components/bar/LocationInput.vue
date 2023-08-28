@@ -23,9 +23,9 @@ export default {
     methods: {
         getSuggestions() {
             if (this.query_name.length >= 2) {
-                axios.get(process.env.VUE_APP_BACKEND_HOST + "/api/v1/station/search/?query=" + this.query_name)
+                axios.get(process.env.VUE_APP_BACKEND_HOST + "/api/v1/locations/?query=" + this.query_name)
                     .then(response => {
-                        this.suggestions = response.data.hits
+                        this.suggestions = response.data
                     })
                     .catch(error => {
                         console.error('Error fetching suggestions:', error);
@@ -36,7 +36,7 @@ export default {
         },
         selectSuggestion(suggestion) {
             this.query_name = suggestion['display_name']
-            this.$emit('setLocation', 'station', suggestion['id'])
+            this.$emit('setLocation', suggestion['type'], suggestion['id'])
             this.suggestions = []
         }
     },

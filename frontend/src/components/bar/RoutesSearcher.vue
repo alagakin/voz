@@ -80,9 +80,13 @@ export default {
             }
             if (this.request.from.type === 'station') {
                 params['station_from_id'] = this.request.from.id
+            } else if (this.request.from.type === 'city') {
+                params['city_from_id'] = this.request.from.id
             }
             if (this.request.to.type === 'station') {
                 params['station_to_id'] = this.request.to.id
+            } else if (this.request.to.type === 'city') {
+                params['city_to_id'] = this.request.to.id
             }
             this.isLoading = true
             axios.get(process.env.VUE_APP_BACKEND_HOST + "/api/v1/routes/", {params})
