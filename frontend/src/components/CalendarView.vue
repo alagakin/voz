@@ -26,6 +26,7 @@ export default {
                     this.setAllowedDates(response.data)
                 }
             })
+        this.date = new Date()
     },
     methods: {
         setAllowedDates(dates) {
