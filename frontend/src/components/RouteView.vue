@@ -5,18 +5,15 @@
         </start-marker>
         <finish-marker :point="point" v-else-if="point.finish"></finish-marker>
         <station-marker :point="point" v-else></station-marker>
-
     </template>
-    <ArrowMarker v-for="arrow in arrows" :start="arrow[0]" :end="arrow[1]" v-bind:key="arrow"/>
 </template>
 <script>
 import FinishMarker from "@/components/markers/FinishMarker.vue";
 import StartMarker from "@/components/markers/StartMarker.vue";
 import StationMarker from "@/components/markers/StationMarker.vue";
-import ArrowMarker from "@/components/markers/ArrowMarker.vue";
 
 export default {
-    components: {ArrowMarker, StationMarker, StartMarker, FinishMarker},
+    components: {StationMarker, StartMarker, FinishMarker},
     props: {
         route: {
             type: Object
@@ -25,7 +22,6 @@ export default {
     watch: {
         route(route) {
             this.points = []
-            this.arrows = []
             if (!route) {
                 return
             }
@@ -69,10 +65,6 @@ export default {
                     point.finish = true
                 }
                 if (index > 0) {
-                    this.arrows.push([
-                        this.points[this.points.length - 1].coordinates,
-                        point.coordinates
-                    ])
                     point['time'] = point.arrival - this.points[this.points.length - 1]['departure']
                 } else {
                     point['time'] = 0
