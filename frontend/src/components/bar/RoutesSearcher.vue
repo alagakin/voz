@@ -133,6 +133,52 @@ export default {
             this.request.from = this.request.to
             this.request.to = temp
             this.search()
+        },
+        setUrl(request) {
+            const params = {};
+            if (request.date) {
+                params.date = request.date
+            }
+            if (request.from.type) {
+                params.from_type = request.from.type
+                params.from_id = request.from.id
+            }
+            if (request.to.type) {
+                params.to_type = request.to.type
+                params.to_id = request.to.id
+            }
+            const queryString = Object.keys(params)
+                .map((key) => `${key}=${encodeURIComponent(params[key])}`)
+                .join('&');
+            const newUrl = `/?${queryString}`;
+            history.pushState(null, null, newUrl);
+        },
+        recoverUrl() {
+            const queryString = window.location.search;
+            const params = new URLSearchParams(queryString);
+            const date = params.get('date')
+            const from_type = params.get('from_type')
+            const from_id = params.get('from_id')
+            const to_type = params.get('to_type')
+            const to_id = params.get('to_id')
+
+            let request = {
+                date: null,
+                from: {},
+                to: {}
+            }
+            if (date) {
+                request.date = date
+            }
+            if (from_type && from_id) {
+                request.from.type = from_type
+                request.from.id = from_id
+            }
+            if (to_type && to_id) {
+                request.to.type = to_type
+                request.to.id = to_id
+            }
+            this.request = request
         }
     },
     computed: {
@@ -140,10 +186,14 @@ export default {
             return this.request.from.id && this.request.to.id && this.request.date
         }
     },
+    beforeMount() {
+        this.recoverUrl()
+    },
     watch: {
         request: {
             deep: true,
-            handler() {
+            handler(value) {
+                this.setUrl(value)
                 if (this.isSearchEnabled) {
                     this.search()
                 }
