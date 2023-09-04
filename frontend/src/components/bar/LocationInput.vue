@@ -53,7 +53,7 @@ export default {
                     this.query_name = response.data.display_name
                 }
             }).catch(error => {
-                console.log(error)
+                console.error('Error fetching names:', error);
             })
 
         },
