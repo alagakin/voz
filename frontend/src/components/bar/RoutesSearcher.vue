@@ -83,7 +83,7 @@ export default {
             let route = this.routes[0]
             this.$emit('selectRoute', route)
             this.$refs.result.selectRoute(0)
-
+            this.$refs.result.dropDetail()
         },
         sortRoutes(routes) {
             let available_routes = []

@@ -43,6 +43,9 @@ export default {
                     this.$refs.item[index].select()
                 }
             })
+        },
+        dropDetail() {
+            this.detailRoute = null
         }
     },
     data() {
