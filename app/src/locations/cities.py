@@ -1,10 +1,11 @@
 import csv
 import os
 from typing import List
-
+import bson.errors
+from bson import ObjectId
 from config import MONGO_DB
 from database import get_async_client
-from locations.schemas import CitySchema
+from locations.schemas import CitySchema, CityDisplaySchema
 from meili import fill_index
 from utils import latin_to_cyrillic, simplify_latin_serbian
 
@@ -63,10 +64,10 @@ def read_cities(file) -> List[CitySchema]:
 async def create_cities_search_index():
     client = await get_async_client()
     db = client[MONGO_DB]
-    stations = db["cities"]
+    cities = db["cities"]
     documents = []
-    async for station in stations.find():
-        documents.append(make_document_for_index(station))
+    async for city in cities.find():
+        documents.append(make_document_for_index(city))
 
     return fill_index(index_name="cities", documents=documents)
 
@@ -79,3 +80,16 @@ def make_document_for_index(city):
         "names": simplify_latin_serbian(city["name"]),
         "country": city["country"]
     }
+
+
+async def get_by_id(city_id):
+    client = await get_async_client()
+    db = client[MONGO_DB]
+    cities = db["cities"]
+    try:
+        city = await cities.find_one({'_id': ObjectId(city_id)})
+        if city:
+            return CityDisplaySchema.from_motor_dict(city)
+        return False
+    except bson.errors.InvalidId:
+        return False

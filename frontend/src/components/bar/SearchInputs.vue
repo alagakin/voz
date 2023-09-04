@@ -1,6 +1,6 @@
 <template>
     <div class="relative">
-        <LocationInput ref="from" @setLocation="setLocationFrom" :placeholder="'From'"/>
+        <LocationInput ref="from" @setLocation="setLocationFrom" :placeholder="'From'" :request="request.from"/>
     </div>
     <div class="mt-2 flex justify-center">
         <span class="cursor-pointer" @click="reverse">
@@ -8,7 +8,7 @@
         </span>
     </div>
     <div class="relative mt-3">
-        <LocationInput ref="to" @setLocation="setLocationTo" :placeholder="'To'"/>
+        <LocationInput ref="to" @setLocation="setLocationTo" :placeholder="'To'" :request="request.to"/>
     </div>
 
     <div class="relative mt-3">

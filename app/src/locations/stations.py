@@ -2,6 +2,7 @@ import json
 import os
 from database import get_async_client
 from config import MONGO_DB
+from locations.schemas import StationDisplaySchema
 from utils import latin_to_cyrillic, simplify_latin_serbian
 from meili import fill_index
 
@@ -60,3 +61,14 @@ async def create_stations_index():
     client = await get_async_client()
     db = client[MONGO_DB]
     await db.stations.create_index([("coordinates", "2dsphere")])
+
+
+async def get_station_by_id(id: int):
+    client = await get_async_client()
+    db = client[MONGO_DB]
+    stations = db["stations"]
+    station = await stations.find_one({'id': id})
+    if station:
+        return StationDisplaySchema.from_motor_dict(station)
+    else:
+        return False
