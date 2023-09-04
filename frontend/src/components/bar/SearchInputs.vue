@@ -4,7 +4,7 @@
     </div>
     <div class="mt-2 flex justify-center">
         <span class="cursor-pointer" @click="reverse">
-            <font-awesome-icon :icon="['fas', 'rotate']" :spin-pulse="reverseSpin" style="color: #5e6064;" size="xl"/>
+            <font-awesome-icon :icon="['fas', 'rotate']" :spin-pulse="reverseSpin" style="color: #5e6064;" size="md"/>
         </span>
     </div>
     <div class="relative mt-3">
