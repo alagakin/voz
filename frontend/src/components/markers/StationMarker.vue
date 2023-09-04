@@ -34,8 +34,8 @@ export default {
     data() {
         return {
             iconOptions: {
-                iconUrl: require("@/assets/marker.svg"),
-                iconAnchor: [12, 24],
+                iconUrl: require("@/assets/station-marker.svg"),
+                iconAnchor: [9, 18]
             }
         }
     }

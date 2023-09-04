@@ -33,7 +33,7 @@ export default {
     data() {
         return {
             iconOptions: {
-                iconUrl: require("@/assets/start.svg"),
+                iconUrl: require("@/assets/start-marker.svg"),
                 iconAnchor: [18, 36],
             }
         }
