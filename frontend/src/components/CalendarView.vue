@@ -3,6 +3,7 @@
                    :enable-time-picker="false"
                    :allowed-dates="allowedDates"
                    timezone="Europe/Belgrade"
+                   format="dd.MM.yyyy"
                    auto-apply/>
 </template>
 <script>
