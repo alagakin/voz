@@ -10,8 +10,8 @@ from locations.schemas import CitySchema
 class SearchRequest(BaseModel):
     date: datetime
 
-    city_from_id: Union[str, ObjectId] = None
-    city_to_id: Union[str, ObjectId] = None
+    city_from_id: int = None
+    city_to_id: int = None
     city_from: CitySchema = None
     city_to: CitySchema = None
 
@@ -29,15 +29,6 @@ class SearchRequest(BaseModel):
 
     supposed_stations_from: list = []
     supposed_stations_to: list = []
-
-    @validator("city_from_id", "city_to_id", pre=True, always=True)
-    def validate_id(cls, field_value):
-        try:
-            if field_value is None:
-                return field_value
-            return ObjectId(field_value)
-        except bson.errors.InvalidId:
-            raise ValueError(f"{field_value} must be correct ObjectId")
 
     class Config:
         arbitrary_types_allowed = True

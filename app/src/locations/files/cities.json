@@ -1,0 +1,10502 @@
+[
+  {
+    "id": 1,
+    "name": "Sarajevo",
+    "country": "Bosnia and Herzegovina",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.8564,
+        18.4131
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "name": "Banja Luka",
+    "country": "Bosnia and Herzegovina",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.7725,
+        17.1925
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "name": "Bijeljina",
+    "country": "Bosnia and Herzegovina",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.75,
+        19.2167
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "name": "Mostar",
+    "country": "Bosnia and Herzegovina",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.3436,
+        17.8075
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "name": "Tuzla",
+    "country": "Bosnia and Herzegovina",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.5381,
+        18.6761
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "name": "Ilidža",
+    "country": "Bosnia and Herzegovina",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.8167,
+        18.3
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "name": "Tešanj",
+    "country": "Bosnia and Herzegovina",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.6142,
+        17.9894
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "name": "Brčko",
+    "country": "Bosnia and Herzegovina",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.8783,
+        18.8092
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "name": "Vrapčići",
+    "country": "Bosnia and Herzegovina",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.374,
+        17.851
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "name": "Jelah",
+    "country": "Bosnia and Herzegovina",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.6544,
+        17.9594
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "name": "Matuzići",
+    "country": "Bosnia and Herzegovina",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.6833,
+        18.05
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "name": "Vogošća",
+    "country": "Bosnia and Herzegovina",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.9,
+        18.35
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "name": "Teočak",
+    "country": "Bosnia and Herzegovina",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.6032,
+        18.9797
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "name": "Lukavica",
+    "country": "Bosnia and Herzegovina",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.8269,
+        18.3832
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "name": "Klokotnica",
+    "country": "Bosnia and Herzegovina",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.7329,
+        18.1888
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "name": "Omanjska",
+    "country": "Bosnia and Herzegovina",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.6939,
+        17.955
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "name": "Zagreb",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.8167,
+        15.9833
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "name": "Rijeka",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3272,
+        14.4411
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "name": "Split",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.51,
+        16.44
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "name": "Osijek",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.5556,
+        18.6944
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "name": "Zadar",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.1194,
+        15.2319
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "name": "Sesvete",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.8269,
+        16.1111
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "name": "Velika Gorica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.7,
+        16.0667
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "name": "Pula",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.8703,
+        13.8456
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "name": "Slavonski Brod",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1667,
+        18.0167
+      ]
+    }
+  },
+  {
+    "id": 26,
+    "name": "Karlovac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4833,
+        15.55
+      ]
+    }
+  },
+  {
+    "id": 27,
+    "name": "Šibenik",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.735,
+        15.8906
+      ]
+    }
+  },
+  {
+    "id": 28,
+    "name": "Kaštel Stari",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.55,
+        16.35
+      ]
+    }
+  },
+  {
+    "id": 29,
+    "name": "Dubrovnik",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.6403,
+        18.1083
+      ]
+    }
+  },
+  {
+    "id": 30,
+    "name": "Bjelovar",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.9,
+        16.8333
+      ]
+    }
+  },
+  {
+    "id": 31,
+    "name": "Varaždin",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.3081,
+        16.3378
+      ]
+    }
+  },
+  {
+    "id": 32,
+    "name": "Sisak",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4872,
+        16.3761
+      ]
+    }
+  },
+  {
+    "id": 33,
+    "name": "Vinkovci",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2911,
+        18.8011
+      ]
+    }
+  },
+  {
+    "id": 34,
+    "name": "Koprivnica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.15,
+        16.8167
+      ]
+    }
+  },
+  {
+    "id": 35,
+    "name": "Čakovec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.3858,
+        16.4333
+      ]
+    }
+  },
+  {
+    "id": 36,
+    "name": "Ðakovo",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.31,
+        18.41
+      ]
+    }
+  },
+  {
+    "id": 37,
+    "name": "Zaprešić",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.8572,
+        15.805
+      ]
+    }
+  },
+  {
+    "id": 38,
+    "name": "Vukovar",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3444,
+        19.0025
+      ]
+    }
+  },
+  {
+    "id": 39,
+    "name": "Sinj",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.7,
+        16.6333
+      ]
+    }
+  },
+  {
+    "id": 40,
+    "name": "Petrinja",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4406,
+        16.2783
+      ]
+    }
+  },
+  {
+    "id": 41,
+    "name": "Solin",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.5317,
+        16.4947
+      ]
+    }
+  },
+  {
+    "id": 42,
+    "name": "Kutina",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4667,
+        16.7833
+      ]
+    }
+  },
+  {
+    "id": 43,
+    "name": "Požega",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3331,
+        17.6736
+      ]
+    }
+  },
+  {
+    "id": 44,
+    "name": "Virovitica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.8333,
+        17.3833
+      ]
+    }
+  },
+  {
+    "id": 45,
+    "name": "Dugo Selo",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.8058,
+        16.2331
+      ]
+    }
+  },
+  {
+    "id": 46,
+    "name": "Sveti Ivan Zelina",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.9596,
+        16.2431
+      ]
+    }
+  },
+  {
+    "id": 47,
+    "name": "Jastrebarsko",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.6719,
+        15.6511
+      ]
+    }
+  },
+  {
+    "id": 48,
+    "name": "Metković",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.05,
+        17.65
+      ]
+    }
+  },
+  {
+    "id": 49,
+    "name": "Samobor",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.8,
+        15.7167
+      ]
+    }
+  },
+  {
+    "id": 50,
+    "name": "Omiš",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.4333,
+        16.6833
+      ]
+    }
+  },
+  {
+    "id": 51,
+    "name": "Vrbovec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.8833,
+        16.4333
+      ]
+    }
+  },
+  {
+    "id": 52,
+    "name": "Ivanić-Grad",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.7081,
+        16.3947
+      ]
+    }
+  },
+  {
+    "id": 53,
+    "name": "Viškovo",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3778,
+        14.3861
+      ]
+    }
+  },
+  {
+    "id": 54,
+    "name": "Rovinj",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.0833,
+        13.6333
+      ]
+    }
+  },
+  {
+    "id": 55,
+    "name": "Makarska",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.3,
+        17.0333
+      ]
+    }
+  },
+  {
+    "id": 56,
+    "name": "Ivanec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.2264,
+        16.1253
+      ]
+    }
+  },
+  {
+    "id": 57,
+    "name": "Trogir",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.5169,
+        16.2514
+      ]
+    }
+  },
+  {
+    "id": 58,
+    "name": "Novi Marof",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.1667,
+        16.3333
+      ]
+    }
+  },
+  {
+    "id": 59,
+    "name": "Umag",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4333,
+        13.5167
+      ]
+    }
+  },
+  {
+    "id": 60,
+    "name": "Krapina",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.16,
+        15.87
+      ]
+    }
+  },
+  {
+    "id": 61,
+    "name": "Županja",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.07,
+        18.7
+      ]
+    }
+  },
+  {
+    "id": 62,
+    "name": "Nedelišće",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.3833,
+        16.3833
+      ]
+    }
+  },
+  {
+    "id": 63,
+    "name": "Popovača",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.5697,
+        16.625
+      ]
+    }
+  },
+  {
+    "id": 64,
+    "name": "Nova Gradiška",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.25,
+        17.3833
+      ]
+    }
+  },
+  {
+    "id": 65,
+    "name": "Opatija",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3333,
+        14.3
+      ]
+    }
+  },
+  {
+    "id": 66,
+    "name": "Labin",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.0833,
+        14.1167
+      ]
+    }
+  },
+  {
+    "id": 67,
+    "name": "Valpovo",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.6667,
+        18.4167
+      ]
+    }
+  },
+  {
+    "id": 68,
+    "name": "Matulji",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3667,
+        14.3167
+      ]
+    }
+  },
+  {
+    "id": 69,
+    "name": "Križevci",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.0258,
+        16.5425
+      ]
+    }
+  },
+  {
+    "id": 70,
+    "name": "Crikvenica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1833,
+        14.7
+      ]
+    }
+  },
+  {
+    "id": 71,
+    "name": "Knin",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.0414,
+        16.1986
+      ]
+    }
+  },
+  {
+    "id": 72,
+    "name": "Duga Resa",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4472,
+        15.4958
+      ]
+    }
+  },
+  {
+    "id": 73,
+    "name": "Kastav",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.375,
+        14.349
+      ]
+    }
+  },
+  {
+    "id": 74,
+    "name": "Garešnica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.5667,
+        16.9333
+      ]
+    }
+  },
+  {
+    "id": 75,
+    "name": "Slatina",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.7022,
+        17.7011
+      ]
+    }
+  },
+  {
+    "id": 76,
+    "name": "Beli Manastir",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.7667,
+        18.6
+      ]
+    }
+  },
+  {
+    "id": 77,
+    "name": "Daruvar",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.5929,
+        17.2237
+      ]
+    }
+  },
+  {
+    "id": 78,
+    "name": "Čepin",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.5167,
+        18.5667
+      ]
+    }
+  },
+  {
+    "id": 79,
+    "name": "Trilj",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.6167,
+        16.7167
+      ]
+    }
+  },
+  {
+    "id": 80,
+    "name": "Zabok",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.0333,
+        15.9167
+      ]
+    }
+  },
+  {
+    "id": 81,
+    "name": "Pazin",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2403,
+        13.9367
+      ]
+    }
+  },
+  {
+    "id": 82,
+    "name": "Ludbreg",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.25,
+        16.61
+      ]
+    }
+  },
+  {
+    "id": 83,
+    "name": "Lepoglava",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.2074,
+        16.0437
+      ]
+    }
+  },
+  {
+    "id": 84,
+    "name": "Ðurđevac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.0272,
+        17.0672
+      ]
+    }
+  },
+  {
+    "id": 85,
+    "name": "Mali Lošinj",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.5333,
+        14.4667
+      ]
+    }
+  },
+  {
+    "id": 86,
+    "name": "Čazma",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.75,
+        16.6167
+      ]
+    }
+  },
+  {
+    "id": 87,
+    "name": "Bedekovčina",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.0333,
+        16
+      ]
+    }
+  },
+  {
+    "id": 88,
+    "name": "Rab",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.7561,
+        14.7611
+      ]
+    }
+  },
+  {
+    "id": 89,
+    "name": "Našice",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4833,
+        18.1
+      ]
+    }
+  },
+  {
+    "id": 90,
+    "name": "Poreč",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2272,
+        13.5958
+      ]
+    }
+  },
+  {
+    "id": 91,
+    "name": "Drniš",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.8625,
+        16.1556
+      ]
+    }
+  },
+  {
+    "id": 92,
+    "name": "Križ",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.65,
+        16.5167
+      ]
+    }
+  },
+  {
+    "id": 93,
+    "name": "Erdut",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.5333,
+        19.0667
+      ]
+    }
+  },
+  {
+    "id": 94,
+    "name": "Čavle",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3569,
+        14.4878
+      ]
+    }
+  },
+  {
+    "id": 95,
+    "name": "Dugi Rat",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.262,
+        16.621
+      ]
+    }
+  },
+  {
+    "id": 96,
+    "name": "Novska",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3333,
+        16.9833
+      ]
+    }
+  },
+  {
+    "id": 97,
+    "name": "Prelog",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.3333,
+        16.6167
+      ]
+    }
+  },
+  {
+    "id": 98,
+    "name": "Trnovec Bartolovečki",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.2947,
+        16.3989
+      ]
+    }
+  },
+  {
+    "id": 99,
+    "name": "Brckovljani",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.83,
+        16.3
+      ]
+    }
+  },
+  {
+    "id": 100,
+    "name": "Pregrada",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.16,
+        15.75
+      ]
+    }
+  },
+  {
+    "id": 101,
+    "name": "Vrgorac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.2,
+        17.3667
+      ]
+    }
+  },
+  {
+    "id": 102,
+    "name": "Ploče",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.05,
+        17.4333
+      ]
+    }
+  },
+  {
+    "id": 103,
+    "name": "Belišće",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.6833,
+        18.4
+      ]
+    }
+  },
+  {
+    "id": 104,
+    "name": "Medulin",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.8219,
+        13.935
+      ]
+    }
+  },
+  {
+    "id": 105,
+    "name": "Maruševec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.29,
+        16.18
+      ]
+    }
+  },
+  {
+    "id": 106,
+    "name": "Mursko Središće",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.5,
+        16.4333
+      ]
+    }
+  },
+  {
+    "id": 107,
+    "name": "Krk",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.0167,
+        14.5667
+      ]
+    }
+  },
+  {
+    "id": 108,
+    "name": "Donji Miholjac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.75,
+        18.15
+      ]
+    }
+  },
+  {
+    "id": 109,
+    "name": "Ivankovo",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2833,
+        18.6833
+      ]
+    }
+  },
+  {
+    "id": 110,
+    "name": "Lipik",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.415,
+        17.16
+      ]
+    }
+  },
+  {
+    "id": 111,
+    "name": "Ozalj",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.6129,
+        15.4777
+      ]
+    }
+  },
+  {
+    "id": 112,
+    "name": "Buzet",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4167,
+        13.9667
+      ]
+    }
+  },
+  {
+    "id": 113,
+    "name": "Vodice",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.75,
+        15.7667
+      ]
+    }
+  },
+  {
+    "id": 114,
+    "name": "Kloštar Ivanić",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.74,
+        16.42
+      ]
+    }
+  },
+  {
+    "id": 115,
+    "name": "Gospić",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.546,
+        15.375
+      ]
+    }
+  },
+  {
+    "id": 116,
+    "name": "Donja Stubica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.98,
+        15.97
+      ]
+    }
+  },
+  {
+    "id": 117,
+    "name": "Cestica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.37,
+        16.12
+      ]
+    }
+  },
+  {
+    "id": 118,
+    "name": "Korčula",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.95,
+        17.125
+      ]
+    }
+  },
+  {
+    "id": 119,
+    "name": "Biograd na Moru",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.9391,
+        15.4474
+      ]
+    }
+  },
+  {
+    "id": 120,
+    "name": "Mala Subotica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.3833,
+        16.5333
+      ]
+    }
+  },
+  {
+    "id": 121,
+    "name": "Jelenje",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3833,
+        14.4667
+      ]
+    }
+  },
+  {
+    "id": 122,
+    "name": "Darda",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.6261,
+        18.6925
+      ]
+    }
+  },
+  {
+    "id": 123,
+    "name": "Buje",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4167,
+        13.6667
+      ]
+    }
+  },
+  {
+    "id": 124,
+    "name": "Ilok",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2219,
+        19.3753
+      ]
+    }
+  },
+  {
+    "id": 125,
+    "name": "Borovo",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3833,
+        18.9667
+      ]
+    }
+  },
+  {
+    "id": 126,
+    "name": "Veliko Trgovišće",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46,
+        15.85
+      ]
+    }
+  },
+  {
+    "id": 127,
+    "name": "Gornji Kneginec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.25,
+        16.37
+      ]
+    }
+  },
+  {
+    "id": 128,
+    "name": "Sračinec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.3294,
+        16.2789
+      ]
+    }
+  },
+  {
+    "id": 129,
+    "name": "Rovišće",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.95,
+        16.7333
+      ]
+    }
+  },
+  {
+    "id": 130,
+    "name": "Petrijanec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.35,
+        16.23
+      ]
+    }
+  },
+  {
+    "id": 131,
+    "name": "Imotski",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.45,
+        17.2167
+      ]
+    }
+  },
+  {
+    "id": 132,
+    "name": "Donji Kraljevec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.37,
+        16.65
+      ]
+    }
+  },
+  {
+    "id": 133,
+    "name": "Kraljevica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2667,
+        14.5667
+      ]
+    }
+  },
+  {
+    "id": 134,
+    "name": "Delnice",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4,
+        14.8
+      ]
+    }
+  },
+  {
+    "id": 135,
+    "name": "Stari Jankovci",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2667,
+        18.9167
+      ]
+    }
+  },
+  {
+    "id": 136,
+    "name": "Sukošan",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.049,
+        15.312
+      ]
+    }
+  },
+  {
+    "id": 137,
+    "name": "Vela Luka",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9611,
+        16.7194
+      ]
+    }
+  },
+  {
+    "id": 138,
+    "name": "Hvar",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.1714,
+        16.4433
+      ]
+    }
+  },
+  {
+    "id": 139,
+    "name": "Kostrena",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3072,
+        14.4983
+      ]
+    }
+  },
+  {
+    "id": 140,
+    "name": "Orebić",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9667,
+        17.1667
+      ]
+    }
+  },
+  {
+    "id": 141,
+    "name": "Lovran",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.292,
+        14.274
+      ]
+    }
+  },
+  {
+    "id": 142,
+    "name": "Bednja",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.23,
+        15.98
+      ]
+    }
+  },
+  {
+    "id": 143,
+    "name": "Bibinje",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.0717,
+        15.2878
+      ]
+    }
+  },
+  {
+    "id": 144,
+    "name": "Ližnjan",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.8333,
+        13.95
+      ]
+    }
+  },
+  {
+    "id": 145,
+    "name": "Orahovica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.5329,
+        17.8795
+      ]
+    }
+  },
+  {
+    "id": 146,
+    "name": "Jakovlje",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.95,
+        15.85
+      ]
+    }
+  },
+  {
+    "id": 147,
+    "name": "Marčana",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.95,
+        13.95
+      ]
+    }
+  },
+  {
+    "id": 148,
+    "name": "Bošnjaci",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.05,
+        18.7667
+      ]
+    }
+  },
+  {
+    "id": 149,
+    "name": "Podturen",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.4667,
+        16.55
+      ]
+    }
+  },
+  {
+    "id": 150,
+    "name": "Martijanec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.2667,
+        16.5333
+      ]
+    }
+  },
+  {
+    "id": 151,
+    "name": "Skradin",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.8167,
+        15.9167
+      ]
+    }
+  },
+  {
+    "id": 152,
+    "name": "Preko",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.0864,
+        15.1828
+      ]
+    }
+  },
+  {
+    "id": 153,
+    "name": "Sveti Ðurđ",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.2844,
+        16.6042
+      ]
+    }
+  },
+  {
+    "id": 154,
+    "name": "Josipdol",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1886,
+        15.2848
+      ]
+    }
+  },
+  {
+    "id": 155,
+    "name": "Gunja",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.8967,
+        18.85
+      ]
+    }
+  },
+  {
+    "id": 156,
+    "name": "Novalja",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.55,
+        14.8833
+      ]
+    }
+  },
+  {
+    "id": 157,
+    "name": "Nuštar",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3333,
+        18.8333
+      ]
+    }
+  },
+  {
+    "id": 158,
+    "name": "Jalžabet",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.26,
+        16.48
+      ]
+    }
+  },
+  {
+    "id": 159,
+    "name": "Babina Greda",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1167,
+        18.5333
+      ]
+    }
+  },
+  {
+    "id": 160,
+    "name": "Vodnjan",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.9667,
+        13.85
+      ]
+    }
+  },
+  {
+    "id": 161,
+    "name": "Martinska Ves",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.58,
+        16.37
+      ]
+    }
+  },
+  {
+    "id": 162,
+    "name": "Dugopolje",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.5803,
+        16.5969
+      ]
+    }
+  },
+  {
+    "id": 163,
+    "name": "Lipovljani",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4,
+        16.89
+      ]
+    }
+  },
+  {
+    "id": 164,
+    "name": "Nova Rača",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.8,
+        16.95
+      ]
+    }
+  },
+  {
+    "id": 165,
+    "name": "Oroslavje",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46,
+        15.91
+      ]
+    }
+  },
+  {
+    "id": 166,
+    "name": "Gradac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.1061,
+        17.3411
+      ]
+    }
+  },
+  {
+    "id": 167,
+    "name": "Opuzen",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.0176,
+        17.5623
+      ]
+    }
+  },
+  {
+    "id": 168,
+    "name": "Kotoriba",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.35,
+        16.8167
+      ]
+    }
+  },
+  {
+    "id": 169,
+    "name": "Supetar",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.3844,
+        16.5553
+      ]
+    }
+  },
+  {
+    "id": 170,
+    "name": "Pag",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.4435,
+        15.0545
+      ]
+    }
+  },
+  {
+    "id": 171,
+    "name": "Tisno",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.8,
+        15.65
+      ]
+    }
+  },
+  {
+    "id": 172,
+    "name": "Davor",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1167,
+        17.5167
+      ]
+    }
+  },
+  {
+    "id": 173,
+    "name": "Primošten",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.5833,
+        15.9333
+      ]
+    }
+  },
+  {
+    "id": 174,
+    "name": "Omišalj",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2119,
+        14.5542
+      ]
+    }
+  },
+  {
+    "id": 175,
+    "name": "Privlaka",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.259,
+        15.129
+      ]
+    }
+  },
+  {
+    "id": 176,
+    "name": "Kršan",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1733,
+        14.1392
+      ]
+    }
+  },
+  {
+    "id": 177,
+    "name": "Ražanac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.2833,
+        15.35
+      ]
+    }
+  },
+  {
+    "id": 178,
+    "name": "Ivanska",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.7833,
+        16.8167
+      ]
+    }
+  },
+  {
+    "id": 179,
+    "name": "Šenkovec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.4167,
+        16.4167
+      ]
+    }
+  },
+  {
+    "id": 180,
+    "name": "Netretić",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.5094,
+        15.4125
+      ]
+    }
+  },
+  {
+    "id": 181,
+    "name": "Goričan",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.3833,
+        16.6833
+      ]
+    }
+  },
+  {
+    "id": 182,
+    "name": "Stubičke Toplice",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.9758,
+        15.9322
+      ]
+    }
+  },
+  {
+    "id": 183,
+    "name": "Starigrad",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.1833,
+        16.5833
+      ]
+    }
+  },
+  {
+    "id": 184,
+    "name": "Baška Voda",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.3575,
+        16.9492
+      ]
+    }
+  },
+  {
+    "id": 185,
+    "name": "Tovarnik",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1667,
+        19.15
+      ]
+    }
+  },
+  {
+    "id": 186,
+    "name": "Gradište",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.15,
+        18.71
+      ]
+    }
+  },
+  {
+    "id": 187,
+    "name": "Hrvatska Kostajnica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2333,
+        16.5333
+      ]
+    }
+  },
+  {
+    "id": 188,
+    "name": "Nin",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.2333,
+        15.1833
+      ]
+    }
+  },
+  {
+    "id": 189,
+    "name": "Veliko Trojstvo",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.9333,
+        16.9333
+      ]
+    }
+  },
+  {
+    "id": 190,
+    "name": "Ravna Gora",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3667,
+        14.9333
+      ]
+    }
+  },
+  {
+    "id": 191,
+    "name": "Barban",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1,
+        14.0167
+      ]
+    }
+  },
+  {
+    "id": 192,
+    "name": "Dežanovac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.5667,
+        17.0833
+      ]
+    }
+  },
+  {
+    "id": 193,
+    "name": "Suhopolje",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.8,
+        17.5
+      ]
+    }
+  },
+  {
+    "id": 194,
+    "name": "Orehovica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.33,
+        16.51
+      ]
+    }
+  },
+  {
+    "id": 195,
+    "name": "Strahoninec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.3667,
+        16.4167
+      ]
+    }
+  },
+  {
+    "id": 196,
+    "name": "Krašić",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.65,
+        15.5167
+      ]
+    }
+  },
+  {
+    "id": 197,
+    "name": "Zlatar Bistrica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.06,
+        16.07
+      ]
+    }
+  },
+  {
+    "id": 198,
+    "name": "Klanjec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.0467,
+        15.7361
+      ]
+    }
+  },
+  {
+    "id": 199,
+    "name": "Strizivojna",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.23,
+        18.42
+      ]
+    }
+  },
+  {
+    "id": 200,
+    "name": "Budinšćina",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.11,
+        16.2
+      ]
+    }
+  },
+  {
+    "id": 201,
+    "name": "Donji Andrijevci",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1833,
+        18.3
+      ]
+    }
+  },
+  {
+    "id": 202,
+    "name": "Jarmina",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3167,
+        18.7333
+      ]
+    }
+  },
+  {
+    "id": 203,
+    "name": "Rešetari",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.15,
+        17.27
+      ]
+    }
+  },
+  {
+    "id": 204,
+    "name": "Kutjevo",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4333,
+        17.8833
+      ]
+    }
+  },
+  {
+    "id": 205,
+    "name": "Sibinj",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1917,
+        17.9081
+      ]
+    }
+  },
+  {
+    "id": 206,
+    "name": "Runović",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.3833,
+        17.2167
+      ]
+    }
+  },
+  {
+    "id": 207,
+    "name": "Stari Mikanovci",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2833,
+        18.55
+      ]
+    }
+  },
+  {
+    "id": 208,
+    "name": "Koprivnički Ivanec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.2,
+        16.8167
+      ]
+    }
+  },
+  {
+    "id": 209,
+    "name": "Končanica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.6379,
+        17.1646
+      ]
+    }
+  },
+  {
+    "id": 210,
+    "name": "Rogoznica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.5333,
+        15.9694
+      ]
+    }
+  },
+  {
+    "id": 211,
+    "name": "Sveta Marija",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.3333,
+        16.7333
+      ]
+    }
+  },
+  {
+    "id": 212,
+    "name": "Petrijevci",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.6167,
+        18.5333
+      ]
+    }
+  },
+  {
+    "id": 213,
+    "name": "Višnjan",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2761,
+        13.72
+      ]
+    }
+  },
+  {
+    "id": 214,
+    "name": "Domašinec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.4333,
+        16.6
+      ]
+    }
+  },
+  {
+    "id": 215,
+    "name": "Legrad",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.3,
+        16.85
+      ]
+    }
+  },
+  {
+    "id": 216,
+    "name": "Mali Bukovec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.28,
+        16.74
+      ]
+    }
+  },
+  {
+    "id": 217,
+    "name": "Cavtat",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.5794,
+        18.2208
+      ]
+    }
+  },
+  {
+    "id": 218,
+    "name": "Vrbanja",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.9833,
+        18.9333
+      ]
+    }
+  },
+  {
+    "id": 219,
+    "name": "Svetvinčenat",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.0833,
+        13.8833
+      ]
+    }
+  },
+  {
+    "id": 220,
+    "name": "Breznica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.07,
+        16.27
+      ]
+    }
+  },
+  {
+    "id": 221,
+    "name": "Beretinec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.2486,
+        16.3061
+      ]
+    }
+  },
+  {
+    "id": 222,
+    "name": "Slavonski Šamac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.0667,
+        18.4833
+      ]
+    }
+  },
+  {
+    "id": 223,
+    "name": "Štitar",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1,
+        18.6333
+      ]
+    }
+  },
+  {
+    "id": 224,
+    "name": "Velika",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4556,
+        17.6625
+      ]
+    }
+  },
+  {
+    "id": 225,
+    "name": "Tuhelj",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.0769,
+        15.7472
+      ]
+    }
+  },
+  {
+    "id": 226,
+    "name": "Marija Gorica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.92,
+        15.73
+      ]
+    }
+  },
+  {
+    "id": 227,
+    "name": "Dobrinj",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.13,
+        14.604
+      ]
+    }
+  },
+  {
+    "id": 228,
+    "name": "Cerna",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1903,
+        18.6889
+      ]
+    }
+  },
+  {
+    "id": 229,
+    "name": "Andrijaševci",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2167,
+        18.7333
+      ]
+    }
+  },
+  {
+    "id": 230,
+    "name": "Bizovac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.59,
+        18.46
+      ]
+    }
+  },
+  {
+    "id": 231,
+    "name": "Gundinci",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.15,
+        18.4833
+      ]
+    }
+  },
+  {
+    "id": 232,
+    "name": "Gornji Stupnik",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.7667,
+        15.85
+      ]
+    }
+  },
+  {
+    "id": 233,
+    "name": "Kravarsko",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.58,
+        16.04
+      ]
+    }
+  },
+  {
+    "id": 234,
+    "name": "Vratišinec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.4833,
+        16.45
+      ]
+    }
+  },
+  {
+    "id": 235,
+    "name": "Bukovlje",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.19,
+        18.07
+      ]
+    }
+  },
+  {
+    "id": 236,
+    "name": "Punat",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.0147,
+        14.6289
+      ]
+    }
+  },
+  {
+    "id": 237,
+    "name": "Vođinci",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2756,
+        18.6097
+      ]
+    }
+  },
+  {
+    "id": 238,
+    "name": "Bogdanovci",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3333,
+        18.9333
+      ]
+    }
+  },
+  {
+    "id": 239,
+    "name": "Drenovci",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.92,
+        18.85
+      ]
+    }
+  },
+  {
+    "id": 240,
+    "name": "Farkaševac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.8806,
+        16.6358
+      ]
+    }
+  },
+  {
+    "id": 241,
+    "name": "Vis",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.0667,
+        16.1833
+      ]
+    }
+  },
+  {
+    "id": 242,
+    "name": "Tučepi",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.2667,
+        17.05
+      ]
+    }
+  },
+  {
+    "id": 243,
+    "name": "Pirovac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.8167,
+        15.6667
+      ]
+    }
+  },
+  {
+    "id": 244,
+    "name": "Gornja Vrba",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.15,
+        18.0667
+      ]
+    }
+  },
+  {
+    "id": 245,
+    "name": "Jakšić",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.36,
+        17.76
+      ]
+    }
+  },
+  {
+    "id": 246,
+    "name": "Drnje",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.21,
+        16.92
+      ]
+    }
+  },
+  {
+    "id": 247,
+    "name": "Selca",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.295,
+        16.847
+      ]
+    }
+  },
+  {
+    "id": 248,
+    "name": "Sikirevci",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1167,
+        18.4667
+      ]
+    }
+  },
+  {
+    "id": 249,
+    "name": "Brela",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.3697,
+        16.9225
+      ]
+    }
+  },
+  {
+    "id": 250,
+    "name": "Varaždinske Toplice",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.2081,
+        16.4214
+      ]
+    }
+  },
+  {
+    "id": 251,
+    "name": "Velika Kopanica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.15,
+        18.4
+      ]
+    }
+  },
+  {
+    "id": 252,
+    "name": "Vrpolje",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2106,
+        18.4056
+      ]
+    }
+  },
+  {
+    "id": 253,
+    "name": "Tinjan",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2172,
+        13.8389
+      ]
+    }
+  },
+  {
+    "id": 254,
+    "name": "Preseka",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.9667,
+        16.3833
+      ]
+    }
+  },
+  {
+    "id": 255,
+    "name": "Bol",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.2667,
+        16.65
+      ]
+    }
+  },
+  {
+    "id": 256,
+    "name": "Brtonigla",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3833,
+        13.6333
+      ]
+    }
+  },
+  {
+    "id": 257,
+    "name": "Feričanci",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.53,
+        17.98
+      ]
+    }
+  },
+  {
+    "id": 258,
+    "name": "Cernik",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.29,
+        17.38
+      ]
+    }
+  },
+  {
+    "id": 259,
+    "name": "Brodski Stupnik",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1667,
+        17.8
+      ]
+    }
+  },
+  {
+    "id": 260,
+    "name": "Breznički Hum",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.1044,
+        16.2806
+      ]
+    }
+  },
+  {
+    "id": 261,
+    "name": "Staro Petrovo Selo",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2333,
+        17.5167
+      ]
+    }
+  },
+  {
+    "id": 262,
+    "name": "Bakar",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3278,
+        14.5361
+      ]
+    }
+  },
+  {
+    "id": 263,
+    "name": "Postire",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.3833,
+        16.6333
+      ]
+    }
+  },
+  {
+    "id": 264,
+    "name": "Kanfanar",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1167,
+        13.8333
+      ]
+    }
+  },
+  {
+    "id": 265,
+    "name": "Tribunj",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.77,
+        15.9169
+      ]
+    }
+  },
+  {
+    "id": 266,
+    "name": "Mošćenička Draga",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2333,
+        14.25
+      ]
+    }
+  },
+  {
+    "id": 267,
+    "name": "Ðelekovec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.25,
+        16.87
+      ]
+    }
+  },
+  {
+    "id": 268,
+    "name": "Komiža",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.05,
+        16.1
+      ]
+    }
+  },
+  {
+    "id": 269,
+    "name": "Lopar",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.83,
+        14.73
+      ]
+    }
+  },
+  {
+    "id": 270,
+    "name": "Visoko",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.0903,
+        16.325
+      ]
+    }
+  },
+  {
+    "id": 271,
+    "name": "Negoslavci",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2833,
+        19
+      ]
+    }
+  },
+  {
+    "id": 272,
+    "name": "Veliki Bukovec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.3,
+        16.7167
+      ]
+    }
+  },
+  {
+    "id": 273,
+    "name": "Karojba",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3,
+        13.8167
+      ]
+    }
+  },
+  {
+    "id": 274,
+    "name": "Bedenica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.0223,
+        16.2639
+      ]
+    }
+  },
+  {
+    "id": 275,
+    "name": "Donji Vidovec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.3333,
+        16.7833
+      ]
+    }
+  },
+  {
+    "id": 276,
+    "name": "Luka",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.97,
+        15.82
+      ]
+    }
+  },
+  {
+    "id": 277,
+    "name": "Gračišće",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2194,
+        14.0103
+      ]
+    }
+  },
+  {
+    "id": 278,
+    "name": "Donja Motičina",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.49,
+        18.02
+      ]
+    }
+  },
+  {
+    "id": 279,
+    "name": "Vižinada",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3333,
+        13.7667
+      ]
+    }
+  },
+  {
+    "id": 280,
+    "name": "Viškovci",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.34,
+        18.45
+      ]
+    }
+  },
+  {
+    "id": 281,
+    "name": "Vladislavci",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.46,
+        18.57
+      ]
+    }
+  },
+  {
+    "id": 282,
+    "name": "Sveti Petar u Šumi",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1833,
+        13.8667
+      ]
+    }
+  },
+  {
+    "id": 283,
+    "name": "Lokve",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3581,
+        14.7481
+      ]
+    }
+  },
+  {
+    "id": 284,
+    "name": "Ernestinovo",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.45,
+        18.66
+      ]
+    }
+  },
+  {
+    "id": 285,
+    "name": "Smokvica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9292,
+        16.8953
+      ]
+    }
+  },
+  {
+    "id": 286,
+    "name": "Markušica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3738,
+        18.7062
+      ]
+    }
+  },
+  {
+    "id": 287,
+    "name": "Zagorska Sela",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.0969,
+        15.635
+      ]
+    }
+  },
+  {
+    "id": 288,
+    "name": "Motovun",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3333,
+        13.8333
+      ]
+    }
+  },
+  {
+    "id": 289,
+    "name": "Malinska",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1333,
+        14.5333
+      ]
+    }
+  },
+  {
+    "id": 290,
+    "name": "Lopatinec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.4331,
+        16.3831
+      ]
+    }
+  },
+  {
+    "id": 291,
+    "name": "Garčin",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1819,
+        18.1839
+      ]
+    }
+  },
+  {
+    "id": 292,
+    "name": "Zrinski Topolovac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.0333,
+        16.7167
+      ]
+    }
+  },
+  {
+    "id": 293,
+    "name": "Tar",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2989,
+        13.625
+      ]
+    }
+  },
+  {
+    "id": 294,
+    "name": "Trpanj",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43,
+        17.275
+      ]
+    }
+  },
+  {
+    "id": 295,
+    "name": "Lovas",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2333,
+        19.1667
+      ]
+    }
+  },
+  {
+    "id": 296,
+    "name": "Mikleuš",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.62,
+        17.8
+      ]
+    }
+  },
+  {
+    "id": 297,
+    "name": "Funtana",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1667,
+        13.6
+      ]
+    }
+  },
+  {
+    "id": 298,
+    "name": "Donja Pušća",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.9167,
+        15.7833
+      ]
+    }
+  },
+  {
+    "id": 299,
+    "name": "Dekanovec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.45,
+        16.5833
+      ]
+    }
+  },
+  {
+    "id": 300,
+    "name": "Povljana",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.3467,
+        15.1156
+      ]
+    }
+  },
+  {
+    "id": 301,
+    "name": "Tordinci",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3667,
+        18.8
+      ]
+    }
+  },
+  {
+    "id": 302,
+    "name": "Kukljica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.035,
+        15.2464
+      ]
+    }
+  },
+  {
+    "id": 303,
+    "name": "Gornji Bogičevci",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.26,
+        17.23
+      ]
+    }
+  },
+  {
+    "id": 304,
+    "name": "Punitovci",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4333,
+        18.4167
+      ]
+    }
+  },
+  {
+    "id": 305,
+    "name": "Nedeščina",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.14,
+        14.1139
+      ]
+    }
+  },
+  {
+    "id": 306,
+    "name": "Drenje",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.38,
+        18.28
+      ]
+    }
+  },
+  {
+    "id": 307,
+    "name": "Dragalić",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2467,
+        17.2889
+      ]
+    }
+  },
+  {
+    "id": 308,
+    "name": "Vlaka",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.0094,
+        17.5256
+      ]
+    }
+  },
+  {
+    "id": 309,
+    "name": "Kaštelir",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3031,
+        13.685
+      ]
+    }
+  },
+  {
+    "id": 310,
+    "name": "Sveti Martin na Muri",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.5269,
+        16.375
+      ]
+    }
+  },
+  {
+    "id": 311,
+    "name": "Klakar",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1,
+        18.1333
+      ]
+    }
+  },
+  {
+    "id": 312,
+    "name": "Podstrana",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.48,
+        16.58
+      ]
+    }
+  },
+  {
+    "id": 313,
+    "name": "Kaštel Sućurac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.55,
+        16.4261
+      ]
+    }
+  },
+  {
+    "id": 314,
+    "name": "Sveta Nedjelja",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.7983,
+        15.7806
+      ]
+    }
+  },
+  {
+    "id": 315,
+    "name": "Okrug Gornji",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.4969,
+        16.22
+      ]
+    }
+  },
+  {
+    "id": 316,
+    "name": "Donji Seget",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.5167,
+        16.2333
+      ]
+    }
+  },
+  {
+    "id": 317,
+    "name": "Petrovsko",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.16,
+        15.84
+      ]
+    }
+  },
+  {
+    "id": 318,
+    "name": "Sveti Ilija",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.245,
+        16.3381
+      ]
+    }
+  },
+  {
+    "id": 319,
+    "name": "Pribislavec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.3925,
+        16.4825
+      ]
+    }
+  },
+  {
+    "id": 320,
+    "name": "Srebreno",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.6233,
+        18.1961
+      ]
+    }
+  },
+  {
+    "id": 321,
+    "name": "Vir",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.3034,
+        15.0855
+      ]
+    }
+  },
+  {
+    "id": 322,
+    "name": "Hum na Sutli",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.2139,
+        15.6903
+      ]
+    }
+  },
+  {
+    "id": 323,
+    "name": "Vidovec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.2833,
+        16.2411
+      ]
+    }
+  },
+  {
+    "id": 324,
+    "name": "Sveti Križ Začretje",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.08,
+        15.91
+      ]
+    }
+  },
+  {
+    "id": 325,
+    "name": "Galovac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.0714,
+        15.3933
+      ]
+    }
+  },
+  {
+    "id": 326,
+    "name": "Poljanica Bistranska",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.9,
+        15.8833
+      ]
+    }
+  },
+  {
+    "id": 327,
+    "name": "Ðurmanec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.2,
+        15.84
+      ]
+    }
+  },
+  {
+    "id": 328,
+    "name": "Vrsar",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.15,
+        13.61
+      ]
+    }
+  },
+  {
+    "id": 329,
+    "name": "Selnica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.4961,
+        16.4036
+      ]
+    }
+  },
+  {
+    "id": 330,
+    "name": "Kali",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.0633,
+        15.2067
+      ]
+    }
+  },
+  {
+    "id": 331,
+    "name": "Špišić-Bukovica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.8561,
+        17.3
+      ]
+    }
+  },
+  {
+    "id": 332,
+    "name": "Bilice",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.7753,
+        15.9181
+      ]
+    }
+  },
+  {
+    "id": 333,
+    "name": "Zmijavci",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.4108,
+        17.2056
+      ]
+    }
+  },
+  {
+    "id": 334,
+    "name": "Krapinske Toplice",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.1,
+        15.85
+      ]
+    }
+  },
+  {
+    "id": 335,
+    "name": "Lumbarda",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.922,
+        17.17
+      ]
+    }
+  },
+  {
+    "id": 336,
+    "name": "Sveti Filip i Jakov",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.9614,
+        15.4248
+      ]
+    }
+  },
+  {
+    "id": 337,
+    "name": "Gornja Stubica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.96,
+        16.03
+      ]
+    }
+  },
+  {
+    "id": 338,
+    "name": "Radoboj",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.1664,
+        15.9236
+      ]
+    }
+  },
+  {
+    "id": 339,
+    "name": "Belica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.4042,
+        16.5183
+      ]
+    }
+  },
+  {
+    "id": 340,
+    "name": "Podbablje",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.4169,
+        17.1761
+      ]
+    }
+  },
+  {
+    "id": 341,
+    "name": "Vinica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.3361,
+        16.1494
+      ]
+    }
+  },
+  {
+    "id": 342,
+    "name": "Kraljevec na Sutli",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.98,
+        15.73
+      ]
+    }
+  },
+  {
+    "id": 343,
+    "name": "Donja Dubrava",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.3147,
+        16.8119
+      ]
+    }
+  },
+  {
+    "id": 344,
+    "name": "Dubravica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.95,
+        15.7333
+      ]
+    }
+  },
+  {
+    "id": 345,
+    "name": "Rugvica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.7361,
+        16.2331
+      ]
+    }
+  },
+  {
+    "id": 346,
+    "name": "Mače",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.09,
+        16.03
+      ]
+    }
+  },
+  {
+    "id": 347,
+    "name": "Koprivnički Bregi",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.1333,
+        16.9
+      ]
+    }
+  },
+  {
+    "id": 348,
+    "name": "Škabrnje",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.0916,
+        15.4516
+      ]
+    }
+  },
+  {
+    "id": 349,
+    "name": "Konjšćina",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.07,
+        16.18
+      ]
+    }
+  },
+  {
+    "id": 350,
+    "name": "Murter",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.8204,
+        15.5899
+      ]
+    }
+  },
+  {
+    "id": 351,
+    "name": "Vrsi",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.2667,
+        15.2333
+      ]
+    }
+  },
+  {
+    "id": 352,
+    "name": "Novi Golubovec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.18,
+        15.98
+      ]
+    }
+  },
+  {
+    "id": 353,
+    "name": "Lobor",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.15,
+        16.06
+      ]
+    }
+  },
+  {
+    "id": 354,
+    "name": "Zlatar",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.15,
+        16.1167
+      ]
+    }
+  },
+  {
+    "id": 355,
+    "name": "Pakoštane",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.9094,
+        15.5081
+      ]
+    }
+  },
+  {
+    "id": 356,
+    "name": "Klinča Sela",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.68,
+        15.75
+      ]
+    }
+  },
+  {
+    "id": 357,
+    "name": "Klenovnik",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.27,
+        16.07
+      ]
+    }
+  },
+  {
+    "id": 358,
+    "name": "Donja Voća",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.3,
+        16.1
+      ]
+    }
+  },
+  {
+    "id": 359,
+    "name": "Antunovac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.49,
+        18.68
+      ]
+    }
+  },
+  {
+    "id": 360,
+    "name": "Pitomača",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.9506,
+        17.2294
+      ]
+    }
+  },
+  {
+    "id": 361,
+    "name": "Desinić",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.14,
+        15.66
+      ]
+    }
+  },
+  {
+    "id": 362,
+    "name": "Gornje Jesenje",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.2064,
+        15.9125
+      ]
+    }
+  },
+  {
+    "id": 363,
+    "name": "Kloštar Podravski",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.9833,
+        17.15
+      ]
+    }
+  },
+  {
+    "id": 364,
+    "name": "Podravske Sesvete",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46,
+        17.2167
+      ]
+    }
+  },
+  {
+    "id": 365,
+    "name": "Posedarje",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.2167,
+        15.4833
+      ]
+    }
+  },
+  {
+    "id": 366,
+    "name": "Polača",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.0167,
+        15.5167
+      ]
+    }
+  },
+  {
+    "id": 367,
+    "name": "Otok",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1467,
+        18.8839
+      ]
+    }
+  },
+  {
+    "id": 368,
+    "name": "Ðurđenovac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.54,
+        18.05
+      ]
+    }
+  },
+  {
+    "id": 369,
+    "name": "Virje",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.0672,
+        16.99
+      ]
+    }
+  },
+  {
+    "id": 370,
+    "name": "Poličnik",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.1833,
+        15.3833
+      ]
+    }
+  },
+  {
+    "id": 371,
+    "name": "Mihovljan",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.1331,
+        15.9722
+      ]
+    }
+  },
+  {
+    "id": 372,
+    "name": "Peteranec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.2,
+        16.8833
+      ]
+    }
+  },
+  {
+    "id": 373,
+    "name": "Ljubešćica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.1667,
+        16.3833
+      ]
+    }
+  },
+  {
+    "id": 374,
+    "name": "Donji Proložac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.4667,
+        17.15
+      ]
+    }
+  },
+  {
+    "id": 375,
+    "name": "Orle",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.68,
+        16.23
+      ]
+    }
+  },
+  {
+    "id": 376,
+    "name": "Žminj",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.15,
+        13.9167
+      ]
+    }
+  },
+  {
+    "id": 377,
+    "name": "Hrašćina",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.11,
+        16.22
+      ]
+    }
+  },
+  {
+    "id": 378,
+    "name": "Vuka",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4339,
+        18.505
+      ]
+    }
+  },
+  {
+    "id": 379,
+    "name": "Novigrad",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.1942,
+        15.5567
+      ]
+    }
+  },
+  {
+    "id": 380,
+    "name": "Sveti Ivan Žabno",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.95,
+        16.6167
+      ]
+    }
+  },
+  {
+    "id": 381,
+    "name": "Sveti Petar Orehovec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.0833,
+        16.45
+      ]
+    }
+  },
+  {
+    "id": 382,
+    "name": "Gornja Rijeka",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.1167,
+        16.4
+      ]
+    }
+  },
+  {
+    "id": 383,
+    "name": "Kamanje",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.6333,
+        15.4
+      ]
+    }
+  },
+  {
+    "id": 384,
+    "name": "Dubrava",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.8381,
+        16.5439
+      ]
+    }
+  },
+  {
+    "id": 385,
+    "name": "Molve",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.1167,
+        17.0333
+      ]
+    }
+  },
+  {
+    "id": 386,
+    "name": "Kalnik",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.1167,
+        16.4667
+      ]
+    }
+  },
+  {
+    "id": 387,
+    "name": "Raša",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.0806,
+        14.0847
+      ]
+    }
+  },
+  {
+    "id": 388,
+    "name": "Pašman",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.9569,
+        15.38
+      ]
+    }
+  },
+  {
+    "id": 389,
+    "name": "Kalinovac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.0333,
+        17.1167
+      ]
+    }
+  },
+  {
+    "id": 390,
+    "name": "Sutivan",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.3833,
+        16.4833
+      ]
+    }
+  },
+  {
+    "id": 391,
+    "name": "Zadvarje",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.4314,
+        16.8897
+      ]
+    }
+  },
+  {
+    "id": 392,
+    "name": "Zemunik Donji",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.1067,
+        15.3806
+      ]
+    }
+  },
+  {
+    "id": 393,
+    "name": "Novo Virje",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.0983,
+        17.155
+      ]
+    }
+  },
+  {
+    "id": 394,
+    "name": "Hercegovac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.6667,
+        17.0167
+      ]
+    }
+  },
+  {
+    "id": 395,
+    "name": "Gradec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.9111,
+        16.4828
+      ]
+    }
+  },
+  {
+    "id": 396,
+    "name": "Kraj",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.6375,
+        16.5819
+      ]
+    }
+  },
+  {
+    "id": 397,
+    "name": "Draganići",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.6,
+        15.6
+      ]
+    }
+  },
+  {
+    "id": 398,
+    "name": "Lukač",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.87,
+        17.42
+      ]
+    }
+  },
+  {
+    "id": 399,
+    "name": "Hlebine",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.1539,
+        16.9661
+      ]
+    }
+  },
+  {
+    "id": 400,
+    "name": "Blato",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9408,
+        16.7917
+      ]
+    }
+  },
+  {
+    "id": 401,
+    "name": "Kaptol",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4347,
+        17.7261
+      ]
+    }
+  },
+  {
+    "id": 402,
+    "name": "Klis",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.5667,
+        16.5167
+      ]
+    }
+  },
+  {
+    "id": 403,
+    "name": "Lećevica",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.6489,
+        16.3489
+      ]
+    }
+  },
+  {
+    "id": 404,
+    "name": "Novigrad Podravski",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.0833,
+        16.95
+      ]
+    }
+  },
+  {
+    "id": 405,
+    "name": "Marina",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.5141,
+        16.1082
+      ]
+    }
+  },
+  {
+    "id": 406,
+    "name": "Rakovec",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.9303,
+        16.3225
+      ]
+    }
+  },
+  {
+    "id": 407,
+    "name": "Ferdinandovac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.05,
+        17.2
+      ]
+    }
+  },
+  {
+    "id": 408,
+    "name": "Gola",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.1958,
+        17.0581
+      ]
+    }
+  },
+  {
+    "id": 409,
+    "name": "Pićan",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2,
+        14.05
+      ]
+    }
+  },
+  {
+    "id": 410,
+    "name": "Popovac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.8092,
+        18.6583
+      ]
+    }
+  },
+  {
+    "id": 411,
+    "name": "Grohote",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.3833,
+        16.2833
+      ]
+    }
+  },
+  {
+    "id": 412,
+    "name": "Stankovci",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.9167,
+        15.7
+      ]
+    }
+  },
+  {
+    "id": 413,
+    "name": "Severin",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.8369,
+        16.9592
+      ]
+    }
+  },
+  {
+    "id": 414,
+    "name": "Gorjani",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4,
+        18.37
+      ]
+    }
+  },
+  {
+    "id": 415,
+    "name": "Nova Kapela",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1989,
+        17.6392
+      ]
+    }
+  },
+  {
+    "id": 416,
+    "name": "Gradina",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.855,
+        17.5072
+      ]
+    }
+  },
+  {
+    "id": 417,
+    "name": "Milna",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.4,
+        16.3267
+      ]
+    }
+  },
+  {
+    "id": 418,
+    "name": "Štefanje",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.8,
+        16.72
+      ]
+    }
+  },
+  {
+    "id": 419,
+    "name": "Žakanje",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.6,
+        15.34
+      ]
+    }
+  },
+  {
+    "id": 420,
+    "name": "Rasinja",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.1839,
+        16.7067
+      ]
+    }
+  },
+  {
+    "id": 421,
+    "name": "Kolan",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.4833,
+        14.95
+      ]
+    }
+  },
+  {
+    "id": 422,
+    "name": "Lekenik",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.5833,
+        16.2167
+      ]
+    }
+  },
+  {
+    "id": 423,
+    "name": "Podgora",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.2433,
+        17.0772
+      ]
+    }
+  },
+  {
+    "id": 424,
+    "name": "Pisarovina",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.5872,
+        15.8583
+      ]
+    }
+  },
+  {
+    "id": 425,
+    "name": "Velika Ludina",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.6,
+        16.6
+      ]
+    }
+  },
+  {
+    "id": 426,
+    "name": "Kapela",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.9881,
+        16.8517
+      ]
+    }
+  },
+  {
+    "id": 427,
+    "name": "Bribir",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1611,
+        14.7647
+      ]
+    }
+  },
+  {
+    "id": 428,
+    "name": "Kula Norinska",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.029,
+        17.605
+      ]
+    }
+  },
+  {
+    "id": 429,
+    "name": "Pakrac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4389,
+        17.1917
+      ]
+    }
+  },
+  {
+    "id": 430,
+    "name": "Primorski Dolac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.6308,
+        16.1761
+      ]
+    }
+  },
+  {
+    "id": 431,
+    "name": "Lokvičič",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.5,
+        17.06
+      ]
+    }
+  },
+  {
+    "id": 432,
+    "name": "Generalski Stol",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.34,
+        15.38
+      ]
+    }
+  },
+  {
+    "id": 433,
+    "name": "Šandrovac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.9,
+        17.0167
+      ]
+    }
+  },
+  {
+    "id": 434,
+    "name": "Sokolovac",
+    "country": "Croatia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.1108,
+        16.7064
+      ]
+    }
+  },
+  {
+    "id": 435,
+    "name": "Podgorica",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4413,
+        19.2629
+      ]
+    }
+  },
+  {
+    "id": 436,
+    "name": "Nikšić",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.7778,
+        18.95
+      ]
+    }
+  },
+  {
+    "id": 437,
+    "name": "Ulcinj",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        41.92,
+        19.2
+      ]
+    }
+  },
+  {
+    "id": 438,
+    "name": "Herceg Novi",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.453,
+        18.5312
+      ]
+    }
+  },
+  {
+    "id": 439,
+    "name": "Budva",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.2881,
+        18.8425
+      ]
+    }
+  },
+  {
+    "id": 440,
+    "name": "Pljevlja",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.3567,
+        19.3583
+      ]
+    }
+  },
+  {
+    "id": 441,
+    "name": "Bijelo Polje",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3031,
+        19.1966
+      ]
+    }
+  },
+  {
+    "id": 442,
+    "name": "Cetinje",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.38,
+        18.92
+      ]
+    }
+  },
+  {
+    "id": 443,
+    "name": "Plav",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.6,
+        19.94
+      ]
+    }
+  },
+  {
+    "id": 444,
+    "name": "Bar",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.1,
+        19.1
+      ]
+    }
+  },
+  {
+    "id": 445,
+    "name": "Kotor",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.43,
+        18.77
+      ]
+    }
+  },
+  {
+    "id": 446,
+    "name": "Berane",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.84,
+        19.86
+      ]
+    }
+  },
+  {
+    "id": 447,
+    "name": "Mojkovac",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.96,
+        19.58
+      ]
+    }
+  },
+  {
+    "id": 448,
+    "name": "Rožaje",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.84,
+        20.16
+      ]
+    }
+  },
+  {
+    "id": 449,
+    "name": "Tivat",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.43,
+        18.7
+      ]
+    }
+  },
+  {
+    "id": 450,
+    "name": "Petnjica",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9089,
+        19.9644
+      ]
+    }
+  },
+  {
+    "id": 451,
+    "name": "Danilovgrad",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.61,
+        19.05
+      ]
+    }
+  },
+  {
+    "id": 452,
+    "name": "Tuzi",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3656,
+        19.3314
+      ]
+    }
+  },
+  {
+    "id": 453,
+    "name": "Bijela",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4533,
+        18.6556
+      ]
+    }
+  },
+  {
+    "id": 454,
+    "name": "Igalo",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4589,
+        18.5122
+      ]
+    }
+  },
+  {
+    "id": 455,
+    "name": "Golubovci",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3344,
+        19.2253
+      ]
+    }
+  },
+  {
+    "id": 456,
+    "name": "Kolašin",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.8236,
+        19.5225
+      ]
+    }
+  },
+  {
+    "id": 457,
+    "name": "Mojanovići",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3383,
+        19.2194
+      ]
+    }
+  },
+  {
+    "id": 458,
+    "name": "Rakonje",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.0197,
+        19.7367
+      ]
+    }
+  },
+  {
+    "id": 459,
+    "name": "Mrčevac",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4186,
+        18.7175
+      ]
+    }
+  },
+  {
+    "id": 460,
+    "name": "Žabljak",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.155,
+        19.1208
+      ]
+    }
+  },
+  {
+    "id": 461,
+    "name": "Gusinje",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.5619,
+        19.8339
+      ]
+    }
+  },
+  {
+    "id": 462,
+    "name": "Zelenika",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4515,
+        18.5767
+      ]
+    }
+  },
+  {
+    "id": 463,
+    "name": "Petrovac na Moru",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.2056,
+        18.9425
+      ]
+    }
+  },
+  {
+    "id": 464,
+    "name": "Podi",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4636,
+        18.5433
+      ]
+    }
+  },
+  {
+    "id": 465,
+    "name": "Mahala",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3506,
+        19.2189
+      ]
+    }
+  },
+  {
+    "id": 466,
+    "name": "Baošići",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4429,
+        18.627
+      ]
+    }
+  },
+  {
+    "id": 467,
+    "name": "Plužine",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.15,
+        18.83
+      ]
+    }
+  },
+  {
+    "id": 468,
+    "name": "Loznica",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.0361,
+        19.7569
+      ]
+    }
+  },
+  {
+    "id": 469,
+    "name": "Mataguži",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3208,
+        19.2703
+      ]
+    }
+  },
+  {
+    "id": 470,
+    "name": "Goričani",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.33,
+        19.2117
+      ]
+    }
+  },
+  {
+    "id": 471,
+    "name": "Ðenovići",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4369,
+        18.6019
+      ]
+    }
+  },
+  {
+    "id": 472,
+    "name": "Meljine",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4558,
+        18.5619
+      ]
+    }
+  },
+  {
+    "id": 473,
+    "name": "Andrijevica",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.73,
+        19.79
+      ]
+    }
+  },
+  {
+    "id": 474,
+    "name": "Donji Kokoti",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4,
+        19.1833
+      ]
+    }
+  },
+  {
+    "id": 475,
+    "name": "Dobra Voda",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.0439,
+        19.1432
+      ]
+    }
+  },
+  {
+    "id": 476,
+    "name": "Balabani",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3248,
+        19.2385
+      ]
+    }
+  },
+  {
+    "id": 477,
+    "name": "Vranj",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.326,
+        19.2974
+      ]
+    }
+  },
+  {
+    "id": 478,
+    "name": "Kodre",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        41.9297,
+        19.2389
+      ]
+    }
+  },
+  {
+    "id": 479,
+    "name": "Kumbor",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4406,
+        18.5858
+      ]
+    }
+  },
+  {
+    "id": 480,
+    "name": "Bečići",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.2839,
+        18.8692
+      ]
+    }
+  },
+  {
+    "id": 481,
+    "name": "Srpska",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3701,
+        19.2172
+      ]
+    }
+  },
+  {
+    "id": 482,
+    "name": "Prošćenje",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9994,
+        19.4936
+      ]
+    }
+  },
+  {
+    "id": 483,
+    "name": "Donja Lastva",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4431,
+        18.6886
+      ]
+    }
+  },
+  {
+    "id": 484,
+    "name": "Kuti",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4613,
+        18.581
+      ]
+    }
+  },
+  {
+    "id": 485,
+    "name": "Prijevor",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.2949,
+        18.8079
+      ]
+    }
+  },
+  {
+    "id": 486,
+    "name": "Botun",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3826,
+        19.1986
+      ]
+    }
+  },
+  {
+    "id": 487,
+    "name": "Martinoviće",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.5774,
+        19.8789
+      ]
+    }
+  },
+  {
+    "id": 488,
+    "name": "Muo",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4304,
+        18.7583
+      ]
+    }
+  },
+  {
+    "id": 489,
+    "name": "Sukurić",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3263,
+        19.3211
+      ]
+    }
+  },
+  {
+    "id": 490,
+    "name": "Vojno Selo",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.5792,
+        19.9174
+      ]
+    }
+  },
+  {
+    "id": 491,
+    "name": "Rasovo",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.0453,
+        19.7773
+      ]
+    }
+  },
+  {
+    "id": 492,
+    "name": "Grbavci",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3664,
+        19.1884
+      ]
+    }
+  },
+  {
+    "id": 493,
+    "name": "Pečurice",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.031,
+        19.1732
+      ]
+    }
+  },
+  {
+    "id": 494,
+    "name": "Beri",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4328,
+        19.1849
+      ]
+    }
+  },
+  {
+    "id": 495,
+    "name": "Ćurilac",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.5429,
+        19.1213
+      ]
+    }
+  },
+  {
+    "id": 496,
+    "name": "Sušćepan",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4668,
+        18.5097
+      ]
+    }
+  },
+  {
+    "id": 497,
+    "name": "Pitoma Loza",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.5099,
+        19.155
+      ]
+    }
+  },
+  {
+    "id": 498,
+    "name": "Radovići",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3929,
+        18.6702
+      ]
+    }
+  },
+  {
+    "id": 499,
+    "name": "Kosić",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.5212,
+        19.1581
+      ]
+    }
+  },
+  {
+    "id": 500,
+    "name": "Donji Mileš",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3892,
+        19.3264
+      ]
+    }
+  },
+  {
+    "id": 501,
+    "name": "Dinoša",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.413,
+        19.339
+      ]
+    }
+  },
+  {
+    "id": 502,
+    "name": "Sustaš",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.1118,
+        19.1192
+      ]
+    }
+  },
+  {
+    "id": 503,
+    "name": "Berislavci",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3027,
+        19.2176
+      ]
+    }
+  },
+  {
+    "id": 504,
+    "name": "Lajkovići",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3669,
+        19.215
+      ]
+    }
+  },
+  {
+    "id": 505,
+    "name": "Lagatori",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9137,
+        19.9884
+      ]
+    }
+  },
+  {
+    "id": 506,
+    "name": "Vladni",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3417,
+        19.2865
+      ]
+    }
+  },
+  {
+    "id": 507,
+    "name": "Šavnik",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.95,
+        19.1
+      ]
+    }
+  },
+  {
+    "id": 508,
+    "name": "Ðuraševići",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3938,
+        18.6895
+      ]
+    }
+  },
+  {
+    "id": 509,
+    "name": "Crnča",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9386,
+        19.8519
+      ]
+    }
+  },
+  {
+    "id": 510,
+    "name": "Farmaci",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.412,
+        19.1928
+      ]
+    }
+  },
+  {
+    "id": 511,
+    "name": "Stijena",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4558,
+        19.2048
+      ]
+    }
+  },
+  {
+    "id": 512,
+    "name": "Desni Meteh",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.6303,
+        19.9949
+      ]
+    }
+  },
+  {
+    "id": 513,
+    "name": "Slatina",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.7544,
+        19.7728
+      ]
+    }
+  },
+  {
+    "id": 514,
+    "name": "Kavač",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4104,
+        18.7498
+      ]
+    }
+  },
+  {
+    "id": 515,
+    "name": "Bogajići",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.5838,
+        19.9534
+      ]
+    }
+  },
+  {
+    "id": 516,
+    "name": "Sasovići",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4638,
+        18.5701
+      ]
+    }
+  },
+  {
+    "id": 517,
+    "name": "Klikovače",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4999,
+        19.1852
+      ]
+    }
+  },
+  {
+    "id": 518,
+    "name": "Vuča",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9312,
+        20.2703
+      ]
+    }
+  },
+  {
+    "id": 519,
+    "name": "Gornji Vukovci",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3338,
+        19.2013
+      ]
+    }
+  },
+  {
+    "id": 520,
+    "name": "Kunje",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.0131,
+        19.1832
+      ]
+    }
+  },
+  {
+    "id": 521,
+    "name": "Babin",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.904,
+        19.9034
+      ]
+    }
+  },
+  {
+    "id": 522,
+    "name": "Sveti Stefan",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.2558,
+        18.8911
+      ]
+    }
+  },
+  {
+    "id": 523,
+    "name": "Grižice",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9016,
+        20.14
+      ]
+    }
+  },
+  {
+    "id": 524,
+    "name": "Gornja Jošica",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4625,
+        18.6719
+      ]
+    }
+  },
+  {
+    "id": 525,
+    "name": "Njegnjevo",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.0836,
+        19.7842
+      ]
+    }
+  },
+  {
+    "id": 526,
+    "name": "Palež",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.1821,
+        19.1409
+      ]
+    }
+  },
+  {
+    "id": 527,
+    "name": "Zoganj",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        41.9489,
+        19.2836
+      ]
+    }
+  },
+  {
+    "id": 528,
+    "name": "Radetina",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.896,
+        20.2571
+      ]
+    }
+  },
+  {
+    "id": 529,
+    "name": "Donji Martinići",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.5391,
+        19.1804
+      ]
+    }
+  },
+  {
+    "id": 530,
+    "name": "Žari",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.0569,
+        19.4747
+      ]
+    }
+  },
+  {
+    "id": 531,
+    "name": "Pistula",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        41.942,
+        19.2675
+      ]
+    }
+  },
+  {
+    "id": 532,
+    "name": "Velike Crnokrpe",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9159,
+        20.2347
+      ]
+    }
+  },
+  {
+    "id": 533,
+    "name": "Boljanina",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.0378,
+        19.7992
+      ]
+    }
+  },
+  {
+    "id": 534,
+    "name": "Dragovoljići",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.7728,
+        19.043
+      ]
+    }
+  },
+  {
+    "id": 535,
+    "name": "Sukobin",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.0118,
+        19.3625
+      ]
+    }
+  },
+  {
+    "id": 536,
+    "name": "Radmanci",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9217,
+        19.9659
+      ]
+    }
+  },
+  {
+    "id": 537,
+    "name": "Podostrog",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3002,
+        18.8407
+      ]
+    }
+  },
+  {
+    "id": 538,
+    "name": "Dacići",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.8087,
+        20.1778
+      ]
+    }
+  },
+  {
+    "id": 539,
+    "name": "Zagrađe",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.871,
+        19.9351
+      ]
+    }
+  },
+  {
+    "id": 540,
+    "name": "Gornja Lovnica",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9024,
+        20.1077
+      ]
+    }
+  },
+  {
+    "id": 541,
+    "name": "Rastiš",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.0477,
+        19.3291
+      ]
+    }
+  },
+  {
+    "id": 542,
+    "name": "Bartula",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.0837,
+        19.1368
+      ]
+    }
+  },
+  {
+    "id": 543,
+    "name": "Goduša",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9669,
+        19.9397
+      ]
+    }
+  },
+  {
+    "id": 544,
+    "name": "Dobrakovo",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.1394,
+        19.7744
+      ]
+    }
+  },
+  {
+    "id": 545,
+    "name": "Gornja Korita",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.0044,
+        19.9597
+      ]
+    }
+  },
+  {
+    "id": 546,
+    "name": "Kruševo",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.5623,
+        19.8651
+      ]
+    }
+  },
+  {
+    "id": 547,
+    "name": "Prijelozi",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9528,
+        19.7911
+      ]
+    }
+  },
+  {
+    "id": 548,
+    "name": "Donji Stoliv",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4724,
+        18.7124
+      ]
+    }
+  },
+  {
+    "id": 549,
+    "name": "Morakovo",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.7166,
+        19.1571
+      ]
+    }
+  },
+  {
+    "id": 550,
+    "name": "Veliki Ostros",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.0783,
+        19.316
+      ]
+    }
+  },
+  {
+    "id": 551,
+    "name": "Obrov",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.0236,
+        19.7431
+      ]
+    }
+  },
+  {
+    "id": 552,
+    "name": "Sutvara",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3774,
+        18.7669
+      ]
+    }
+  },
+  {
+    "id": 553,
+    "name": "Potkula",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.568,
+        19.1424
+      ]
+    }
+  },
+  {
+    "id": 554,
+    "name": "Staro Selo",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.7188,
+        19.1064
+      ]
+    }
+  },
+  {
+    "id": 555,
+    "name": "Velje Brdo",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4908,
+        19.2183
+      ]
+    }
+  },
+  {
+    "id": 556,
+    "name": "Bistrice",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3057,
+        19.1855
+      ]
+    }
+  },
+  {
+    "id": 557,
+    "name": "Brezovik",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.8188,
+        18.9279
+      ]
+    }
+  },
+  {
+    "id": 558,
+    "name": "Luštica",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3967,
+        18.6019
+      ]
+    }
+  },
+  {
+    "id": 559,
+    "name": "Pržno",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.2692,
+        18.8942
+      ]
+    }
+  },
+  {
+    "id": 560,
+    "name": "Majstorovina",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9742,
+        19.6917
+      ]
+    }
+  },
+  {
+    "id": 561,
+    "name": "Crljenice",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.3569,
+        19.3922
+      ]
+    }
+  },
+  {
+    "id": 562,
+    "name": "Kosići",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.0258,
+        19.2731
+      ]
+    }
+  },
+  {
+    "id": 563,
+    "name": "Zankovići",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.1446,
+        19.0478
+      ]
+    }
+  },
+  {
+    "id": 564,
+    "name": "Jastreb",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.5274,
+        19.136
+      ]
+    }
+  },
+  {
+    "id": 565,
+    "name": "Štitari",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9432,
+        19.8375
+      ]
+    }
+  },
+  {
+    "id": 566,
+    "name": "Skić",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.6067,
+        19.9418
+      ]
+    }
+  },
+  {
+    "id": 567,
+    "name": "Ðurići",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4718,
+        18.6806
+      ]
+    }
+  },
+  {
+    "id": 568,
+    "name": "Mitrovići",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3644,
+        19.2174
+      ]
+    }
+  },
+  {
+    "id": 569,
+    "name": "Mašnica",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.6671,
+        19.8865
+      ]
+    }
+  },
+  {
+    "id": 570,
+    "name": "Marsenića Rijeka",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.7816,
+        19.8376
+      ]
+    }
+  },
+  {
+    "id": 571,
+    "name": "Brajovići",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.5536,
+        19.1506
+      ]
+    }
+  },
+  {
+    "id": 572,
+    "name": "Martići",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.0919,
+        19.2976
+      ]
+    }
+  },
+  {
+    "id": 573,
+    "name": "Dobrinje",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.1514,
+        19.7197
+      ]
+    }
+  },
+  {
+    "id": 574,
+    "name": "Kanje",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.1369,
+        19.7542
+      ]
+    }
+  },
+  {
+    "id": 575,
+    "name": "Tucanje",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9311,
+        19.9316
+      ]
+    }
+  },
+  {
+    "id": 576,
+    "name": "Orahovića",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.1131,
+        19.75
+      ]
+    }
+  },
+  {
+    "id": 577,
+    "name": "Pripčići",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.0033,
+        19.7364
+      ]
+    }
+  },
+  {
+    "id": 578,
+    "name": "Unevina",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.1056,
+        19.7694
+      ]
+    }
+  },
+  {
+    "id": 579,
+    "name": "Kaluđerac",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.1997,
+        18.9655
+      ]
+    }
+  },
+  {
+    "id": 580,
+    "name": "Rakića Kuće",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3883,
+        19.2801
+      ]
+    }
+  },
+  {
+    "id": 581,
+    "name": "Orja Luka",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.5642,
+        19.0793
+      ]
+    }
+  },
+  {
+    "id": 582,
+    "name": "Liverovići",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.7417,
+        19.0718
+      ]
+    }
+  },
+  {
+    "id": 583,
+    "name": "Štitarica",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9253,
+        19.5428
+      ]
+    }
+  },
+  {
+    "id": 584,
+    "name": "Gračanica",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.696,
+        19.8458
+      ]
+    }
+  },
+  {
+    "id": 585,
+    "name": "Gornja Ržanica",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.6626,
+        19.9161
+      ]
+    }
+  },
+  {
+    "id": 586,
+    "name": "Šušunja",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3201,
+        19.2226
+      ]
+    }
+  },
+  {
+    "id": 587,
+    "name": "Vuksanlekići",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3373,
+        19.3399
+      ]
+    }
+  },
+  {
+    "id": 588,
+    "name": "Mojdež",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4851,
+        18.4907
+      ]
+    }
+  },
+  {
+    "id": 589,
+    "name": "Donji Morinj",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4892,
+        18.6491
+      ]
+    }
+  },
+  {
+    "id": 590,
+    "name": "Potrk",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.0447,
+        19.6144
+      ]
+    }
+  },
+  {
+    "id": 591,
+    "name": "Donji Orahovac",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4905,
+        18.7593
+      ]
+    }
+  },
+  {
+    "id": 592,
+    "name": "Ponari",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3167,
+        19.1813
+      ]
+    }
+  },
+  {
+    "id": 593,
+    "name": "Lekovina",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.1519,
+        19.6125
+      ]
+    }
+  },
+  {
+    "id": 594,
+    "name": "Kalušići",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.2414,
+        19.085
+      ]
+    }
+  },
+  {
+    "id": 595,
+    "name": "Savin Bor",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9498,
+        20.0441
+      ]
+    }
+  },
+  {
+    "id": 596,
+    "name": "Srđevac",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9544,
+        19.8519
+      ]
+    }
+  },
+  {
+    "id": 597,
+    "name": "Pothum",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3097,
+        19.3386
+      ]
+    }
+  },
+  {
+    "id": 598,
+    "name": "Vijenac",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.3885,
+        19.0952
+      ]
+    }
+  },
+  {
+    "id": 599,
+    "name": "Murino",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.6619,
+        19.8857
+      ]
+    }
+  },
+  {
+    "id": 600,
+    "name": "Otilovići",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.3433,
+        19.423
+      ]
+    }
+  },
+  {
+    "id": 601,
+    "name": "Tomaševo",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.0578,
+        19.6364
+      ]
+    }
+  },
+  {
+    "id": 602,
+    "name": "Daljam",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4866,
+        19.1793
+      ]
+    }
+  },
+  {
+    "id": 603,
+    "name": "Kruševice",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.5346,
+        18.4944
+      ]
+    }
+  },
+  {
+    "id": 604,
+    "name": "Fundina",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4438,
+        19.3643
+      ]
+    }
+  },
+  {
+    "id": 605,
+    "name": "Šipačno",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.8708,
+        18.9431
+      ]
+    }
+  },
+  {
+    "id": 606,
+    "name": "Paučina",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.932,
+        20.1537
+      ]
+    }
+  },
+  {
+    "id": 607,
+    "name": "Bobulja",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.5536,
+        19.1636
+      ]
+    }
+  },
+  {
+    "id": 608,
+    "name": "Kotrabudan",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.318,
+        19.3271
+      ]
+    }
+  },
+  {
+    "id": 609,
+    "name": "Velje Selo",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.033,
+        19.1983
+      ]
+    }
+  },
+  {
+    "id": 610,
+    "name": "Bratica",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        41.9513,
+        19.195
+      ]
+    }
+  },
+  {
+    "id": 611,
+    "name": "Boreti",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.2837,
+        18.863
+      ]
+    }
+  },
+  {
+    "id": 612,
+    "name": "Gornja Brvenica",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.3786,
+        19.2353
+      ]
+    }
+  },
+  {
+    "id": 613,
+    "name": "Stevanovac",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9903,
+        19.5465
+      ]
+    }
+  },
+  {
+    "id": 614,
+    "name": "Kolonza",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        41.9406,
+        19.2409
+      ]
+    }
+  },
+  {
+    "id": 615,
+    "name": "Ubli",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4906,
+        19.3958
+      ]
+    }
+  },
+  {
+    "id": 616,
+    "name": "Vrševo",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9444,
+        19.9597
+      ]
+    }
+  },
+  {
+    "id": 617,
+    "name": "Godočelje",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9159,
+        19.9401
+      ]
+    }
+  },
+  {
+    "id": 618,
+    "name": "Ulotina",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.6833,
+        19.8459
+      ]
+    }
+  },
+  {
+    "id": 619,
+    "name": "Trebesinj",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4723,
+        18.5239
+      ]
+    }
+  },
+  {
+    "id": 620,
+    "name": "Žiljak",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.0747,
+        19.8219
+      ]
+    }
+  },
+  {
+    "id": 621,
+    "name": "Bjeloševina",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.7204,
+        19.1375
+      ]
+    }
+  },
+  {
+    "id": 622,
+    "name": "Gošići",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3975,
+        18.6624
+      ]
+    }
+  },
+  {
+    "id": 623,
+    "name": "Stanjevića Rupa",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.5386,
+        19.2196
+      ]
+    }
+  },
+  {
+    "id": 624,
+    "name": "Zbljevo",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.3231,
+        19.3039
+      ]
+    }
+  },
+  {
+    "id": 625,
+    "name": "Vranjina",
+    "country": "Montenegro",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.2783,
+        19.1347
+      ]
+    }
+  },
+  {
+    "id": 626,
+    "name": "Beograd",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.82,
+        20.46
+      ]
+    }
+  },
+  {
+    "id": 627,
+    "name": "Novi Sad",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2542,
+        19.8425
+      ]
+    }
+  },
+  {
+    "id": 628,
+    "name": "Niš",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.3192,
+        21.8961
+      ]
+    }
+  },
+  {
+    "id": 629,
+    "name": "Zemun",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.85,
+        20.4
+      ]
+    }
+  },
+  {
+    "id": 630,
+    "name": "Kragujevac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.0142,
+        20.9394
+      ]
+    }
+  },
+  {
+    "id": 631,
+    "name": "Valjevo",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.2667,
+        19.8833
+      ]
+    }
+  },
+  {
+    "id": 632,
+    "name": "Loznica",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.5333,
+        19.2258
+      ]
+    }
+  },
+  {
+    "id": 633,
+    "name": "Sremska Mitrovica",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.97,
+        19.6125
+      ]
+    }
+  },
+  {
+    "id": 634,
+    "name": "Zrenjanin",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3833,
+        20.3894
+      ]
+    }
+  },
+  {
+    "id": 635,
+    "name": "Pančevo",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.8706,
+        20.6403
+      ]
+    }
+  },
+  {
+    "id": 636,
+    "name": "Stara Pazova",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.9833,
+        20.1667
+      ]
+    }
+  },
+  {
+    "id": 637,
+    "name": "Čačak",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.8914,
+        20.3497
+      ]
+    }
+  },
+  {
+    "id": 638,
+    "name": "Kraljevo",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.7234,
+        20.687
+      ]
+    }
+  },
+  {
+    "id": 639,
+    "name": "Novi Pazar",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.15,
+        20.5167
+      ]
+    }
+  },
+  {
+    "id": 640,
+    "name": "Leskovac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9981,
+        21.9461
+      ]
+    }
+  },
+  {
+    "id": 641,
+    "name": "Užice",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.85,
+        19.85
+      ]
+    }
+  },
+  {
+    "id": 642,
+    "name": "Kruševac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.5833,
+        21.3267
+      ]
+    }
+  },
+  {
+    "id": 643,
+    "name": "Vranje",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.5542,
+        21.8972
+      ]
+    }
+  },
+  {
+    "id": 644,
+    "name": "Ruma",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45,
+        19.8333
+      ]
+    }
+  },
+  {
+    "id": 645,
+    "name": "Mladenovac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.4333,
+        20.7
+      ]
+    }
+  },
+  {
+    "id": 646,
+    "name": "Sombor",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.7833,
+        19.1167
+      ]
+    }
+  },
+  {
+    "id": 647,
+    "name": "Batajnica",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.9022,
+        20.2814
+      ]
+    }
+  },
+  {
+    "id": 648,
+    "name": "Inđija",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.05,
+        20.0833
+      ]
+    }
+  },
+  {
+    "id": 649,
+    "name": "Borča",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.87,
+        20.45
+      ]
+    }
+  },
+  {
+    "id": 650,
+    "name": "Surčin",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.8,
+        20.2833
+      ]
+    }
+  },
+  {
+    "id": 651,
+    "name": "Kula",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.6,
+        19.5333
+      ]
+    }
+  },
+  {
+    "id": 652,
+    "name": "Kikinda",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.8333,
+        20.45
+      ]
+    }
+  },
+  {
+    "id": 653,
+    "name": "Bečej",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.6167,
+        20.0333
+      ]
+    }
+  },
+  {
+    "id": 654,
+    "name": "Prijepolje",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.5439,
+        19.6514
+      ]
+    }
+  },
+  {
+    "id": 655,
+    "name": "Vršac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1167,
+        21.3033
+      ]
+    }
+  },
+  {
+    "id": 656,
+    "name": "Šid",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1167,
+        19.2333
+      ]
+    }
+  },
+  {
+    "id": 657,
+    "name": "Bor",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.1303,
+        22.1036
+      ]
+    }
+  },
+  {
+    "id": 658,
+    "name": "Kovin",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.75,
+        20.9667
+      ]
+    }
+  },
+  {
+    "id": 659,
+    "name": "Subotica",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.1003,
+        19.6656
+      ]
+    }
+  },
+  {
+    "id": 660,
+    "name": "Bačka Palanka",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.25,
+        19.4
+      ]
+    }
+  },
+  {
+    "id": 661,
+    "name": "Apatin",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.6667,
+        18.9833
+      ]
+    }
+  },
+  {
+    "id": 662,
+    "name": "Temerin",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4167,
+        19.8833
+      ]
+    }
+  },
+  {
+    "id": 663,
+    "name": "Bajina Bašta",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.9731,
+        19.5597
+      ]
+    }
+  },
+  {
+    "id": 664,
+    "name": "Vrbas",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.5667,
+        19.65
+      ]
+    }
+  },
+  {
+    "id": 665,
+    "name": "Ćuprija",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.9231,
+        21.3686
+      ]
+    }
+  },
+  {
+    "id": 666,
+    "name": "Senta",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.9314,
+        20.09
+      ]
+    }
+  },
+  {
+    "id": 667,
+    "name": "Pećinci",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.9,
+        19.9667
+      ]
+    }
+  },
+  {
+    "id": 668,
+    "name": "Futog",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2333,
+        19.7167
+      ]
+    }
+  },
+  {
+    "id": 669,
+    "name": "Veternik",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2533,
+        19.7608
+      ]
+    }
+  },
+  {
+    "id": 670,
+    "name": "Trstenik",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.6186,
+        20.9972
+      ]
+    }
+  },
+  {
+    "id": 671,
+    "name": "Nova Pazova",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.95,
+        20.2167
+      ]
+    }
+  },
+  {
+    "id": 672,
+    "name": "Srbobran",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.5333,
+        19.7833
+      ]
+    }
+  },
+  {
+    "id": 673,
+    "name": "Bačka Topola",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.8167,
+        19.6333
+      ]
+    }
+  },
+  {
+    "id": 674,
+    "name": "Titel",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2047,
+        20.3
+      ]
+    }
+  },
+  {
+    "id": 675,
+    "name": "Petrovaradin",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.25,
+        19.8667
+      ]
+    }
+  },
+  {
+    "id": 676,
+    "name": "Niška Banja",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.2933,
+        22.0061
+      ]
+    }
+  },
+  {
+    "id": 677,
+    "name": "Sjenica",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.2667,
+        20
+      ]
+    }
+  },
+  {
+    "id": 678,
+    "name": "Sečanj",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3667,
+        20.7725
+      ]
+    }
+  },
+  {
+    "id": 679,
+    "name": "Novi Bečej",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.6,
+        20.1167
+      ]
+    }
+  },
+  {
+    "id": 680,
+    "name": "Sremska Kamenica",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2206,
+        19.8392
+      ]
+    }
+  },
+  {
+    "id": 681,
+    "name": "Kać",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3,
+        19.95
+      ]
+    }
+  },
+  {
+    "id": 682,
+    "name": "Ugrinovci",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.8783,
+        20.1869
+      ]
+    }
+  },
+  {
+    "id": 683,
+    "name": "Bela Crkva",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.8975,
+        21.4169
+      ]
+    }
+  },
+  {
+    "id": 684,
+    "name": "Laćarak",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45,
+        19.5667
+      ]
+    }
+  },
+  {
+    "id": 685,
+    "name": "Ada",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.8,
+        20.1333
+      ]
+    }
+  },
+  {
+    "id": 686,
+    "name": "Vrnjačka Banja",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.6236,
+        20.8936
+      ]
+    }
+  },
+  {
+    "id": 687,
+    "name": "Kanjiža",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.0667,
+        20.05
+      ]
+    }
+  },
+  {
+    "id": 688,
+    "name": "Vranjska Banja",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.5556,
+        21.9917
+      ]
+    }
+  },
+  {
+    "id": 689,
+    "name": "Novi Banovci",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.95,
+        20.2833
+      ]
+    }
+  },
+  {
+    "id": 690,
+    "name": "Žabalj",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3667,
+        20.0667
+      ]
+    }
+  },
+  {
+    "id": 691,
+    "name": "Odžaci",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.5167,
+        19.2667
+      ]
+    }
+  },
+  {
+    "id": 692,
+    "name": "Crvenka",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.6583,
+        19.4556
+      ]
+    }
+  },
+  {
+    "id": 693,
+    "name": "Sremski Karlovci",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2,
+        19.9333
+      ]
+    }
+  },
+  {
+    "id": 694,
+    "name": "Dobanovci",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.8333,
+        20.2333
+      ]
+    }
+  },
+  {
+    "id": 695,
+    "name": "Beočin",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2,
+        19.7333
+      ]
+    }
+  },
+  {
+    "id": 696,
+    "name": "Sokobanja",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.65,
+        21.8667
+      ]
+    }
+  },
+  {
+    "id": 697,
+    "name": "Sivac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.7,
+        19.3833
+      ]
+    }
+  },
+  {
+    "id": 698,
+    "name": "Palić",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.1031,
+        19.7586
+      ]
+    }
+  },
+  {
+    "id": 699,
+    "name": "Starčevo",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.8072,
+        20.7047
+      ]
+    }
+  },
+  {
+    "id": 700,
+    "name": "Lapovo",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.1833,
+        21.1
+      ]
+    }
+  },
+  {
+    "id": 701,
+    "name": "Kačarevo",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.9597,
+        20.6894
+      ]
+    }
+  },
+  {
+    "id": 702,
+    "name": "Banatsko Novo Selo",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.9897,
+        20.7836
+      ]
+    }
+  },
+  {
+    "id": 703,
+    "name": "Novi Kneževac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.05,
+        20.1
+      ]
+    }
+  },
+  {
+    "id": 704,
+    "name": "Kovačica",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1117,
+        20.6214
+      ]
+    }
+  },
+  {
+    "id": 705,
+    "name": "Novo Miloševo",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.7197,
+        20.3019
+      ]
+    }
+  },
+  {
+    "id": 706,
+    "name": "Melenci",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3764,
+        20.3008
+      ]
+    }
+  },
+  {
+    "id": 707,
+    "name": "Rumenka",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3,
+        19.75
+      ]
+    }
+  },
+  {
+    "id": 708,
+    "name": "Bogatić",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.8333,
+        19.4833
+      ]
+    }
+  },
+  {
+    "id": 709,
+    "name": "Jakovo",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.75,
+        20.2667
+      ]
+    }
+  },
+  {
+    "id": 710,
+    "name": "Zvečka",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.6389,
+        20.1647
+      ]
+    }
+  },
+  {
+    "id": 711,
+    "name": "Banja Koviljača",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.5167,
+        19.15
+      ]
+    }
+  },
+  {
+    "id": 712,
+    "name": "Horgoš",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        46.1533,
+        19.9703
+      ]
+    }
+  },
+  {
+    "id": 713,
+    "name": "Beška",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1333,
+        20.0667
+      ]
+    }
+  },
+  {
+    "id": 714,
+    "name": "Jabuka",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.9431,
+        20.5931
+      ]
+    }
+  },
+  {
+    "id": 715,
+    "name": "Bački Petrovac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3606,
+        19.5917
+      ]
+    }
+  },
+  {
+    "id": 716,
+    "name": "Bavanište",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.8181,
+        20.8722
+      ]
+    }
+  },
+  {
+    "id": 717,
+    "name": "Bač",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3833,
+        19.2333
+      ]
+    }
+  },
+  {
+    "id": 718,
+    "name": "Mol",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.7586,
+        20.1253
+      ]
+    }
+  },
+  {
+    "id": 719,
+    "name": "Stari Banovci",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.9833,
+        20.2833
+      ]
+    }
+  },
+  {
+    "id": 720,
+    "name": "Banatski Karlovac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.05,
+        21.0167
+      ]
+    }
+  },
+  {
+    "id": 721,
+    "name": "Padina",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.12,
+        20.72
+      ]
+    }
+  },
+  {
+    "id": 722,
+    "name": "Bački Jarak",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3667,
+        19.8667
+      ]
+    }
+  },
+  {
+    "id": 723,
+    "name": "Mali Iđoš",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.7069,
+        19.6644
+      ]
+    }
+  },
+  {
+    "id": 724,
+    "name": "Bačko Gradište",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.5333,
+        20.0333
+      ]
+    }
+  },
+  {
+    "id": 725,
+    "name": "Debeljača",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.0711,
+        20.6
+      ]
+    }
+  },
+  {
+    "id": 726,
+    "name": "Mokrin",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.9347,
+        20.4044
+      ]
+    }
+  },
+  {
+    "id": 727,
+    "name": "Stara Moravica",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.8689,
+        19.4661
+      ]
+    }
+  },
+  {
+    "id": 728,
+    "name": "Irig",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1,
+        19.85
+      ]
+    }
+  },
+  {
+    "id": 729,
+    "name": "Stanišić",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.9333,
+        19.1667
+      ]
+    }
+  },
+  {
+    "id": 730,
+    "name": "Golubinci",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.9833,
+        20.0667
+      ]
+    }
+  },
+  {
+    "id": 731,
+    "name": "Čoka",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.9333,
+        20.15
+      ]
+    }
+  },
+  {
+    "id": 732,
+    "name": "Elemir",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4389,
+        20.2922
+      ]
+    }
+  },
+  {
+    "id": 733,
+    "name": "Opovo",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.0519,
+        20.4303
+      ]
+    }
+  },
+  {
+    "id": 734,
+    "name": "Ečka",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3178,
+        20.4389
+      ]
+    }
+  },
+  {
+    "id": 735,
+    "name": "Markovac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.2333,
+        21.1
+      ]
+    }
+  },
+  {
+    "id": 736,
+    "name": "Sonta",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.6,
+        19.1
+      ]
+    }
+  },
+  {
+    "id": 737,
+    "name": "Ostružnica",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.7236,
+        20.3181
+      ]
+    }
+  },
+  {
+    "id": 738,
+    "name": "Vladimirovac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.0472,
+        20.8822
+      ]
+    }
+  },
+  {
+    "id": 739,
+    "name": "Feketić",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.6667,
+        19.7
+      ]
+    }
+  },
+  {
+    "id": 740,
+    "name": "Bukovac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1911,
+        19.8947
+      ]
+    }
+  },
+  {
+    "id": 741,
+    "name": "Bačko Dobro Polje",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.5,
+        19.6833
+      ]
+    }
+  },
+  {
+    "id": 742,
+    "name": "Mačvanska Mitrovica",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.9656,
+        19.5981
+      ]
+    }
+  },
+  {
+    "id": 743,
+    "name": "Plandište",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2269,
+        21.1217
+      ]
+    }
+  },
+  {
+    "id": 744,
+    "name": "Srpska Crnja",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.7206,
+        20.6864
+      ]
+    }
+  },
+  {
+    "id": 745,
+    "name": "Kamenica",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.3758,
+        21.9419
+      ]
+    }
+  },
+  {
+    "id": 746,
+    "name": "Budisava",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2833,
+        20
+      ]
+    }
+  },
+  {
+    "id": 747,
+    "name": "Bašaid",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.6381,
+        20.4086
+      ]
+    }
+  },
+  {
+    "id": 748,
+    "name": "Aradac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3764,
+        20.3008
+      ]
+    }
+  },
+  {
+    "id": 749,
+    "name": "Alibunar",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.0806,
+        20.9656
+      ]
+    }
+  },
+  {
+    "id": 750,
+    "name": "Perlez",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.2047,
+        20.3756
+      ]
+    }
+  },
+  {
+    "id": 751,
+    "name": "Šimanovci",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.8667,
+        20.0833
+      ]
+    }
+  },
+  {
+    "id": 752,
+    "name": "Gaj",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.7878,
+        21.0581
+      ]
+    }
+  },
+  {
+    "id": 753,
+    "name": "Kumane",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.5367,
+        20.2236
+      ]
+    }
+  },
+  {
+    "id": 754,
+    "name": "Banatski Brestovac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.7269,
+        20.8072
+      ]
+    }
+  },
+  {
+    "id": 755,
+    "name": "Klenak",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.7881,
+        19.7044
+      ]
+    }
+  },
+  {
+    "id": 756,
+    "name": "Putinci",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45,
+        19.9667
+      ]
+    }
+  },
+  {
+    "id": 757,
+    "name": "Vreoci",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.4422,
+        20.2817
+      ]
+    }
+  },
+  {
+    "id": 758,
+    "name": "Obrovac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3167,
+        19.35
+      ]
+    }
+  },
+  {
+    "id": 759,
+    "name": "Mramorak",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.8753,
+        20.9686
+      ]
+    }
+  },
+  {
+    "id": 760,
+    "name": "Čenta",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.105,
+        20.3861
+      ]
+    }
+  },
+  {
+    "id": 761,
+    "name": "Srpski Miletić",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.5667,
+        19.2
+      ]
+    }
+  },
+  {
+    "id": 762,
+    "name": "Hrtkovci",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.8833,
+        19.7667
+      ]
+    }
+  },
+  {
+    "id": 763,
+    "name": "Banatsko Veliko Selo",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.8194,
+        20.6058
+      ]
+    }
+  },
+  {
+    "id": 764,
+    "name": "Glogonj",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.9833,
+        20.5333
+      ]
+    }
+  },
+  {
+    "id": 765,
+    "name": "Sirig",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4333,
+        19.8167
+      ]
+    }
+  },
+  {
+    "id": 766,
+    "name": "Jaša Tomić",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4414,
+        20.8531
+      ]
+    }
+  },
+  {
+    "id": 767,
+    "name": "Belegiš",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.0167,
+        20.3333
+      ]
+    }
+  },
+  {
+    "id": 768,
+    "name": "Klek",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4197,
+        20.4747
+      ]
+    }
+  },
+  {
+    "id": 769,
+    "name": "Mataruška Banja",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.6917,
+        20.6111
+      ]
+    }
+  },
+  {
+    "id": 770,
+    "name": "Deliblato",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.8375,
+        21.0392
+      ]
+    }
+  },
+  {
+    "id": 771,
+    "name": "Žitište",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4833,
+        20.55
+      ]
+    }
+  },
+  {
+    "id": 772,
+    "name": "Padej",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.8239,
+        20.1597
+      ]
+    }
+  },
+  {
+    "id": 773,
+    "name": "Krčedin",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.1333,
+        20.1333
+      ]
+    }
+  },
+  {
+    "id": 774,
+    "name": "Lazarevo",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3864,
+        20.5367
+      ]
+    }
+  },
+  {
+    "id": 775,
+    "name": "Begejci",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.5053,
+        20.6039
+      ]
+    }
+  },
+  {
+    "id": 776,
+    "name": "Novi Žednik",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.9333,
+        19.6667
+      ]
+    }
+  },
+  {
+    "id": 777,
+    "name": "Ostojićevo",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.8881,
+        20.1667
+      ]
+    }
+  },
+  {
+    "id": 778,
+    "name": "Rusko Selo",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.7578,
+        20.5697
+      ]
+    }
+  },
+  {
+    "id": 779,
+    "name": "Ravni Topolovac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.4553,
+        20.5681
+      ]
+    }
+  },
+  {
+    "id": 780,
+    "name": "Platičevo",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.8167,
+        19.8
+      ]
+    }
+  },
+  {
+    "id": 781,
+    "name": "Svetozar Miletić",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.8503,
+        19.2067
+      ]
+    }
+  },
+  {
+    "id": 782,
+    "name": "Maglić",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3622,
+        19.5317
+      ]
+    }
+  },
+  {
+    "id": 783,
+    "name": "Aleksandrovo",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.6356,
+        20.5889
+      ]
+    }
+  },
+  {
+    "id": 784,
+    "name": "Riđica",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.9833,
+        19.1
+      ]
+    }
+  },
+  {
+    "id": 785,
+    "name": "Skorenovac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.7589,
+        20.9028
+      ]
+    }
+  },
+  {
+    "id": 786,
+    "name": "Mošorin",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.3,
+        20.1667
+      ]
+    }
+  },
+  {
+    "id": 787,
+    "name": "Bajša",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.7833,
+        19.5833
+      ]
+    }
+  },
+  {
+    "id": 788,
+    "name": "Sefkerin",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.0028,
+        20.4764
+      ]
+    }
+  },
+  {
+    "id": 789,
+    "name": "Banatsko Karađorđevo",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.5667,
+        20.5578
+      ]
+    }
+  },
+  {
+    "id": 790,
+    "name": "Donji Milanovac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.4664,
+        22.1517
+      ]
+    }
+  },
+  {
+    "id": 791,
+    "name": "Nova Crnja",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        45.6667,
+        20.6
+      ]
+    }
+  },
+  {
+    "id": 792,
+    "name": "Crna Trava",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.8101,
+        22.299
+      ]
+    }
+  },
+  {
+    "id": 793,
+    "name": "Tutin",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9875,
+        20.3256
+      ]
+    }
+  },
+  {
+    "id": 794,
+    "name": "Aranđelovac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.3042,
+        20.5561
+      ]
+    }
+  },
+  {
+    "id": 795,
+    "name": "Ivanjica",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.5811,
+        20.2297
+      ]
+    }
+  },
+  {
+    "id": 796,
+    "name": "Obrenovac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.6539,
+        20.2
+      ]
+    }
+  },
+  {
+    "id": 797,
+    "name": "Priboj",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.5836,
+        19.5258
+      ]
+    }
+  },
+  {
+    "id": 798,
+    "name": "Jagodina",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.975,
+        21.2564
+      ]
+    }
+  },
+  {
+    "id": 799,
+    "name": "Šabac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.7558,
+        19.6939
+      ]
+    }
+  },
+  {
+    "id": 800,
+    "name": "Smederevo",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.6633,
+        20.9289
+      ]
+    }
+  },
+  {
+    "id": 801,
+    "name": "Arilje",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.7531,
+        20.0956
+      ]
+    }
+  },
+  {
+    "id": 802,
+    "name": "Vladičin Han",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.7,
+        22.0667
+      ]
+    }
+  },
+  {
+    "id": 803,
+    "name": "Nova Varoš",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.4667,
+        19.8203
+      ]
+    }
+  },
+  {
+    "id": 804,
+    "name": "Kuršumlija",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.1408,
+        21.2678
+      ]
+    }
+  },
+  {
+    "id": 805,
+    "name": "Aleksandrovac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.4553,
+        21.0514
+      ]
+    }
+  },
+  {
+    "id": 806,
+    "name": "Gornji Milanovac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.0212,
+        20.456
+      ]
+    }
+  },
+  {
+    "id": 807,
+    "name": "Svrljig",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.4167,
+        22.1167
+      ]
+    }
+  },
+  {
+    "id": 808,
+    "name": "Raška",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.2856,
+        20.6092
+      ]
+    }
+  },
+  {
+    "id": 809,
+    "name": "Pirot",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.1519,
+        22.585
+      ]
+    }
+  },
+  {
+    "id": 810,
+    "name": "Prokuplje",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.2339,
+        21.5861
+      ]
+    }
+  },
+  {
+    "id": 811,
+    "name": "Brus",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.3836,
+        21.0336
+      ]
+    }
+  },
+  {
+    "id": 812,
+    "name": "Surdulica",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.695,
+        22.1672
+      ]
+    }
+  },
+  {
+    "id": 813,
+    "name": "Ub",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.45,
+        20.0667
+      ]
+    }
+  },
+  {
+    "id": 814,
+    "name": "Lučani",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.8667,
+        20.1333
+      ]
+    }
+  },
+  {
+    "id": 815,
+    "name": "Požega",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.8459,
+        20.0368
+      ]
+    }
+  },
+  {
+    "id": 816,
+    "name": "Smederevska Palanka",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.3655,
+        20.9587
+      ]
+    }
+  },
+  {
+    "id": 817,
+    "name": "Babušnica",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.068,
+        22.4115
+      ]
+    }
+  },
+  {
+    "id": 818,
+    "name": "Vlasotince",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9667,
+        22.1333
+      ]
+    }
+  },
+  {
+    "id": 819,
+    "name": "Ljubovija",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.1869,
+        19.3728
+      ]
+    }
+  },
+  {
+    "id": 820,
+    "name": "Lajkovac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.3667,
+        20.1667
+      ]
+    }
+  },
+  {
+    "id": 821,
+    "name": "Kosjerić",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44,
+        19.9167
+      ]
+    }
+  },
+  {
+    "id": 822,
+    "name": "Mionica",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.25,
+        20.0833
+      ]
+    }
+  },
+  {
+    "id": 823,
+    "name": "Bela Palanka",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.2178,
+        22.3067
+      ]
+    }
+  },
+  {
+    "id": 824,
+    "name": "Požarevac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.62,
+        21.1897
+      ]
+    }
+  },
+  {
+    "id": 825,
+    "name": "Krupanj",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.3667,
+        19.3667
+      ]
+    }
+  },
+  {
+    "id": 826,
+    "name": "Knjaževac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.5,
+        22.4333
+      ]
+    }
+  },
+  {
+    "id": 827,
+    "name": "Zaječar",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.9042,
+        22.2847
+      ]
+    }
+  },
+  {
+    "id": 828,
+    "name": "Paraćin",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.8667,
+        21.4167
+      ]
+    }
+  },
+  {
+    "id": 829,
+    "name": "Lebane",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.9167,
+        21.7333
+      ]
+    }
+  },
+  {
+    "id": 830,
+    "name": "Rača",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.2333,
+        20.9833
+      ]
+    }
+  },
+  {
+    "id": 831,
+    "name": "Aleksinac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.5383,
+        21.7047
+      ]
+    }
+  },
+  {
+    "id": 832,
+    "name": "Osečina",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.3667,
+        19.6
+      ]
+    }
+  },
+  {
+    "id": 833,
+    "name": "Despotovac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.0833,
+        21.4333
+      ]
+    }
+  },
+  {
+    "id": 834,
+    "name": "Čajetina",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.75,
+        19.7167
+      ]
+    }
+  },
+  {
+    "id": 835,
+    "name": "Ljig",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.2213,
+        20.2375
+      ]
+    }
+  },
+  {
+    "id": 836,
+    "name": "Varvarin",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.7167,
+        21.3667
+      ]
+    }
+  },
+  {
+    "id": 837,
+    "name": "Mali Zvornik",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.3992,
+        19.1214
+      ]
+    }
+  },
+  {
+    "id": 838,
+    "name": "Blace",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.2906,
+        21.2847
+      ]
+    }
+  },
+  {
+    "id": 839,
+    "name": "Doljevac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.1968,
+        21.8334
+      ]
+    }
+  },
+  {
+    "id": 840,
+    "name": "Batočina",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.15,
+        21.0833
+      ]
+    }
+  },
+  {
+    "id": 841,
+    "name": "Negotin",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.2167,
+        22.5167
+      ]
+    }
+  },
+  {
+    "id": 842,
+    "name": "Veliko Gradište",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.75,
+        21.5167
+      ]
+    }
+  },
+  {
+    "id": 843,
+    "name": "Dimitrovgrad",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.0167,
+        22.7833
+      ]
+    }
+  },
+  {
+    "id": 844,
+    "name": "Velika Plana",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.3333,
+        21.0833
+      ]
+    }
+  },
+  {
+    "id": 845,
+    "name": "Petrovac na Mlavi",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.3783,
+        21.4194
+      ]
+    }
+  },
+  {
+    "id": 846,
+    "name": "Svilajnac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.2167,
+        21.2
+      ]
+    }
+  },
+  {
+    "id": 847,
+    "name": "Boljevac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.8247,
+        21.9519
+      ]
+    }
+  },
+  {
+    "id": 848,
+    "name": "Kladovo",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.6039,
+        22.6072
+      ]
+    }
+  },
+  {
+    "id": 849,
+    "name": "Bojnik",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.0142,
+        21.718
+      ]
+    }
+  },
+  {
+    "id": 850,
+    "name": "Topola",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.2525,
+        20.6761
+      ]
+    }
+  },
+  {
+    "id": 851,
+    "name": "Merošina",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.2833,
+        21.7167
+      ]
+    }
+  },
+  {
+    "id": 852,
+    "name": "Žitorađa",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.1833,
+        21.7167
+      ]
+    }
+  },
+  {
+    "id": 853,
+    "name": "Koceljeva",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.4708,
+        19.807
+      ]
+    }
+  },
+  {
+    "id": 854,
+    "name": "Gadžin Han",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.2203,
+        22.0258
+      ]
+    }
+  },
+  {
+    "id": 855,
+    "name": "Ćićevac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.7167,
+        21.45
+      ]
+    }
+  },
+  {
+    "id": 856,
+    "name": "Bosilegrad",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.5005,
+        22.4728
+      ]
+    }
+  },
+  {
+    "id": 857,
+    "name": "Vladimirci",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.6167,
+        19.7833
+      ]
+    }
+  },
+  {
+    "id": 858,
+    "name": "Ražanj",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.6667,
+        21.55
+      ]
+    }
+  },
+  {
+    "id": 859,
+    "name": "Kučevo",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.4833,
+        21.6667
+      ]
+    }
+  },
+  {
+    "id": 860,
+    "name": "Medveđa",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.8333,
+        21.5833
+      ]
+    }
+  },
+  {
+    "id": 861,
+    "name": "Rekovac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.8667,
+        21.1333
+      ]
+    }
+  },
+  {
+    "id": 862,
+    "name": "Knić",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        43.9167,
+        20.7167
+      ]
+    }
+  },
+  {
+    "id": 863,
+    "name": "Žabari",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.3562,
+        21.2143
+      ]
+    }
+  },
+  {
+    "id": 864,
+    "name": "Malo Crniće",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.5667,
+        21.2833
+      ]
+    }
+  },
+  {
+    "id": 865,
+    "name": "Golubac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.653,
+        21.632
+      ]
+    }
+  },
+  {
+    "id": 866,
+    "name": "Majdanpek",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.4167,
+        21.9333
+      ]
+    }
+  },
+  {
+    "id": 867,
+    "name": "Trgovište",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3514,
+        22.0921
+      ]
+    }
+  },
+  {
+    "id": 868,
+    "name": "Žagubica",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.1979,
+        21.7902
+      ]
+    }
+  },
+  {
+    "id": 869,
+    "name": "Preševo",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.3067,
+        21.65
+      ]
+    }
+  },
+  {
+    "id": 870,
+    "name": "Bujanovac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        42.4667,
+        21.7667
+      ]
+    }
+  },
+  {
+    "id": 871,
+    "name": "Lazarevac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.3667,
+        20.25
+      ]
+    }
+  },
+  {
+    "id": 872,
+    "name": "Kostolac",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.7167,
+        21.1667
+      ]
+    }
+  },
+  {
+    "id": 873,
+    "name": "Sopot",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.5193,
+        20.5758
+      ]
+    }
+  },
+  {
+    "id": 874,
+    "name": "Grocka",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.672,
+        20.7153
+      ]
+    }
+  },
+  {
+    "id": 875,
+    "name": "Barajevo",
+    "country": "Serbia",
+    "coordinates": {
+      "type": "Point",
+      "coordinates": [
+        44.579,
+        20.4179
+      ]
+    }
+  }
+]

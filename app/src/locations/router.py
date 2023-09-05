@@ -37,7 +37,7 @@ async def locations(query: str, client=Depends(get_search_client)):
 
 # todo: cache
 @router.get("/locations/city/")
-async def city_by_id(id: str):
+async def city_by_id(id: int):
     res = await get_city_by_id(id)
     if not res:
         raise HTTPException(HTTP_404_NOT_FOUND)

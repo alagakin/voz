@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 from config import FRONTEND_ORIGIN
-from locations.cities import load_cities_to_db, create_cities_search_index
+from locations.cities import create_cities_search_index, sync_cities
 from locations.datetable import fill_date_table
 from locations.stations import create_stations_search_index, sync_stations, create_stations_index
 from api.router import router as api_router
@@ -30,6 +30,6 @@ async def startup_event():
     await sync_stations()
     await create_stations_search_index()
     fill_date_table()
-    await load_cities_to_db()
+    await sync_cities()
     await create_cities_search_index()
     await create_stations_index()

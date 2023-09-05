@@ -15,6 +15,9 @@ async def sync_stations() -> None:
     stations_json = await read_stations()
     stations = json.loads(stations_json)
 
+    if len(stations):
+        await collection.drop()
+
     for station in stations:
         query = {"name": station["name"]}
         existing_document = await collection.find_one(query)
@@ -43,9 +46,9 @@ async def create_stations_search_index():
     documents = []
     async for station in stations.find():
         documents.append(make_document_for_index(station))
-
-    return fill_index(index_name="stations", documents=documents)
-
+    if len(documents):
+        return fill_index(index_name="stations", documents=documents)
+    return False
 
 def make_document_for_index(station):
     return {

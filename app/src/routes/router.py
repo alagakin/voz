@@ -32,8 +32,8 @@ async def search_station(query: str, client=Depends(get_search_client)):
 
 @router.get("/routes/")
 async def routes(
-        city_from_id: str = None,
-        city_to_id: str = None,
+        city_from_id: int = None,
+        city_to_id: int = None,
         station_from_id: str = None,
         station_to_id: str = None,
         from_long: float = None,

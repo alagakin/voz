@@ -96,13 +96,12 @@ class Coordinates(BaseModel):
 
 class CitySchema(BaseModel):
     name: str
-    alias: str
     country: str
     coordinates: Coordinates
 
 
 class LocationDisplaySchema(BaseModel):
-    id: str
+    id: int
     display_name: str
     type: str
 
@@ -111,21 +110,21 @@ class CityDisplaySchema(LocationDisplaySchema):
     @classmethod
     def from_motor_dict(cls, dictionary):
         display_name = f"{dictionary['name']}, {dictionary['country']}"
-        return cls(display_name=display_name, id=str(dictionary["_id"]), type="city")
+        return cls(display_name=display_name, id=dictionary["id"], type="city")
 
     @classmethod
     def from_meili_document(cls, document):
         display_name = f"{document['name']}, {document['country']}"
-        return cls(display_name=display_name, id=str(document["id"]), type="city")
+        return cls(display_name=display_name, id=document["id"], type="city")
 
 
 class StationDisplaySchema(LocationDisplaySchema):
     @classmethod
     def from_motor_dict(cls, dictionary):
         display_name = dictionary['name'].title()
-        return cls(display_name=display_name, id=str(dictionary["_id"]), type="station")
+        return cls(display_name=display_name, id=dictionary["id"], type="station")
 
     @classmethod
     def from_meili_document(cls, document):
         display_name = document['display_name']
-        return cls(display_name=display_name, id=str(document["id"]), type="station")
+        return cls(display_name=display_name, id=document["id"], type="station")

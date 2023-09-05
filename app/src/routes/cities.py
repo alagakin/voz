@@ -19,13 +19,13 @@ class CitiesHandler(HandlerInterface):
         collection = db['cities']
 
         if self.request.city_from_id:
-            city_from = await collection.find_one({"_id": self.request.city_from_id})
+            city_from = await collection.find_one({"id": self.request.city_from_id})
             if not city_from:
                 return self.request
             self.request.city_from = CitySchema(**city_from)
 
         if self.request.city_to_id:
-            city_to = await collection.find_one({"_id": self.request.city_to_id})
+            city_to = await collection.find_one({"id": self.request.city_to_id})
             if not city_to:
                 return self.request
             self.request.city_to = CitySchema(**city_to)
