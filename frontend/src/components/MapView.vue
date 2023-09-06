@@ -15,7 +15,7 @@
                 name="OpenStreetMap"
             ></l-tile-layer>
             <RouteView :route="selectedRoute"/>
-            <TopCitiesView :selected="selectedCitiesIds" :connected-cities-ids="connectedCitiesIds"
+            <TopCitiesView :request="request" :connected-cities-ids="connectedCitiesIds"
                            @select-city="selectCity" :selected-route="selectedRoute"/>
         </l-map>
     </div>
@@ -188,18 +188,6 @@ export default {
             previousSelectedCity: null,
             connectedCitiesIds: null
         };
-    },
-    computed: {
-        selectedCitiesIds() {
-            let selectedCitiesIds = []
-            if (this.request.from.type === 'city') {
-                selectedCitiesIds.push(parseInt(this.request.from.id))
-            }
-            if (this.request.to.type === 'city') {
-                selectedCitiesIds.push(parseInt(this.request.to.id))
-            }
-            return selectedCitiesIds
-        }
     },
     beforeMount() {
         this.recoverUrl()

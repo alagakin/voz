@@ -1,7 +1,9 @@
 <template>
     <template v-for="city in topCities">
         <top-city-marker :city="city" @select="selectCity" v-bind:key="city['id']"
-                         v-if="!selected.includes(city['id']) && !selectedRoute"
+                         v-if="!selectedRoute"
+                         :cityFrom="cityFrom"
+                         :cityTo="cityTo"
                          :unreachable="connectedCitiesIds !== null && connectedCitiesIds.length >= 0 && !connectedCitiesIds.includes(city['id'])"
         ></top-city-marker>
     </template>
@@ -13,11 +15,25 @@ import TopCityMarker from "@/components/TopCityMarker.vue";
 export default {
     components: {TopCityMarker},
     props: {
-        selected: {
-            type: Array
-        },
         selectedRoute: {},
-        connectedCitiesIds: {}
+        connectedCitiesIds: {},
+        request: {
+            type: Object
+        }
+    },
+    computed: {
+        cityFrom() {
+            if (this.request.from.type === 'city') {
+                return this.request.from.id
+            }
+            return null
+        },
+        cityTo() {
+            if (this.request.to.type === 'city') {
+                return this.request.to.id
+            }
+            return null
+        }
     },
     data() {
         return {
