@@ -182,7 +182,7 @@ export default {
                 to: {}
             },
             previousSelectedCity: null,
-            connectedCitiesIds: []
+            connectedCitiesIds: null
         };
     },
     computed: {
@@ -211,7 +211,7 @@ export default {
                 if ((this.request.from.type === 'city' || this.request.to.type === 'city') && !(this.request.from.type && this.request.to.type)) {
                     this.fetchConnected()
                 } else {
-                    this.connectedCitiesIds = []
+                    this.connectedCitiesIds = null
                 }
             }
         },
