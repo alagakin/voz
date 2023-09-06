@@ -5356,6 +5356,7 @@
   {
     "id": 447,
     "name": "Mojkovac",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Mojkovac_coa.png",
     "country": "Montenegro",
     "coordinates": {
       "type": "Point",
@@ -5464,6 +5465,7 @@
   {
     "id": 456,
     "name": "Kolašin",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Grbkolasin.jpg",
     "country": "Montenegro",
     "coordinates": {
       "type": "Point",
@@ -7581,6 +7583,7 @@
   {
     "id": 632,
     "name": "Loznica",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/3/33/COA_Loznica.png",
     "country": "Serbia",
     "coordinates": {
       "type": "Point",
@@ -7856,6 +7859,7 @@
   {
     "id": 654,
     "name": "Prijepolje",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Grb-Prijepolje_mali.gif",
     "country": "Serbia",
     "coordinates": {
       "type": "Point",
@@ -7881,6 +7885,7 @@
   {
     "id": 656,
     "name": "Šid",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Sidcoa.gif",
     "country": "Serbia",
     "coordinates": {
       "type": "Point",
@@ -9710,6 +9715,7 @@
   {
     "id": 808,
     "name": "Raška",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/8/82/COA_Raska.png",
     "country": "Serbia",
     "coordinates": {
       "type": "Point",
@@ -9904,6 +9910,7 @@
   {
     "id": 824,
     "name": "Požarevac",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/3/35/Grb_pozarevca.svg",
     "country": "Serbia",
     "coordinates": {
       "type": "Point",
