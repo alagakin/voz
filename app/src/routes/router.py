@@ -5,10 +5,8 @@ from fastapi import APIRouter, Depends, HTTPException
 from pydantic import ValidationError
 from starlette.status import HTTP_400_BAD_REQUEST
 
+from config import MONGO_DB
 from database import get_async_client
-from meili import get_client as get_search_client
-
-from meili import get_index
 from routes.handler import ParamsCheckHandler, AmbiguousParamsException
 from routes.routes_searcher import RoutesHandler
 from routes.stations import StationsHandler
@@ -16,21 +14,13 @@ from routes.cities import CitiesHandler
 from routes.request import SearchRequest
 
 router = APIRouter(
-    prefix="/api/v1",
+    prefix="/api/v1/routes",
 )
 
 timezone = pytz.timezone('Europe/Belgrade')
 
-@router.get("/city/search/")
-async def search_station(query: str, client=Depends(get_search_client)):
-    index = get_index("cities", client)
-    return index.search(query, {
-        'limit': 5,
-        'attributesToSearchOn': ['name', 'name1', 'names']
-    })
 
-
-@router.get("/routes/")
+@router.get("/")
 async def routes(
         city_from_id: int = None,
         city_to_id: int = None,
@@ -73,3 +63,12 @@ async def routes(
         raise HTTPException(HTTP_400_BAD_REQUEST, detail=e.errors())
     except AmbiguousParamsException:
         raise HTTPException(HTTP_400_BAD_REQUEST, 'Ambiguous params')
+
+@router.get("/available-days/")
+async def get_available_day(client=Depends(get_async_client)):
+    db = client[MONGO_DB]
+    collection = db['datetable']
+    dates = []
+    async for item in collection.find({'fetched': True}):
+        dates.append(item['date'])
+    return dates

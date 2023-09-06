@@ -4,7 +4,6 @@ from config import FRONTEND_ORIGIN
 from locations.cities import create_cities_search_index, sync_cities
 from locations.datetable import fill_date_table
 from locations.stations import create_stations_search_index, sync_stations, create_stations_index
-from api.router import router as api_router
 from routes.router import router as routes_router
 from locations.router import router as locations_router
 
@@ -20,7 +19,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-app.include_router(api_router)
 app.include_router(routes_router)
 app.include_router(locations_router)
 

@@ -7,12 +7,12 @@ from meili import get_client as get_search_client, get_index
 from locations.cities import get_by_id as get_city_by_id, get_top_cities
 
 router = APIRouter(
-    prefix="/api/v1",
+    prefix="/api/v1/locations",
 )
 
 
-@router.get("/locations/")
-async def locations(query: str, client=Depends(get_search_client)):
+@router.get("/")
+async def search(query: str, client=Depends(get_search_client)):
     query_result = client.multi_search(
         [
             {'indexUid': 'cities', 'q': query, 'limit': 3},
@@ -36,7 +36,7 @@ async def locations(query: str, client=Depends(get_search_client)):
 
 
 # todo: cache
-@router.get("/locations/city/")
+@router.get("/city/")
 async def city_by_id(id: int):
     res = await get_city_by_id(id)
     if not res:
@@ -45,13 +45,13 @@ async def city_by_id(id: int):
 
 
 # todo: cache
-@router.get("/locations/station/")
+@router.get("/station/")
 async def station_by_id(id: int):
     res = await get_station_by_id(id)
     if not res:
         raise HTTPException(HTTP_404_NOT_FOUND)
     return res
 
-@router.get("/locations/top_cities/")
+@router.get("/top_cities/")
 async def get_top_cities_route():
     return await get_top_cities()

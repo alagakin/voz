@@ -21,7 +21,7 @@ export default {
         }
     },
     mounted() {
-        axios.get(process.env.VUE_APP_BACKEND_HOST + "/api/v1/available-days/")
+        axios.get(process.env.VUE_APP_BACKEND_HOST + "/api/v1/routes/available-days/")
             .then(response => {
                 if (response.data) {
                     this.setAllowedDates(response.data)
