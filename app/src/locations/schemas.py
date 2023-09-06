@@ -1,6 +1,6 @@
 import hashlib
 from typing import List
-from pydantic import BaseModel, root_validator
+from pydantic import BaseModel, root_validator, Field
 from datetime import datetime, timedelta
 import pytz
 
@@ -107,10 +107,14 @@ class LocationDisplaySchema(BaseModel):
 
 
 class CityDisplaySchema(LocationDisplaySchema):
+    logo: str = None
+    coordinates: list = Field(default_factory=list)
+
     @classmethod
     def from_motor_dict(cls, dictionary):
         display_name = f"{dictionary['name']}, {dictionary['country']}"
-        return cls(display_name=display_name, id=dictionary["id"], type="city")
+        return cls(display_name=display_name, id=dictionary["id"], type="city", logo=dictionary['logo'],
+                   coordinates=dictionary['coordinates']['coordinates'])
 
     @classmethod
     def from_meili_document(cls, document):

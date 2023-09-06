@@ -4,7 +4,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from locations.schemas import CityDisplaySchema, StationDisplaySchema
 from locations.stations import get_station_by_id
 from meili import get_client as get_search_client, get_index
-from locations.cities import get_by_id as get_city_by_id
+from locations.cities import get_by_id as get_city_by_id, get_top_cities
 
 router = APIRouter(
     prefix="/api/v1",
@@ -51,3 +51,7 @@ async def station_by_id(id: int):
     if not res:
         raise HTTPException(HTTP_404_NOT_FOUND)
     return res
+
+@router.get("/locations/top_cities/")
+async def get_top_cities_route():
+    return await get_top_cities()

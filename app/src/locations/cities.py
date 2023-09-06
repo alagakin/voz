@@ -1,3 +1,4 @@
+import asyncio
 import json
 import os
 from config import MONGO_DB
@@ -19,13 +20,9 @@ async def sync_cities() -> None:
         await collection.drop()
 
     for city in cities:
-        query = {"name": city["name"]}
-        existing_document = await collection.find_one(query)
-
-        if existing_document:
-            await collection.update_one(query, {"$set": city})
-        else:
-            await collection.insert_one(city)
+        if "logo" not in city:
+            city["logo"] = None
+        await collection.insert_one(city)
 
     client.close()
 
@@ -70,3 +67,12 @@ async def get_by_id(city_id):
     if city:
         return CityDisplaySchema.from_motor_dict(city)
     return False
+
+
+async def get_top_cities():
+    client = await get_async_client()
+    db = client[MONGO_DB]
+    res = []
+    async for city in db.cities.find({"logo": {"$ne": None}}):
+        res.append(CityDisplaySchema.from_motor_dict(city))
+    return res
