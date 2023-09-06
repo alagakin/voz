@@ -163,7 +163,11 @@ export default {
                     }
                 })
                 .catch(error => {
-                    console.error('Error fetching connected cities:', error);
+                    if (error.response.status === 404) {
+                        this.connectedCitiesIds = []
+                    } else {
+                        console.error('Error fetching connected cities:', error);
+                    }
                 });
 
         }
