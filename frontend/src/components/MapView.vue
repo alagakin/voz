@@ -26,6 +26,7 @@ import {LMap, LTileLayer} from "vue3-leaflet";
 import RouteView from "@/components/RouteView.vue";
 import RoutesSearcher from "@/components/bar/RoutesSearcher.vue";
 import TopCitiesView from "@/components/TopCitiesView.vue";
+import {calculateDistance, calculateCenter} from "@/utils/Geo"
 
 export default {
     components: {
@@ -38,6 +39,10 @@ export default {
     methods: {
         showRouteOnMap(route) {
             this.selectedRoute = route
+            if (route?.from?.coordinates && route?.to?.coordinates) {
+                this.moveView(route.from.coordinates, route.to.coordinates)
+            }
+            console.log(route)
         },
         updateFromRequest(from) {
             this.request.from = from
@@ -48,7 +53,31 @@ export default {
         updateDate(date) {
             this.request.date = date
         },
+        moveView(coords1, coords2) {
+            let lat1, lat2, long1, long2;
+            lat1 = coords1[0]
+            lat2 = coords2[0]
+            long1 = coords1[1]
+            long2 = coords2[1]
+            this.$refs.map.panTo(
+                calculateCenter(lat2, long2, lat1, long1),
+            )
+            setTimeout(() => {
+                let distance = calculateDistance(lat1, long1, lat2, long2)
+                if (distance > 300) {
+                    this.$refs.map.setZoom(8)
+                } else if (distance > 200) {
+                    this.$refs.map.setZoom(9)
+                } else if (distance > 100) {
+                    this.$refs.map.setZoom(10)
+                } else if (distance > 50) {
+                    this.$refs.map.setZoom(10)
+                } else {
+                    this.$refs.map.setZoom(11)
+                }
+            }, 500)
 
+        },
         recoverUrl() {
             const queryString = window.location.search;
             const params = new URLSearchParams(queryString);
@@ -76,7 +105,6 @@ export default {
             }
             this.request = request
         },
-
         setUrl(request) {
             const params = {};
             if (request.date) {
@@ -96,7 +124,6 @@ export default {
             const newUrl = `/?${queryString}`;
             history.pushState(null, null, newUrl);
         },
-
         selectCity(id) {
             if (!this.request.from.type) {
                 this.request.from.type = 'city'
@@ -160,7 +187,6 @@ export default {
                 }
             }
         }
-    },
-
+    }
 };
 </script>
