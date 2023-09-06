@@ -5,12 +5,11 @@
         <div class="flex flex-col h-full">
             <div class="p-4">
                 <SearchInputs @setRoutes="setRoutes" @set-date="setDate" @set-request-param="setRequestParam"
-                              :request="request" @reverse="reverse"/>
+                              :request="request" @reverse="reverse" @clear-request="clearRequest"/>
             </div>
-            <SearchResult ref="result" :routes="routes" @select-route="(route) => $emit('selectRoute', route)"/>
-
+            <SearchResult ref="result" :request="request" :routes="routes"
+                          @select-route="(route) => $emit('selectRoute', route)"/>
         </div>
-
         <LoaderPlug v-if="isLoading"/>
         <CloseButton :isOpen="isOpen" @toggle="toggle"/>
     </div>
@@ -26,21 +25,42 @@ import axios from "axios";
 export default {
     name: "RoutesSearcher",
     components: {SearchResult, LoaderPlug, SearchInputs, CloseButton},
+    props: {
+        request: {
+            type: Object,
+            required: true
+        }
+    },
+    data() {
+        return {
+            isOpen: true,
+            isLoading: false,
+            routes: false,
+        }
+    },
     methods: {
+        clearRequest(direction) {
+            if (direction === 'to') {
+                this.$emit('updateTo', {})
+            } else {
+                this.$emit('updateFrom', {})
+            }
+            this.setRoutes([])
+        },
         setDate(date) {
-            this.request.date = date
+            this.$emit('updateDate', date)
         },
         setRequestParam(param) {
             if (param.direction === 'from') {
-                this.request.from = {
+                this.$emit('updateFrom', {
                     id: param.id,
                     type: param.type
-                }
+                })
             } else {
-                this.request.to = {
+                this.$emit('updateTo', {
                     id: param.id,
                     type: param.type
-                }
+                })
             }
         },
         toggle() {
@@ -48,6 +68,7 @@ export default {
         },
         setRoutes(routes) {
             if (!routes.length) {
+                this.$emit('selectRoute', false)
                 this.routes = []
                 return
             }
@@ -129,90 +150,24 @@ export default {
                 });
         },
         reverse() {
-            let temp = this.request.from
-            this.request.from = this.request.to
-            this.request.to = temp
+            let from = this.request.from
+            let to = this.request.to
+            this.$emit('updateTo', from)
+            this.$emit('updateFrom', to)
+
             this.search()
         },
-        setUrl(request) {
-            const params = {};
-            if (request.date) {
-                params.date = request.date
-            }
-            if (request.from.type) {
-                params.from_type = request.from.type
-                params.from_id = request.from.id
-            }
-            if (request.to.type) {
-                params.to_type = request.to.type
-                params.to_id = request.to.id
-            }
-            const queryString = Object.keys(params)
-                .map((key) => `${key}=${encodeURIComponent(params[key])}`)
-                .join('&');
-            const newUrl = `/?${queryString}`;
-            history.pushState(null, null, newUrl);
-        },
-        recoverUrl() {
-            const queryString = window.location.search;
-            const params = new URLSearchParams(queryString);
-            const date = params.get('date')
-            const from_type = params.get('from_type')
-            const from_id = params.get('from_id')
-            const to_type = params.get('to_type')
-            const to_id = params.get('to_id')
-
-            let request = {
-                date: null,
-                from: {},
-                to: {}
-            }
-            if (date) {
-                request.date = date
-            }
-            if (from_type && from_id) {
-                request.from.type = from_type
-                request.from.id = from_id
-            }
-            if (to_type && to_id) {
-                request.to.type = to_type
-                request.to.id = to_id
-            }
-            this.request = request
-        }
     },
     computed: {
         isSearchEnabled() {
             return this.request.from.id && this.request.to.id && this.request.date
         }
     },
-    beforeMount() {
-        this.recoverUrl()
+    mounted() {
+        this.search()
     },
-    watch: {
-        request: {
-            deep: true,
-            handler(value) {
-                this.setUrl(value)
-                if (this.isSearchEnabled) {
-                    this.search()
-                }
-            }
-        }
-    },
-    data() {
-        return {
-            request: {
-                date: null,
-                from: {},
-                to: {}
-            },
-            isOpen: true,
-            isLoading: false,
-            routes: false,
-        }
-    },
-    emits: ['setRoutes', 'selectRoute']
+
+    emits: ['setRoutes', 'selectRoute', 'updateTo', 'updateFrom', 'updateDate']
 }
 </script>
 

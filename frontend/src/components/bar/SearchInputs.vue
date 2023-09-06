@@ -1,14 +1,16 @@
 <template>
     <div class="relative">
-        <LocationInput ref="from" @setLocation="setLocationFrom" :placeholder="'From'" :request="request.from"/>
+        <LocationInput ref="from" @setLocation="setLocationFrom" :placeholder="'From'" :request="request.from"
+                       @clearQuery="$emit('clearRequest', 'from')"/>
     </div>
     <div class="mt-2 flex justify-center">
         <span class="cursor-pointer" @click="reverse">
-            <font-awesome-icon :icon="['fas', 'rotate']" :spin-pulse="reverseSpin" style="color: #5e6064;" />
+            <font-awesome-icon :icon="['fas', 'rotate']" :spin-pulse="reverseSpin" style="color: #5e6064;"/>
         </span>
     </div>
     <div class="relative mt-3">
-        <LocationInput ref="to" @setLocation="setLocationTo" :placeholder="'To'" :request="request.to"/>
+        <LocationInput ref="to" @setLocation="setLocationTo" :placeholder="'To'" :request="request.to"
+                       @clearQuery="$emit('clearRequest', 'to')"/>
     </div>
 
     <div class="relative mt-3">
@@ -76,6 +78,6 @@ export default {
         };
 
     },
-    emits: ["setRoutes", "setRequestParam", "setDate", "reverse"]
+    emits: ["setRoutes", "setRequestParam", "setDate", "reverse", "clearRequest"]
 }
 </script>

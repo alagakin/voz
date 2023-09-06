@@ -1,7 +1,9 @@
 <template>
-    <input v-model="query_name" :placeholder="placeholder"
+    <input v-model="query" :placeholder="placeholder"
            class="p-2 border rounded w-full focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
            @input="getSuggestions()"/>
+
+    <ClearInputButton v-if="request.type || query" @click="clearQuery"/>
 
     <div v-if="suggestions.length > 0"
          class="absolute mt-2 w-full bg-white border border-gray-300 rounded shadow-md cursor-pointer"
@@ -14,12 +16,13 @@
         </ul>
     </div>
 </template>
-
 <script>
 import axios from "axios";
+import ClearInputButton from "@/components/bar/ClearInputButton.vue";
 
 export default {
     name: "LocationInput",
+    components: {ClearInputButton},
     props: {
         placeholder: String,
         request: {
@@ -32,13 +35,17 @@ export default {
             deep: true,
             immediate: true,
             handler(value) {
-                if (value && this.query_name === '') {
+                if (value) {
                     this.setDisplayValue()
                 }
             }
         }
     },
     methods: {
+        clearQuery() {
+            this.query = ''
+            this.$emit('clearQuery')
+        },
         setDisplayValue() {
             let url = ''
             if (this.request.type === 'city') {
@@ -50,7 +57,7 @@ export default {
             }
             axios.get(url).then(response => {
                 if (response.data.display_name) {
-                    this.query_name = response.data.display_name
+                    this.query = response.data.display_name
                 }
             }).catch(error => {
                 console.error('Error fetching names:', error);
@@ -58,8 +65,8 @@ export default {
 
         },
         getSuggestions() {
-            if (this.query_name.length >= 2) {
-                axios.get(process.env.VUE_APP_BACKEND_HOST + "/api/v1/locations/?query=" + this.query_name)
+            if (this.query.length >= 2) {
+                axios.get(process.env.VUE_APP_BACKEND_HOST + "/api/v1/locations/?query=" + this.query)
                     .then(response => {
                         this.suggestions = response.data
                     })
@@ -71,23 +78,23 @@ export default {
             }
         },
         selectSuggestion(suggestion) {
-            this.query_name = suggestion['display_name']
+            this.query = suggestion['display_name']
             this.$emit('setLocation', suggestion['type'], suggestion['id'])
             this.suggestions = []
         },
         setQuery(value) {
-            this.query_name = value
+            this.query = value
         },
         getQuery() {
-            return this.query_name
+            return this.query
         }
     },
     data() {
         return {
             suggestions: [],
-            query_name: ''
+            query: ''
         }
     },
-    emits: ['setLocation']
+    emits: ['setLocation', 'clearQuery']
 }
 </script>

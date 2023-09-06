@@ -9,7 +9,7 @@
             />
         </div>
         <DetailRoute :route="detailRoute" @back="back" v-if="detailRoute != null"/>
-        <NotFound v-if="routes.length === 0" />
+        <NotFound v-if="showNotFound" />
     </div>
 </template>
 <script>
@@ -23,7 +23,16 @@ import NotFound from "@/components/bar/NotFound.vue";
 export default {
     components: {NotFound, DetailRoute, RouteInfoItem},
     props: {
-        routes: [Array, Boolean]
+        routes: [Array, Boolean],
+        request: {
+            type: Object,
+            required: true
+        }
+    },
+    computed: {
+        showNotFound() {
+            return this.routes.length === 0 && this.request.from.type && this.request.to.type
+        }
     },
     methods: {
         back() {
