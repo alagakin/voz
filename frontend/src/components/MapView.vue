@@ -15,7 +15,8 @@
                 name="OpenStreetMap"
             ></l-tile-layer>
             <RouteView :route="selectedRoute"/>
-            <TopCitiesView :selected="selectedCitiesIds" :connected-cities-ids="connectedCitiesIds" @select-city="selectCity" :selected-route="selectedRoute"/>
+            <TopCitiesView :selected="selectedCitiesIds" :connected-cities-ids="connectedCitiesIds"
+                           @select-city="selectCity" :selected-route="selectedRoute"/>
         </l-map>
     </div>
 </template>
@@ -40,9 +41,6 @@ export default {
     methods: {
         showRouteOnMap(route) {
             this.selectedRoute = route
-            if (route?.from?.coordinates && route?.to?.coordinates) {
-                this.moveView(route.from.coordinates, route.to.coordinates)
-            }
         },
         updateFromRequest(from) {
             this.request.from = from
@@ -214,6 +212,15 @@ export default {
                     this.fetchConnected()
                 } else {
                     this.connectedCitiesIds = []
+                }
+            }
+        },
+        selectedRoute: {
+            handler(newRoute, oldRoute) {
+                if (oldRoute?.['first_station'] !== newRoute?.['first_station'] && oldRoute?.['last_station'] !== newRoute?.['last_station']) {
+                    if (newRoute?.from?.coordinates && newRoute?.to?.coordinates) {
+                        this.moveView(newRoute.from.coordinates, newRoute.to.coordinates)
+                    }
                 }
             }
         }
