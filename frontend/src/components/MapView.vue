@@ -15,7 +15,7 @@
                 name="OpenStreetMap"
             ></l-tile-layer>
             <RouteView :route="selectedRoute"/>
-            <TopCitiesView :selected="selectedCitiesIds" @select-city="selectCity" :selected-route="selectedRoute"/>
+            <TopCitiesView :selected="selectedCitiesIds" :connected-cities-ids="connectedCitiesIds" @select-city="selectCity" :selected-route="selectedRoute"/>
         </l-map>
     </div>
 </template>
@@ -27,6 +27,7 @@ import RouteView from "@/components/RouteView.vue";
 import RoutesSearcher from "@/components/bar/RoutesSearcher.vue";
 import TopCitiesView from "@/components/TopCitiesView.vue";
 import {calculateDistance, calculateCenter} from "@/utils/Geo"
+import axios from "axios";
 
 export default {
     components: {
@@ -42,7 +43,6 @@ export default {
             if (route?.from?.coordinates && route?.to?.coordinates) {
                 this.moveView(route.from.coordinates, route.to.coordinates)
             }
-            console.log(route)
         },
         updateFromRequest(from) {
             this.request.from = from
@@ -144,6 +144,30 @@ export default {
                 this.request.from.id = id
             }
             this.previousSelectedCity = id
+        },
+        fetchConnected() {
+            let cityId;
+            if (this.request.from.type === 'city') {
+                cityId = this.request.from.id
+            } else if (this.request.to.type === 'city') {
+                cityId = this.request.to.id
+            } else {
+                return
+            }
+            axios.get(process.env.VUE_APP_BACKEND_HOST + "/api/v1/routes/connected-cities/?city_id=" + cityId)
+                .then(response => {
+                    if (response.data) {
+                        let ids = []
+                        response.data.forEach(city => {
+                            ids.push(city.id)
+                        })
+                        this.connectedCitiesIds = ids
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching connected cities:', error);
+                });
+
         }
     },
     data() {
@@ -159,7 +183,8 @@ export default {
                 from: {},
                 to: {}
             },
-            previousSelectedCity: null
+            previousSelectedCity: null,
+            connectedCitiesIds: []
         };
     },
     computed: {
@@ -184,6 +209,11 @@ export default {
                 this.setUrl(value)
                 if (this.$refs.searcher) {
                     this.$refs.searcher.search()
+                }
+                if ((this.request.from.type === 'city' || this.request.to.type === 'city') && !(this.request.from.type && this.request.to.type)) {
+                    this.fetchConnected()
+                } else {
+                    this.connectedCitiesIds = []
                 }
             }
         }
