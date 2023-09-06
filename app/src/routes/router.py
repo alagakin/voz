@@ -1,12 +1,14 @@
+import time
 from datetime import datetime
 
 import pytz
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import ValidationError
-from starlette.status import HTTP_400_BAD_REQUEST
-
+from starlette.status import HTTP_400_BAD_REQUEST, HTTP_404_NOT_FOUND
+from fastapi_cache.decorator import cache
 from config import MONGO_DB
 from database import get_async_client
+from routes.connected_cities import ConnectedCities
 from routes.handler import ParamsCheckHandler, AmbiguousParamsException
 from routes.routes_searcher import RoutesHandler
 from routes.stations import StationsHandler
@@ -64,6 +66,7 @@ async def routes(
     except AmbiguousParamsException:
         raise HTTPException(HTTP_400_BAD_REQUEST, 'Ambiguous params')
 
+
 @router.get("/available-days/")
 async def get_available_day(client=Depends(get_async_client)):
     db = client[MONGO_DB]
@@ -72,3 +75,12 @@ async def get_available_day(client=Depends(get_async_client)):
     async for item in collection.find({'fetched': True}):
         dates.append(item['date'])
     return dates
+
+
+@router.get("/connected-cities/")
+@cache(expire=3600)
+async def get_connected_cities(city_id: int, client=Depends(get_async_client)):
+    res = await ConnectedCities(city_id, client).get()
+    if not res:
+        raise HTTPException(HTTP_404_NOT_FOUND)
+    return res

@@ -1,10 +1,11 @@
+from fastapi_cache.decorator import cache
 from starlette.status import HTTP_404_NOT_FOUND
 from fastapi import APIRouter, Depends, HTTPException
 
 from locations.schemas import CityDisplaySchema, StationDisplaySchema
 from locations.stations import get_station_by_id
-from meili import get_client as get_search_client, get_index
-from locations.cities import get_by_id as get_city_by_id, get_top_cities
+from meili import get_client as get_search_client
+from locations.cities import get_city_by_id, get_top_cities
 
 router = APIRouter(
     prefix="/api/v1/locations",
@@ -35,8 +36,8 @@ async def search(query: str, client=Depends(get_search_client)):
     return res
 
 
-# todo: cache
 @router.get("/city/")
+@cache(expire=3600)
 async def city_by_id(id: int):
     res = await get_city_by_id(id)
     if not res:
@@ -44,14 +45,16 @@ async def city_by_id(id: int):
     return res
 
 
-# todo: cache
 @router.get("/station/")
+@cache(expire=3600)
 async def station_by_id(id: int):
     res = await get_station_by_id(id)
     if not res:
         raise HTTPException(HTTP_404_NOT_FOUND)
     return res
 
+
 @router.get("/top_cities/")
+@cache(expire=3600)
 async def get_top_cities_route():
     return await get_top_cities()

@@ -111,24 +111,24 @@ class CityDisplaySchema(LocationDisplaySchema):
     coordinates: list = Field(default_factory=list)
 
     @classmethod
-    def from_motor_dict(cls, dictionary):
+    def from_motor_dict(cls, dictionary) -> 'CityDisplaySchema':
         display_name = f"{dictionary['name']}, {dictionary['country']}"
         return cls(display_name=display_name, id=dictionary["id"], type="city", logo=dictionary['logo'],
                    coordinates=dictionary['coordinates']['coordinates'])
 
     @classmethod
-    def from_meili_document(cls, document):
+    def from_meili_document(cls, document) -> 'CityDisplaySchema':
         display_name = f"{document['name']}, {document['country']}"
         return cls(display_name=display_name, id=document["id"], type="city")
 
 
 class StationDisplaySchema(LocationDisplaySchema):
     @classmethod
-    def from_motor_dict(cls, dictionary):
+    def from_motor_dict(cls, dictionary) -> 'StationDisplaySchema':
         display_name = dictionary['name'].title()
         return cls(display_name=display_name, id=dictionary["id"], type="station")
 
     @classmethod
-    def from_meili_document(cls, document):
+    def from_meili_document(cls, document) -> 'StationDisplaySchema':
         display_name = document['display_name']
         return cls(display_name=display_name, id=document["id"], type="station")

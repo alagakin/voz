@@ -1,6 +1,8 @@
 import asyncio
 import json
 import os
+from typing import Union
+
 from config import MONGO_DB
 from database import get_async_client
 from locations.schemas import CityDisplaySchema
@@ -58,7 +60,7 @@ def make_document_for_index(city):
     }
 
 
-async def get_by_id(city_id):
+async def get_city_by_id(city_id) -> Union[CityDisplaySchema, False]:
     client = await get_async_client()
     db = client[MONGO_DB]
     cities = db["cities"]
@@ -76,3 +78,9 @@ async def get_top_cities():
     async for city in db.cities.find({"logo": {"$ne": None}}):
         res.append(CityDisplaySchema.from_motor_dict(city))
     return res
+
+
+async def create_cities_index():
+    client = await get_async_client()
+    db = client[MONGO_DB]
+    await db.cities.create_index([("coordinates", "2dsphere")])
