@@ -16,7 +16,6 @@ export default {
     components: {StationMarker, StartMarker, FinishMarker},
     props: {
         route: {
-            type: Object
         }
     },
     watch: {

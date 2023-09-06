@@ -1,5 +1,5 @@
 <template>
-    <template v-for="city in topCities" >
+    <template v-for="city in topCities">
         <top-city-marker :city="city" @select="selectCity" v-bind:key="city['id']"
                          v-if="!selected.includes(city['id']) && !selectedRoute"
                          :unreachable="connectedCitiesIds.length > 0 && !connectedCitiesIds.includes(city['id'])"
@@ -16,9 +16,7 @@ export default {
         selected: {
             type: Array
         },
-        selectedRoute: {
-            type: Object
-        },
+        selectedRoute: {},
         connectedCitiesIds: {
             type: Array,
         }
