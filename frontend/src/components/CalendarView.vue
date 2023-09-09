@@ -4,6 +4,7 @@
                    :allowed-dates="allowedDates"
                    timezone="Europe/Belgrade"
                    format="dd.MM.yyyy"
+                   :clearable="false"
                    auto-apply/>
 </template>
 <script>

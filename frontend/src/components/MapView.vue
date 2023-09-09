@@ -1,5 +1,4 @@
 <template>
-    <!--    todo: split in two-->
     <RoutesSearcher ref="searcher"
                     :request="request"
                     @selectRoute="showRouteOnMap"
@@ -41,6 +40,7 @@ export default {
     methods: {
         showRouteOnMap(route) {
             this.selectedRoute = route
+            this.$refs.searcher.open()
         },
         updateFromRequest(from) {
             this.request.from = from

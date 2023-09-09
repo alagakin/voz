@@ -1,6 +1,6 @@
 <template>
     <div :class="{'open': isOpen}"
-         class="sidebar fixed top-0 left-0 bg-white shadow-xl h-full w-1/5 max-h-screen"
+         class="sidebar fixed top-0 left-0 bg-white shadow-xl h-full max-h-screen"
          style="z-index: 10000000;">
         <div class="flex flex-col h-full">
             <div class="p-4">
@@ -65,6 +65,9 @@ export default {
         },
         toggle() {
             this.isOpen = !this.isOpen
+        },
+        open() {
+            this.isOpen = true
         },
         setRoutes(routes) {
             if (!routes.length) {
@@ -175,7 +178,7 @@ export default {
 <style scoped>
 
 .sidebar {
-    width: 20%;
+    width: 340px;
     transform: translateX(-100%);
     transition: transform 0.3s ease-out;
 }
