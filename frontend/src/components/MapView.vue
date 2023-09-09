@@ -17,6 +17,7 @@
             <TopCitiesView :request="request" :connected-cities-ids="connectedCitiesIds"
                            @select-city="selectCity" :selected-route="selectedRoute"/>
         </l-map>
+        <AuthorBlock />
     </div>
 </template>
 
@@ -28,9 +29,11 @@ import RoutesSearcher from "@/components/bar/RoutesSearcher.vue";
 import TopCitiesView from "@/components/TopCitiesView.vue";
 import {calculateDistance, calculateCenter} from "@/utils/Geo"
 import axios from "axios";
+import AuthorBlock from "@/components/AuthorBlock.vue";
 
 export default {
     components: {
+        AuthorBlock,
         TopCitiesView,
         RoutesSearcher,
         RouteView,
