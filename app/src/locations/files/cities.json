@@ -5288,7 +5288,8 @@
     "coordinates": {
       "type": "Point",
       "coordinates": [
-        43.033849, 19.74673
+        43.033849,
+        19.74673
       ]
     }
   },
@@ -7749,6 +7750,7 @@
   {
     "id": 645,
     "name": "Mladenovac",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ad/COA_Mladenovac_%28small%29.png",
     "country": "Serbia",
     "coordinates": {
       "type": "Point",
@@ -8416,6 +8418,7 @@
   {
     "id": 700,
     "name": "Lapovo",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Grb-Lapovo_mali.gif",
     "country": "Serbia",
     "coordinates": {
       "type": "Point",
@@ -9874,6 +9877,7 @@
   {
     "id": 821,
     "name": "Kosjerić",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Kosjeri%C4%87_%28grb%29.gif",
     "country": "Serbia",
     "coordinates": {
       "type": "Point",
@@ -10476,6 +10480,7 @@
   {
     "id": 871,
     "name": "Lazarevac",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/5/53/COA_Lazarevac.png",
     "country": "Serbia",
     "coordinates": {
       "type": "Point",
