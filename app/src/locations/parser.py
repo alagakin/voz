@@ -125,8 +125,8 @@ class Parser:
                 item["time"] = station["vremevoznje"]
                 item["id"] = station["Sifra"]
                 stations.append(RouteStationSchema(**item))
-            except KeyError as e:
-                message = f"Key {e} is not present in object {station}"
+            except (KeyError, ValueError) as e:
+                message = f"{e} in station - {station}"
                 routes_parsing_logger.error(message)
 
         if len(stations) == 0:
