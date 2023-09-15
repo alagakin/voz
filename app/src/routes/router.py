@@ -78,7 +78,7 @@ async def get_available_day(client=Depends(get_async_client)):
 
 
 @router.get("/connected-cities/")
-# @cache(expire=3600)
+@cache(expire=3600)
 async def get_connected_cities(city_id: int, client=Depends(get_async_client)):
     res = await ConnectedCities(city_id, client).get()
     if not res:
